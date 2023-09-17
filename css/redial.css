@@ -1,0 +1,743 @@
+
+
+.desktop {
+  display: none;
+}
+
+.desktop-flex {
+  display: none;
+}
+
+
+
+
+.redial-table-row {
+  width:100%;
+  display:flex;
+
+  margin-bottom:2px;
+}
+
+.radial-table-worktime {
+  min-height:76px;
+}
+
+.redial-table-cell {
+  padding:10px 8px 10px 10px;
+  margin-right:2px;
+  flex:1 1;
+  font-size:14px;
+  color:#5A5A5B;
+  line-height: 130%;
+  background-color: #F5F5F5;
+}
+
+.redial-table-cell-header {
+color: var(--color-text-dark, #3C3A3E);
+text-align: center;
+font-size: 12px;
+font-weight: 700;
+line-height: 130%; /* 15.6px */
+padding:10px 2px 10px 1px;
+min-width: 84px;
+border-top-left-radius:5px;
+}
+
+
+.redial-tooltip {
+  margin:0 0 0 2px;
+}
+
+.radial-tooltip-activator  {
+max-width: 15px;
+max-height: 15px;
+}
+
+.redial-table-cell-logo {
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+  border-top-right-radius:12px;
+  align-items: center;
+  padding:0px;
+  min-width: 76px;
+} 
+
+.redial-table-left {
+  min-width:135px;
+  max-width:45%;
+}
+
+.redial-table-left h2 {
+  color: #3C3A3E;
+line-height:133%;
+margin-bottom: 59px;
+margin-right: 29px;
+}
+
+.redial-table-sametime {
+  border-top-left-radius:5px;
+  border-left-color: #F5F5F5;
+}
+
+
+.redial-table-cell-mobile-empty {
+  background-color: #fff;
+}
+
+.redial-table-cell-call,.redial-table-cell-zvonok  {
+  padding:0px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+}
+
+.redial-table-cell-call {
+    color: #8C8C8D;
+    min-width:84px;
+   
+}
+
+.redial-table-cell-zvonok {
+  min-width:76px;
+}
+
+.lh-13-14 {
+  line-hegith: 130%;
+}
+
+.redial-list li {
+  line-height: 140%;
+}
+
+
+.redial-circle:before {
+  background-image: url("/img/decor/circle-redial.svg");
+  bottom:-28px;
+  width:155px;
+}
+
+.redial-focus-top {
+  margin-bottom: 25px;
+}
+
+.redial-focus-bottom {
+  padding:25px 15px 0px;
+}
+
+.redial-robot-left {
+  margin-bottom: ;
+}
+
+.redial-robot-right {
+    max-height: 270px;
+    margin-top: 20px;
+    min-height: 270px;
+    max-width: 219px;
+    margin-bottom: -99px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.redial-focus-paragraph {
+  margin-bottom: 10px;
+  line-height: 140%;
+  color: #5A5A5A;
+}
+
+.redial-focus-card-header {
+  font-size: 18px;
+  margin-bottom: -15px;
+}
+
+.redial-focus-card {
+  padding:25px 15px;
+  border-radius: 5px;
+}
+
+.redial-focus-paragraph:last-child {
+  margin-bottom: 0px;
+}
+
+.redial-form-desc {
+  max-width:unset;
+}
+
+.redial-time-list {
+  margin-top:30px;
+}
+
+.redial-answer-left {
+  margin-top: 20px;
+}
+
+.redial-cases-button-wrapper {
+  margin-top: 40px;
+}
+
+.redial-hero-imageblock {
+  margin-right: -10px;
+  margin-bottom: 20px;
+  margin-left:-12px;
+  margin-top: -30px;
+}
+
+.redial-hero-image {
+  min-width: 100%;
+  min-height: 317px;
+}
+
+.redial-voice-card {
+  background-color: #fff;
+}
+
+.redial-better-header {
+  margin-bottom: 10px;
+}
+
+.redial-answer {
+  padding-top: 50px;
+}
+
+.redial-any:after {
+  display: block;
+  height: 8px;
+  bottom: -8px;
+  width:120%;
+}
+
+.redial-client-header {
+  color: var(--color-text-dark, #3c3a3e);
+  font-feature-settings:
+    'clig' off,
+    'liga' off;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: -2.5px;
+}
+
+.redial-client-header h2 {
+  font-size: 20px;
+}
+
+
+.redial-try-form {
+  margin-top:30px;
+}
+
+.redial-col-second {
+  color: #8C8C8D;
+}
+
+
+@media screen and (min-width: 375px) {
+  .redial-table-cell-logo {
+    min-width: 105px;
+  }
+}
+
+
+@media screen and (min-width: 399px) {
+  .redial-table-cell-logo {
+    min-width: 117px;
+  }
+
+  .redial-table-cell-header {
+    min-width: 117px;
+  }
+
+}
+
+@media screen and (min-width: 420px) {
+  .redial-table-cell-logo {
+    min-width: 124px;
+  }
+
+  .redial-table-cell-header {
+    min-width: 124px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .redial-table-cell-logo {
+    min-width: 134px;
+  }
+
+  .redial-table-cell-header {
+    min-width: 134px;
+  }
+}
+
+
+
+@media screen and (min-width: 575px) {
+
+.redial-table-cell {
+  font-size: 16px;
+}
+
+  .redial-table-cell-header {
+    font-size:14px;
+  }
+
+  .redial-table-cell-logo {
+    min-width: 168.67px;
+  }
+
+  .redial-zvonok-logo {
+    min-width: 85px;
+    min-height: 20px;
+  }
+
+  .redial-focus-top {
+    margin-bottom: 30px;
+  }
+
+  .redial-focus-paragraph {
+    font-size: 17px;
+  }
+
+  .redial-focus-card {
+    padding:30px 20px;
+  }
+
+  .redial-focus-card-header {
+    font-size: 20px;
+    margin-bottom: -5px;
+  }
+
+  .redial-client-header {
+    font-size: 24px;
+  }
+
+  .redial-circle:before {
+   display:block;
+   width:150px;
+  }
+
+  .redial-any:after {
+    display: block;
+    height: 15px;
+    bottom: -15px;
+    width: 115%;
+  }
+
+  .redial-robot-right {
+    max-width: 252px;
+    margin-bottom: -78px;
+    margin-top:25px;
+  }
+
+  .redial-cases-button-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+  }
+
+  .redial-form-desc {
+    margin-top:15px;
+  }
+
+  .redial-list li {
+    font-size:16px
+  }
+
+  .redial-answer-left {
+    margin-top: 30px;
+  }
+}
+
+
+
+@media screen and (min-width: 767px) {
+
+  .redial-table-cell {
+    font-size: 17px;
+  }
+  
+  .redial-table-cell-header {
+      font-size:15px;
+    }
+
+    .redial-table-cell-logo {
+      min-width: 232px;
+    }
+
+    .redial-zvonok-logo {
+      min-width: 100px;
+      min-height: 30px;
+    }
+  
+
+  .redial-focus-paragraph {
+    font-size: 18px;
+  }
+
+  .redial-focus-top {
+    margin-bottom: 35px;
+  }
+
+  .redial-focus-card {
+    padding:40px 25px;
+  }
+
+
+  .redial-focus-card-header {
+    margin-bottom: 25px;
+  }
+
+
+  .redial-robot-right {
+    max-width: 300px;
+    margin-bottom: -40px;
+    margin-top:35px;
+  }
+
+
+  .redial-client-header {
+    margin-bottom: 25px;
+  }
+
+  .redial-answer-left {
+    margin-top: 40px;
+  }
+
+   .redial-list li {
+    font-size:18px
+  }
+
+  .redial-circle:before {
+    width:180px;
+    bottom:-23px;
+   }
+}
+
+
+@media screen and (min-width: 992px) {
+  .redial-flex {
+    display: flex;
+  }
+
+  .no-mb {
+    margin-bottom:0px;
+  }
+
+  .lh-13-14 {
+    line-hegith: 140%;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .desktop-flex {
+    display: flex;
+  }
+
+
+
+  .redial-table-left {
+    min-width:552px;
+    padding:20px 30px;
+ 
+  }
+
+  .redial-table-cell-mobile-empty {
+    padding:0px;
+  }
+
+
+  .redial-table-cell-logo {
+    min-width: 201px;
+    max-width: 276px;
+  }
+
+  .redial-table-cell-header {
+    font-size: 20px;
+    padding:42px;
+    max-width: 24.85%;
+  }
+
+.redial-hero-card {
+  width: 33%;
+}
+
+  .redial-hero-card:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  .redial-hero-desc {
+    font-size:16px;
+  }
+
+  .redial-focus-top {
+    margin-bottom: 55px;
+  }
+
+  .redial-focus-paragraph {
+    font-size: 20px;
+  }
+
+  .redial-focus-card {
+   padding: 0 30px;
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   height:100%;
+   margin-left:20px;
+  }
+
+  .redial-focus-card-header {
+    font-size: 20px;
+  }
+
+  .redial-robot-left {
+    width: 580px;
+  }
+
+
+  .redial-robot-right {
+    max-width: 308px;
+    max-height: 400px;
+    min-height: 400px;
+  position: absolute;
+    right:30px;
+    top: -1px;
+  }
+
+  .redial-robot-image {
+    min-height:442px;
+  }
+
+  .redial-client-case {
+    padding: 60px 95px;
+  }
+
+  .redial-any:after {
+    width: 100%;
+  }
+
+  .redial-case-item {
+    max-width: 230px;
+  }
+
+  .redial-client-header {
+    max-width: 469px;
+  }
+
+  .redial-case-wrapper {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .redial-client-heading {
+    margin-bottom: 15px;
+  }
+
+  
+  .redial-heading-small {
+    max-width: 185px;
+  }
+
+  .redial-faq-paragraph {
+    max-widht:915px;
+  }
+
+  .redial-scenario-header {
+    max-width: 540px;
+  }
+
+  .redial-answer {
+    padding-top: 55px;
+  }
+
+  .redial-card-right {
+    max-width: 505px;
+  }
+
+  .redial-card-right h2 {
+    margin-bottom: 0px;
+  }
+
+  .redial-register-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: unset;
+    padding: 0;
+    margin: 0;
+    grid-row-gap: 10px;
+    grid-column-gap: 15px;
+  }
+
+  .redial-form-desc {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    max-width: 100%;
+    margin: 0px;
+    justify-self: center;
+    max-height: 17px;
+  }
+
+  .redial-try-card-desc {
+    margin-top: 15px;
+  }
+
+  .redial-try-form {
+    margin-left: 0px !important;
+    margin-top: 20px;
+    max-width: 461px;
+    max-height: 68px;
+  }
+
+  .redial-feedback {
+    padding: 55px 55px 37px;
+  }
+
+  .redial-feedback-big {
+    padding: 55px;
+  }
+
+  .redial-register-input {
+    margin: 0px;
+    padding: 10px;
+  }
+
+  .redial-answer-left {
+    margin-top: 8px;
+  }
+
+
+  .redial-time-list {
+    margin-top:0px;
+  }
+
+  .redial-time-list li {
+    font-size:16px
+  }
+
+
+  .redial-circle:before {
+    background-image: url("/img/decor/circle20.svg");
+    width:194px;
+    bottom:-11px;
+   }
+
+   .redial-focus-bottom {
+    padding:55px 0px 55px 55px;
+    position: relative;
+  }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+.redial-hero-card:not(:first-child) {
+  margin-left: 30px;
+}
+
+.redial-table-cell {
+  font-size: 20px;
+}
+
+
+
+
+.redial-zvonok-logo {
+  min-width: 174px;
+  min-height: 35px;
+}
+
+
+
+.redial-hero-desc {
+  font-size:18px;
+}
+
+
+  .auto-redial-focus-wrapper {
+    padding-right: 95px;
+  }
+
+
+  .redial-focus-card {
+    padding:0px 35px;
+    margin-left:30px;
+  }
+
+  .redial-focus-bottom {
+    padding:55px 0px 55px 55px;
+    position: relative;
+  }
+
+  .redial-time-list {
+    margin-left: 60px;
+
+  }
+
+  .redial-robot-right {
+    max-width: 358px;
+    max-height: 442px;
+    min-height: 442px;
+  position: absolute;
+    margin-left: 16px;
+    right:80px;
+    top: -25px;
+  }
+
+
+  .redial-list li {
+    font-size:18px
+  }
+
+  .redial-hero-imageblock {
+    max-width: 629px;
+    max-height: 355px;
+  }
+
+  .cases-clients-logo {
+    max-width: 469px;
+  }
+
+  .redial-register-input {
+    max-width: 285px;
+    min-width: 285px;
+  }
+
+  .redial-register-button {
+    padding: 10px 32px;
+    max-width: 161px;
+  }
+
+  .redial-case-item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .redial-client-header {
+    max-width: 469px;
+    margin-bottom: 45px;
+  }
+
+  .redial-cases-right {
+    padding: 0px;
+    max-width: 570px;
+  }
+
+  .redial-better-card {
+    padding-right: 35px;
+    min-height: 313px;
+  }
+
+  .redial-answer-left {
+    margin-top: 8px;
+  }
+}

@@ -1,0 +1,70 @@
+@media screen and (min-width: 991.98px) {
+    .confirm-card-wrapper {
+        align-self:start;
+        padding-top:24px;
+        padding-bottom:50px;
+        justify-self:center;
+    }
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    .confirm-card-wrapper-step4 {
+     
+        padding-bottom:58px;
+        
+    }
+  }
+
+
+.confirm-instruction-wrapper {
+    padding-bottom:20px;
+    display:flex;
+
+}
+
+@media screen and (min-width: 991.98px) {
+    .confirm-instruction-wrapper {
+      padding-bottom:40px;
+  
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .confirm-instruction-wrapper {
+      padding-bottom:50px;
+      
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .confirm-instruction-wrapper-step3 {
+      padding-bottom:21px;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .confirm-instruction-wrapper-step4 {
+      padding-bottom:25px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .confirm-instruction-wrapper-step4 {
+      padding-bottom:13px;
+    }
+  }
+
+
+.confirm-card-instruction {
+color: var(--color-text-light, #5A5A5B);
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; 
+}
+
+.confirm-instruction-icon {
+margin-right:8px;
+}
+
