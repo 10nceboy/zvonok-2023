@@ -24,4 +24,44 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  document.querySelectorAll(".audio-mobile").forEach((audiom) => {
+    audiom.addEventListener("timeupdate", (event) => {
+      let orangeMobileBar = event.currentTarget
+        .closest(".redial-player-wrapper-mobile")
+        .querySelector(".wave-orange");
+
+      let percent = Math.floor((audiom.currentTime / audiom.duration) * 100);
+
+      orangeMobileBar.style.width = `${percent}%`;
+
+      if (percent == 100) {
+        orangeMobileBar.style.width = "0%";
+      }
+    });
+  });
+
+  const handleTimeLineClick = (event) => {
+    const { target: timeline, clientX } = event;
+    const audioa = timeline
+      .closest(".redial-player-wrapper")
+      .querySelector("audio");
+
+    const rect = timeline.getBoundingClientRect();
+    const x = clientX - rect.left;
+    const pcent = Math.floor((x / rect.width) * 100);
+    const to = (audioa.duration * pcent) / 100;
+
+    audioa.currentTime = to;
+  };
+
+  document
+    .querySelectorAll(".redial-player-progressbar")
+    .forEach((timeline) => {
+      timeline.addEventListener("click", handleTimeLineClick);
+    });
+
+  document.querySelectorAll(".wave-wrapper").forEach((timeline) => {
+    timeline.addEventListener("click", handleTimeLineClick);
+  });
 });

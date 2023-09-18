@@ -2,6 +2,11 @@
   display: none;
 }
 
+
+.desktop-768 {
+  display: none;
+}
+
 .desktop-flex {
   display: none;
 }
@@ -12,25 +17,24 @@
 }
 
 .redial-border-radius-left {
-  border-bottom-left-radius:5px;
-
+  border-bottom-left-radius: 5px;
 }
 
 .redial-border-radius-right {
-  border-bottom-right-radius:5px;
+  border-bottom-right-radius: 5px;
 }
 
 .redial-popover {
   max-width: 193px;
-  left:-28% !important;
-  bottom:-10px !important;
-}
+  left: -28% !important;
+  margin-top: -10px;
 
+}
 
 .redial-popover .popover-body {
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.07));
   font-size: 14px;
-  padding:10px;
+  padding: 10px;
 }
 
 .redial-table-row {
@@ -261,9 +265,8 @@
 
   .redial-popover {
     max-width: 198px;
-    left:-30% !important;
+    left: -30% !important;
   }
-  
 }
 
 @media screen and (min-width: 399px) {
@@ -275,10 +278,9 @@
     min-width: 117px;
   }
 
-
   .redial-popover {
     max-width: 198px;
-    left:-28% !important;
+    left: -28% !important;
   }
 }
 
@@ -293,7 +295,7 @@
 
   .redial-popover {
     max-width: 208px;
-    left:-26% !important;
+    left: -26% !important;
   }
 }
 
@@ -306,9 +308,8 @@
     min-width: 134px;
   }
 
-
   .redial-popover {
-    left:-24% !important;
+    left: -24% !important;
   }
 }
 
@@ -327,16 +328,15 @@
   }
 
   .redial-popover {
-    left:-21% !important;
+    left: -21% !important;
   }
 }
 
 @media screen and (min-width: 575px) {
   .redial-popover {
     max-width: 228px;
-    left:-18% !important;
+    left: -18% !important;
   }
-
 
   .redial-table-cell {
     font-size: 16px;
@@ -422,7 +422,7 @@
 
   .redial-popover {
     max-width: 238px;
-    left:-17% !important;
+    left: -17% !important;
   }
 }
 
@@ -433,11 +433,15 @@
 
   .redial-popover {
     max-width: 238px;
-    left:-15.2% !important;
+    left: -15.2% !important;
   }
 }
 
 @media screen and (min-width: 720px) {
+
+
+
+
   .redial-hero-imageblock {
     min-width: 90%;
     margin: 0;
@@ -453,9 +457,12 @@
 @media screen and (min-width: 767px) {
   .redial-popover {
     max-width: 258px;
-    left:-13% !important;
+    left: -13% !important;
   }
 
+  .mobile-768 {
+    display: none;
+  }
 
   .redial-hero-image {
     min-width: 85%;
@@ -523,8 +530,8 @@
   .radial-tooltip-activator {
     max-width: 22px;
     max-height: 22px;
+    margin-bottom: 3px;
   }
-
 
   .redial-popover {
     left: -130px !important;
@@ -781,8 +788,6 @@
     max-width: 540px;
   }
 
- 
-
   .redial-hero-imageblock {
     margin: 0;
     max-width: 645px;
@@ -888,6 +893,3 @@
     margin-top: 8px;
   }
 }
-
-
-
