@@ -2,6 +2,11 @@
   display: none;
 }
 
+
+.desktop-768 {
+  display: none;
+}
+
 .desktop-flex {
   display: none;
 }
@@ -433,6 +438,10 @@
 }
 
 @media screen and (min-width: 720px) {
+
+
+
+
   .redial-hero-imageblock {
     min-width: 90%;
     margin: 0;
@@ -449,6 +458,10 @@
   .redial-popover {
     max-width: 258px;
     left: -13% !important;
+  }
+
+  .mobile-768 {
+    display: none;
   }
 
   .redial-hero-image {

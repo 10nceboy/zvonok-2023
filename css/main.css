@@ -3137,6 +3137,35 @@ main {
   }
 }
 
+
+.advantages-slider2 {
+  overflow: hidden;
+}
+
+
+
+.advantages-slider2 .swiper-slide {
+  height: unset;
+  position: relative;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.advantages-slider2 .swiper-wrapper {
+  transition-timing-function: linear !important;
+  position: relative;
+}
+@media screen and (max-width: 767.98px) {
+  .advantages-slider2 .swiper-wrapper {
+    transition-timing-function: ease !important;
+  }
+}
+
+
+
+
 .advantages-slide {
   padding: 25px;
   height: 100%;
