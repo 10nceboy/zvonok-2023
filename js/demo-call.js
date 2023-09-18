@@ -1,16 +1,15 @@
 // Demo call player
-
-document.addEventListener('DOMContentLoaded', () => {
-  if (document.querySelector('.conversation')) {
+document.addEventListener("DOMContentLoaded", () => {
+  if (document.querySelector(".conversation")) {
     let audio;
     let played = false;
 
-    const tabs = document?.querySelector('.conversation-tabs');
-    const tabButton = document?.querySelectorAll('.conversation-tabs-btn');
-    const contents = document?.querySelectorAll('.conversation-slide');
+    const tabs = document?.querySelector(".conversation-tabs");
+    const tabButton = document?.querySelectorAll(".conversation-tabs-btn");
+    const contents = document?.querySelectorAll(".conversation-slide");
 
-    const btnPrev = document?.querySelector('.conversation-prev');
-    const btnNext = document?.querySelector('.conversation-next');
+    const btnPrev = document?.querySelector(".conversation-prev");
+    const btnNext = document?.querySelector(".conversation-next");
 
     let tabsCount = tabs?.children.length - 1;
     let currentTab = 0;
@@ -19,34 +18,34 @@ document.addEventListener('DOMContentLoaded', () => {
     function changeTab(id) {
       if (document.querySelector(`[data-tab='${id}']`)) {
         tabButton.forEach((tab) => {
-          tab.classList.remove('active');
+          tab.classList.remove("active");
         });
-        document.querySelector(`[data-tab='${id}']`).classList.add('active');
-        document.querySelector(`[data-tab='${id}']`).classList.remove('hidden');
+        document.querySelector(`[data-tab='${id}']`).classList.add("active");
+        document.querySelector(`[data-tab='${id}']`).classList.remove("hidden");
       }
     }
 
     function changeSlide(id) {
       if (document.querySelector(`.slide-${id}`)) {
         contents.forEach((content) => {
-          content.classList.remove('active');
-          content.classList.add('hidden');
+          content.classList.remove("active");
+          content.classList.add("hidden");
         });
-        document.querySelector(`.slide-${id}`).classList.remove('hidden');
-        document.querySelector(`.slide-${id}`).classList.add('active');
+        document.querySelector(`.slide-${id}`).classList.remove("hidden");
+        document.querySelector(`.slide-${id}`).classList.add("active");
       }
     }
 
     function checkAvailability() {
       if (currentTab === 0 && currentTab !== tabsCount) {
-        btnNext?.classList.remove('disabled');
-        btnPrev?.classList.add('disabled');
+        btnNext?.classList.remove("disabled");
+        btnPrev?.classList.add("disabled");
       } else if (currentTab === tabsCount && currentTab !== 0) {
-        btnPrev?.classList.remove('disabled');
-        btnNext?.classList.add('disabled');
+        btnPrev?.classList.remove("disabled");
+        btnNext?.classList.add("disabled");
       } else {
-        btnPrev?.classList.remove('disabled');
-        btnNext?.classList.remove('disabled');
+        btnPrev?.classList.remove("disabled");
+        btnNext?.classList.remove("disabled");
       }
     }
 
@@ -56,8 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document
           .querySelectorAll(`[data-dialog] > div > .conversation-bubble`)
           .forEach(function (el) {
-            el.style.webkitAnimationPlayState = 'paused';
-            el.classList.remove('animation-running');
+            el.style.webkitAnimationPlayState = "paused";
+            el.classList.remove("animation-running");
           });
       }
     }
@@ -68,21 +67,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
       document.querySelectorAll(path).forEach((el) => {
         el.style.animationDelay = el.dataset.delay;
-        el.style.webkitAnimationPlayState = 'running';
-        el.classList.add('animation-running');
+        el.style.webkitAnimationPlayState = "running";
+        el.classList.add("animation-running");
       });
     }
 
     function stopAudio() {
       played = false;
-      document.querySelectorAll('audio').forEach((elm) => {
+      document.querySelectorAll("audio").forEach((elm) => {
         elm.pause();
         elm.currentTime = 0;
       });
     }
 
     // Slide change events
-    btnPrev?.addEventListener('click', function () {
+    btnPrev?.addEventListener("click", function () {
       if (currentTab !== 0 && currentTab > 0) {
         currentTab--;
         changeTab(currentTab);
@@ -96,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    btnNext?.addEventListener('click', function () {
+    btnNext?.addEventListener("click", function () {
       if (currentTab !== tabsCount && currentTab < tabsCount) {
         currentTab++;
         changeTab(currentTab);
@@ -110,8 +109,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Tabs changing
     if (tabs) {
+      // Tabs changing
       tabs.onclick = (e) => {
         stopAnimation();
         stopAudio();
@@ -122,28 +121,27 @@ document.addEventListener('DOMContentLoaded', () => {
           checkAvailability();
 
           tabButton.forEach((btn) => {
-            btn.classList.remove('active');
+            btn.classList.remove("active");
           });
-          e.target.classList.add('active');
-          e.target.classList.remove('hidden');
+          e.target.classList.add("active");
+          e.target.classList.remove("hidden");
 
           contents.forEach((content) => {
-            content.classList.remove('active');
-            content.classList.add('hidden');
+            content.classList.remove("active");
+            content.classList.add("hidden");
           });
           const element = document.getElementById(id);
-          element.classList.add('active');
-          element.classList.remove('hidden');
+          element.classList.add("active");
+          element.classList.remove("hidden");
         }
       };
     }
 
     // Click on audio start btn
-    let startBtn = document.querySelectorAll('.conversation-player');
+    let startBtn = document.querySelectorAll(".conversation-player");
     startBtn.forEach((elm) => {
-      elm.addEventListener('click', (evt) => {
+      elm.addEventListener("click", (evt) => {
         let audio = evt.currentTarget.previousElementSibling;
-        console.log(audio);
 
         if (audio.paused) {
           audio.play();
@@ -156,34 +154,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Events
-    document.querySelectorAll('audio[data-audio]').forEach((elm) => {
-      elm.addEventListener('ended', (evt) => {
+    document.querySelectorAll("audio[data-audio]").forEach((elm) => {
+      elm.addEventListener("ended", (evt) => {
         stopAnimation();
-        evt.currentTarget.classList.remove('active');
+        evt.currentTarget.classList.remove("active");
         played = false;
       });
 
-      elm.addEventListener('pause', (evt) => {
+      elm.addEventListener("pause", (evt) => {
         stopAnimation();
-        evt.currentTarget.classList.remove('active');
+        evt.currentTarget.classList.remove("active");
         played = false;
       });
 
-      elm.addEventListener('playing', (evt) => {
+      elm.addEventListener("playing", (evt) => {
         startAnimation(
-          evt.currentTarget.closest('div').querySelector('button')
+          evt.currentTarget.closest("div").querySelector("button")
         );
-        evt.currentTarget.classList.add('active');
+        evt.currentTarget.classList.add("active");
         played = true;
       });
     });
 
     // Reset all audio elements
-    const audios = Array.from(document.querySelectorAll('audio'));
+    const audios = Array.from(document.querySelectorAll("audio"));
     let playing = false;
 
     audios.forEach((audio) => {
-      audio.addEventListener('play', function (evt) {
+      audio.addEventListener("play", function (evt) {
         if (playing) {
           audios.forEach((el) => {
             el.pause();
