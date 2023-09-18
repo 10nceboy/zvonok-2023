@@ -24,4 +24,24 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  const handleTimeLineClick = (event) => {
+    const { target: timeline, clientX } = event;
+    const audioa = timeline
+      .closest(".redial-player-wrapper")
+      .querySelector("audio");
+    console.log(audioa);
+    const rect = timeline.getBoundingClientRect();
+    const x = clientX - rect.left;
+    const pcent = Math.floor((x / rect.width) * 100);
+    const to = (audioa.duration * pcent) / 100;
+
+    audioa.currentTime = to;
+  };
+
+  document
+    .querySelectorAll(".redial-player-progressbar")
+    .forEach((timeline) => {
+      timeline.addEventListener("click", handleTimeLineClick);
+    });
 });
