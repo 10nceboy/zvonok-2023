@@ -660,7 +660,7 @@ audio.active ~ button.audio-play::after {
   }
 }
 .custom-select-wrapper[data-select-audio] .disabled, [data-select][data-select-audio] .disabled {
-  pointer-events: all;
+  pointer-events: none;
 }
 .custom-select-wrapper[data-rent], [data-select][data-rent] {
   display: inline-flex;
@@ -3136,35 +3136,6 @@ main {
     transition-timing-function: ease !important;
   }
 }
-
-
-.advantages-slider2 {
-  overflow: hidden;
-}
-
-
-
-.advantages-slider2 .swiper-slide {
-  height: unset;
-  position: relative;
-  overflow: hidden;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-.advantages-slider2 .swiper-wrapper {
-  transition-timing-function: linear !important;
-  position: relative;
-}
-@media screen and (max-width: 767.98px) {
-  .advantages-slider2 .swiper-wrapper {
-    transition-timing-function: ease !important;
-  }
-}
-
-
-
 
 .advantages-slide {
   padding: 25px;
@@ -5880,18 +5851,12 @@ input:-webkit-autofill:active {
 }
 
 .confirm-card-right {
-  padding: 0 25px;
+  padding: 0 35px;
   color: #5A5A5B;
 }
 @media screen and (max-width: 991.98px) {
   .confirm-card-right {
-    padding: 15px 15px 35px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .confirm-card-right {
-    padding:0 15px 0px 35px;
+    padding: 40px 15px 35px;
   }
 }
 
@@ -5965,25 +5930,11 @@ input:-webkit-autofill:active {
 @media screen and (max-width: 991.98px) {
   .confirm-card-cost {
     margin-left: 10px;
-
   }
 }
-@media screen and (max-width: 767.98px)  {
+@media screen and (max-width: 767.98px) {
   .confirm-card-cost {
     font-size: 15px;
-  }
-}
-
-
-@media screen and (min-width: 992px) and (max-width:1200px)  {
-  .confirm-card-cost {
-    font-size: 17px;
-  }
-}
-
-@media screen and (min-width: 1200px)  {
-  .confirm-card-cost {
-    font-size: 20px;
   }
 }
 
@@ -6012,7 +5963,7 @@ input:-webkit-autofill:active {
 }
 @media screen and (max-width: 991.98px) {
   .confirm-card-tooltip {
-    display:none;
+    display: none;
   }
 }
 
@@ -6021,21 +5972,12 @@ input:-webkit-autofill:active {
   margin-bottom: 40px;
   background-color: #F5F5F5;
   border-radius: 5px;
-
 }
 @media screen and (max-width: 767.98px) {
   .confirm-card-example {
     padding: 10px;
     margin-bottom: 30px;
     font-size: 12px;
-    min-width:270px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .confirm-card-example {
-  
-    min-width:500px;
   }
 }
 
@@ -6084,14 +6026,14 @@ input:-webkit-autofill:active {
   }
 }
 
-.confirm-card-detail {
+.confirm-card-instruction {
   font-weight: 600;
   transition: color 0.3s ease;
 }
-.confirm-card-detail:hover, .confirm-card-detail:focus {
+.confirm-card-instruction:hover, .confirm-card-instruction:focus {
   color: #F25F2D;
 }
-.confirm-card-detail:active {
+.confirm-card-instruction:active {
   color: #E45726;
 }
 
@@ -6595,7 +6537,7 @@ input:-webkit-autofill:active {
   z-index: -1;
   bottom: -13px;
   left: -8px;
-  background-image: url("/img/decor/circle20.svg");
+  background-image: url("../img/decor/circle20.svg");
 }
 @media screen and (max-width: 991.98px) {
   .circle20-2::before {
