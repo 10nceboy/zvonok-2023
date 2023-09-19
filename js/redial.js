@@ -64,4 +64,39 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".wave-wrapper").forEach((timeline) => {
     timeline.addEventListener("click", handleTimeLineClick);
   });
+
+  if (document.querySelector(".advantages-slider2")) {
+    let advantagesSlider2 = new Swiper(".advantages-slider2", {
+      slidesPerView: 1.1,
+      spaceBetween: 15,
+      grabCursor: true,
+      draggable: false,
+      speed: 5000,
+      loopAdditionalSlides: 5,
+      onlyExternal: true,
+      noSwipingSelector: "button",
+      loop: true,
+      watchSlidesProgress: true,
+      focusableElements: "button",
+      breakpoints: {
+        450: {
+          slidesPerView: 1.5,
+        },
+        720: {
+          slidesPerView: 1.5,
+          spaceBetween: 20,
+        },
+        960: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+  }
+
+  document
+    .querySelector(".advantages-slider2")
+    .addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
 });
