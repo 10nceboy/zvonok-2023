@@ -43,16 +43,16 @@ audio.active ~ button.redial-player::after {
   }
 }
 
-
 .advantages-slider2 .swiper-slide {
   height: unset;
   position: relative;
   overflow: hidden;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+
 .advantages-slider2 .swiper-wrapper {
   transition-timing-function: linear !important;
   position: relative;
@@ -62,7 +62,6 @@ audio.active ~ button.redial-player::after {
     transition-timing-function: ease !important;
   }
 }
-
 
 .redial-player:after {
   content: "";
@@ -108,7 +107,7 @@ audio.active ~ button.redial-player::after {
 }
 
 .redial-voice-card-desc {
-  margin-bottom: 15px;
+  margin:10px 0 15px;
 }
 
 .wave-wrapper {
@@ -394,10 +393,9 @@ audio.active ~ button.redial-player::after {
     margin-bottom: 33px !important;
   }
 
- .wave {
-  min-width: 190px;
- }
-
+  .wave {
+    min-width: 190px;
+  }
 }
 
 @media screen and (min-width: 399px) {
@@ -415,7 +413,6 @@ audio.active ~ button.redial-player::after {
   }
 }
 
-
 @media screen and (min-width: 410px) {
   .redial-reanimate-desc {
     margin-bottom: 35px;
@@ -425,9 +422,6 @@ audio.active ~ button.redial-player::after {
     min-width: 210px;
   }
 }
-
-
-
 
 @media screen and (min-width: 420px) {
   .redial-table-cell-logo {
@@ -443,19 +437,27 @@ audio.active ~ button.redial-player::after {
     left: -26% !important;
   }
 
+  .redial-clients-desc {
+    margin-bottom: 15px !important;
+  }
+
+  .redial-reanimate-desc {
+    margin-bottom: 15px;
+  }
+
+  .redial-voice-card-desc {
+    font-size: 14px;
+  }
+
   .wave {
     min-width: 180px;
   }
 }
 
 @media screen and (min-width: 446px) {
-  .redial-reanimate-desc {
-    margin-bottom: 15px;
+  .redial-voice-card-desc {
+    font-size: 15px;
   }
-  .redial-clients-desc {
-    margin-bottom: 15px !important;
-  }
- 
 }
 
 @media screen and (min-width: 450px) {
@@ -496,21 +498,16 @@ audio.active ~ button.redial-player::after {
 }
 
 @media screen and (min-width: 475px) {
-
   .redial-clients-desc {
     margin-bottom: 35px !important;
   }
- 
 }
-
-
 
 @media screen and (min-width: 520px) {
   .redial-clients-desc {
     margin-bottom: 15px !important;
   }
 }
-
 
 @media screen and (min-width: 540px) {
   .redial-clients-desc {
@@ -666,8 +663,6 @@ audio.active ~ button.redial-player::after {
     display: none;
   }
 
- 
-
   .redial-hero-wrapper {
     margin-bottom: 60px;
   }
@@ -794,11 +789,9 @@ audio.active ~ button.redial-player::after {
     font-size: 18px;
   }
 
-
   .redial-clients-desc {
     margin-bottom: 25px !important;
   }
-
 
   .redial-player-progressbar {
     max-width: 240px;
