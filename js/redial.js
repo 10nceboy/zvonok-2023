@@ -99,4 +99,11 @@ document.addEventListener("DOMContentLoaded", () => {
     .addEventListener("click", (e) => {
       e.stopPropagation();
     });
+
+  function cabinetRegisterRedirect(e) {
+    let phone = e["phone"].value.replace("(", "").replace(")", "");
+    window.location.href = cabinetRegisterUrl + "&" + "phone=" + phone;
+  }
+
+  cabinetRegisterUrl = "https://zvonok.com/manager/users/add/?country=ru";
 });
