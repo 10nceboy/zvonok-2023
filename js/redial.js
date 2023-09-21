@@ -65,8 +65,8 @@ document.addEventListener("DOMContentLoaded", () => {
     timeline.addEventListener("click", handleTimeLineClick);
   });
 
-  if (document.querySelector(".advantages-slider2")) {
-    let advantagesSlider2 = new Swiper(".advantages-slider2", {
+  if (document.querySelector(".players-slider")) {
+    let advantagesSlider2 = new Swiper(".players-slider", {
       slidesPerView: 1.1,
       spaceBetween: 15,
       grabCursor: true,

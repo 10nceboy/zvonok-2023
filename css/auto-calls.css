@@ -1,3 +1,8 @@
+
+.auto-calls-results p {
+  font-size: 12px;
+}
+
 .desktop {
   display: none;
 }
@@ -10,31 +15,33 @@
   display: none;
 }
 
-.redial-text {
+.auto-calls-text {
   color: #5a5a5b !important;
 }
 
-.redial-results p {
+.auto-calls-results p {
   color: #5a5a5b !important;
 }
 
-.redial-h2 {
+
+
+.auto-calls-h2 {
   font-size: 20px;
 }
 
-.redial-hero-wrapper {
+.auto-calls-hero-wrapper {
   margin-bottom: 85px;
 }
 
-.redial-border-radius-left {
+.auto-calls-border-radius-left {
   border-bottom-left-radius: 5px;
 }
 
-.redial-border-radius-right {
+.auto-calls-border-radius-right {
   border-bottom-right-radius: 5px;
 }
 
-audio.active ~ button.redial-player::after {
+audio.active ~ button.auto-calls-player::after {
   background-image: url("../img/icons/pause-white.svg") !important;
 }
 @media screen and (max-width: 767.98px) {
@@ -43,7 +50,7 @@ audio.active ~ button.redial-player::after {
   }
 }
 
-.advantages-slider2 .swiper-slide {
+.players-slider .swiper-slide {
   height: unset;
   position: relative;
   overflow: hidden;
@@ -53,17 +60,17 @@ audio.active ~ button.redial-player::after {
   user-select: none;
 }
 
-.advantages-slider2 .swiper-wrapper {
+.players-slider .swiper-wrapper {
   transition-timing-function: linear !important;
   position: relative;
 }
 @media screen and (max-width: 767.98px) {
-  .advantages-slider2 .swiper-wrapper {
+  .players-slider .swiper-wrapper {
     transition-timing-function: ease !important;
   }
 }
 
-.redial-player:after {
+.auto-calls-player:after {
   content: "";
   position: absolute;
   top: 0;
@@ -77,7 +84,7 @@ audio.active ~ button.redial-player::after {
   transition: all 0.3s ease;
 }
 
-.redial-player:before {
+.auto-calls-player:before {
   content: "";
   position: absolute;
   top: 0;
@@ -88,7 +95,7 @@ audio.active ~ button.redial-player::after {
   background-color: #f4774c;
 }
 
-.redial-player-wrapper {
+.auto-calls-player-wrapper {
   height: fit-content;
   min-height: 40px;
   background: #f5f5f5;
@@ -96,17 +103,17 @@ audio.active ~ button.redial-player::after {
   max-width: fit-content;
 }
 
-.redial-player-progressbar {
+.auto-calls-player-progressbar {
   margin-left: 30px;
   cursor: pointer;
   margin-right: 5px;
 }
 
-.redial-voice-card {
+.auto-calls-voice-card {
   background-color: #fff;
 }
 
-.redial-voice-card-desc {
+.auto-calls-voice-card-desc {
   margin:10px 0 15px;
 }
 
@@ -130,46 +137,46 @@ audio.active ~ button.redial-player::after {
   background-repeat: no-repeat;
 }
 
-.redial-accordion-header {
+.auto-calls-accordion-header {
   font-size: 18px !important;
 }
 
-.redial-hero-button {
+.auto-calls-hero-button {
   background-color: #f4774c;
 }
 
-.redial-check img {
+.auto-calls-check img {
   max-width: 25px;
   max-height: 25px;
 }
 
-.redial-delofon:hover .redial-better-header {
+.auto-calls-delofon:hover .auto-calls-better-header {
   color: #1d71b8;
 }
 
-.redial-popover {
+.auto-calls-popover {
   max-width: 193px;
   left: -28% !important;
   margin-top: -10px;
 }
 
-.redial-popover .popover-body {
+.auto-calls-popover .popover-body {
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.07));
   font-size: 14px;
   padding: 10px;
 }
 
-.redial-table-row {
+.auto-calls-table-row {
   width: 100%;
   display: flex;
   margin-bottom: 2px;
 }
 
-.radial-table-worktime {
+.auto-calls-table-worktime {
   min-height: 76px;
 }
 
-.redial-table-cell {
+.auto-calls-table-cell {
   padding: 10px 8px 10px 10px;
   margin-right: 2px;
   flex: 1 1;
@@ -179,10 +186,10 @@ audio.active ~ button.redial-player::after {
   background-color: #f5f5f5;
 }
 
-.redial-table-cell-header {
+.auto-calls-table-cell-header {
   color: var(--color-text-dark, #3c3a3e);
   text-align: center;
-  font-size: 12px;
+  font-size: auto-calls;
   font-weight: 700;
   line-height: 130%; /* 15.6px */
   padding: 10px 2px 10px 1px;
@@ -190,17 +197,17 @@ audio.active ~ button.redial-player::after {
   border-top-left-radius: 5px;
 }
 
-.redial-tooltip {
+.auto-calls-tooltip {
   margin: 0 0 0 2px;
   display: inline;
 }
 
-.radial-tooltip-activator {
+.auto-calls-tooltip-activator {
   max-width: 15px;
   max-height: 15px;
 }
 
-.redial-arrow::before {
+.auto-calls-arrow::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -212,39 +219,39 @@ audio.active ~ button.redial-player::after {
   background-size: cover;
 }
 
-.redial-table-cell-logo {
+.auto-calls-table-cell-logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-top-right-radius: 12px;
+  border-top-right-radius: ;
   align-items: center;
   padding: 0px;
   min-width: 76px;
 }
 
-.redial-table-left {
+.auto-calls-table-left {
   min-width: 135px;
   max-width: 45%;
 }
 
-.redial-table-left h2 {
+.auto-calls-table-left h2 {
   color: #3c3a3e;
   line-height: 133%;
   margin-bottom: 59px;
   margin-right: 29px;
 }
 
-.redial-table-sametime {
+.auto-calls-table-sametime {
   border-top-left-radius: 5px;
   border-left-color: #f5f5f5;
 }
 
-.redial-table-cell-mobile-empty {
+.auto-calls-table-cell-mobile-empty {
   background-color: #fff;
 }
 
-.redial-table-cell-call,
-.redial-table-cell-zvonok {
+.auto-calls-table-cell-call,
+.auto-calls-table-cell-zvonok {
   padding: 0px;
   display: flex;
   flex-direction: column;
@@ -252,12 +259,12 @@ audio.active ~ button.redial-player::after {
   text-align: center;
 }
 
-.redial-table-cell-call {
+.auto-calls-table-cell-call {
   color: #8c8c8d;
   min-width: 84px;
 }
 
-.redial-table-cell-zvonok {
+.auto-calls-table-cell-zvonok {
   min-width: 76px;
 }
 
@@ -265,25 +272,25 @@ audio.active ~ button.redial-player::after {
   line-height: 130%;
 }
 
-.redial-list li {
+.auto-calls-list li {
   line-height: 140%;
 }
 
-.redial-circle:before {
-  background-image: url("../img/decor/circle-redial.svg");
+.auto-calls-circle:before {
+  background-image: url("../img/decor/circle-auto-calls.svg");
   bottom: -28px;
   width: 155px;
 }
 
-.redial-focus-top {
+.auto-calls-focus-top {
   margin-bottom: 25px;
 }
 
-.redial-focus-bottom {
+.auto-calls-focus-bottom {
   padding: 25px 15px 0px;
 }
 
-.redial-robot-right {
+.auto-calls-robot-right {
   max-height: 270px;
   margin-top: 20px;
   min-height: 270px;
@@ -293,69 +300,69 @@ audio.active ~ button.redial-player::after {
   margin-right: auto;
 }
 
-.redial-focus-paragraph {
+.auto-calls-focus-paragraph {
   margin-bottom: 10px;
   line-height: 140%;
 }
 
-.redial-focus-card-header {
+.auto-calls-focus-card-header {
   font-size: 18px;
   margin-bottom: -15px;
 }
 
-.redial-focus-card {
+.auto-calls-focus-card {
   padding: 25px 15px;
   border-radius: 5px;
 }
 
-.redial-focus-paragraph:last-child {
+.auto-calls-focus-paragraph:last-child {
   margin-bottom: 0px;
 }
 
-.redial-form-desc {
+.auto-calls-form-desc {
   max-width: unset;
 }
 
-.redial-time-list {
+.auto-calls-time-list {
   margin-top: 30px;
 }
 
-.redial-answer-left {
+.auto-calls-answer-left {
   margin-top: 20px;
 }
 
-.redial-cases-button-wrapper {
+.auto-calls-cases-button-wrapper {
   margin-top: 40px;
 }
 
-.redial-hero-imageblock {
+.auto-calls-hero-imageblock {
   margin-right: -10px;
   margin-bottom: -15px;
   margin-left: -12px;
   margin-top: -30px;
 }
 
-.redial-hero-image {
+.auto-calls-hero-image {
   min-width: 100%;
   min-height: 317px;
 }
 
-.redial-better-header {
+.auto-calls-better-header {
   margin-bottom: 10px;
 }
 
-.redial-answer {
+.auto-calls-answer {
   padding-top: 50px;
 }
 
-.redial-any:after {
+.auto-calls-any:after {
   display: block;
   height: 8px;
   bottom: -8px;
   width: 120%;
 }
 
-.redial-client-header {
+.auto-calls-client-header {
   color: var(--color-text-dark, #3c3a3e);
   font-feature-settings:
     "clig" off,
@@ -367,29 +374,29 @@ audio.active ~ button.redial-player::after {
   margin-bottom: -2.5px;
 }
 
-.redial-client-header h2 {
+.auto-calls-client-header h2 {
   font-size: 20px;
 }
 
-.redial-try-form {
+.auto-calls-try-form {
   margin-top: 30px;
 }
 
-.redial-col-second {
+.auto-calls-col-second {
   color: #8c8c8d;
 }
 
 @media screen and (min-width: 375px) {
-  .redial-table-cell-logo {
+  .auto-calls-table-cell-logo {
     min-width: 105px;
   }
 
-  .redial-popover {
+  .auto-calls-popover {
     max-width: 198px;
     left: -30% !important;
   }
 
-  .redial-clients-desc {
+  .auto-calls-clients-desc {
     margin-bottom: 33px !important;
   }
 
@@ -399,22 +406,22 @@ audio.active ~ button.redial-player::after {
 }
 
 @media screen and (min-width: 399px) {
-  .redial-table-cell-logo {
+  .auto-calls-table-cell-logo {
     min-width: 117px;
   }
 
-  .redial-table-cell-header {
+  .auto-calls-table-cell-header {
     min-width: 117px;
   }
 
-  .redial-popover {
+  .auto-calls-popover {
     max-width: 198px;
     left: -28% !important;
   }
 }
 
 @media screen and (min-width: 410px) {
-  .redial-reanimate-desc {
+  .auto-calls-reanimate-desc {
     margin-bottom: 35px;
   }
 
@@ -424,28 +431,28 @@ audio.active ~ button.redial-player::after {
 }
 
 @media screen and (min-width: 420px) {
-  .redial-table-cell-logo {
+  .auto-calls-table-cell-logo {
     min-width: 124px;
   }
 
-  .redial-table-cell-header {
+  .auto-calls-table-cell-header {
     min-width: 124px;
   }
 
-  .redial-popover {
+  .auto-calls-popover {
     max-width: 208px;
     left: -26% !important;
   }
 
-  .redial-clients-desc {
+  .auto-calls-clients-desc {
     margin-bottom: 15px !important;
   }
 
-  .redial-reanimate-desc {
+  .auto-calls-reanimate-desc {
     margin-bottom: 15px;
   }
 
-  .redial-voice-card-desc {
+  .auto-calls-voice-card-desc {
     font-size: 14px;
   }
 
@@ -455,27 +462,27 @@ audio.active ~ button.redial-player::after {
 }
 
 @media screen and (min-width: 446px) {
-  .redial-voice-card-desc {
+  .auto-calls-voice-card-desc {
     font-size: 15px;
   }
 }
 
 @media screen and (min-width: 450px) {
-  .redial-table-cell-logo {
+  .auto-calls-table-cell-logo {
     min-width: 134px;
   }
 
-  .redial-table-cell-header {
+  .auto-calls-table-cell-header {
     min-width: 134px;
   }
 
-  .redial-popover {
+  .auto-calls-popover {
     left: -24% !important;
   }
 }
 
 @media screen and (min-width: 520px) {
-  .redial-hero-imageblock {
+  .auto-calls-hero-imageblock {
     margin-right: 0px;
     margin-bottom: -20px;
     margin-left: 0px;
@@ -483,105 +490,105 @@ audio.active ~ button.redial-player::after {
     min-width: 130%;
   }
 
-  .redial-hero-image {
+  .auto-calls-hero-image {
     min-width: 81%;
     max-width: 85%;
   }
 
-  .redial-popover {
+  .auto-calls-popover {
     left: -21% !important;
   }
 
-  .redial-voice-card-desc {
+  .auto-calls-voice-card-desc {
     font-size: 17px;
   }
 }
 
 @media screen and (min-width: 475px) {
-  .redial-clients-desc {
+  .auto-calls-clients-desc {
     margin-bottom: 35px !important;
   }
 }
 
 @media screen and (min-width: 520px) {
-  .redial-clients-desc {
+  .auto-calls-clients-desc {
     margin-bottom: 15px !important;
   }
 }
 
 @media screen and (min-width: 540px) {
-  .redial-clients-desc {
+  .auto-calls-clients-desc {
     margin-bottom: 38px !important;
   }
 }
 
 @media screen and (min-width: 575px) {
-  .redial-h2 {
+  .auto-calls-h2 {
     font-size: calc(1.325rem + 0.9vw);
   }
 
-  .redial-popover {
+  .auto-calls-popover {
     max-width: 228px;
     left: -18% !important;
   }
 
-  .redial-table-cell {
+  .auto-calls-table-cell {
     font-size: 16px;
   }
 
-  .redial-table-cell-header {
+  .auto-calls-table-cell-header {
     font-size: 14px;
   }
 
-  .redial-table-cell-logo {
+  .auto-calls-table-cell-logo {
     min-width: 168.67px;
   }
 
-  .redial-zvonok-logo {
+  .auto-calls-zvonok-logo {
     min-width: 85px;
     min-height: 20px;
   }
 
-  .redial-focus-top {
+  .auto-calls-focus-top {
     margin-bottom: 30px;
   }
 
-  .redial-focus-paragraph {
+  .auto-calls-focus-paragraph {
     font-size: 17px;
   }
 
-  .redial-focus-card {
+  .auto-calls-focus-card {
     padding: 30px 20px;
   }
 
-  .redial-focus-card-header {
+  .auto-calls-focus-card-header {
     font-size: 20px;
     margin-bottom: -5px;
   }
 
-  .redial-client-header {
+  .auto-calls-client-header {
     font-size: 24px;
   }
 
-  .redial-circle:before {
+  .auto-calls-circle:before {
     display: block;
     width: 150px;
   }
 
-  .redial-any:after {
+  .auto-calls-any:after {
     display: block;
     height: 15px;
     bottom: -15px;
     width: 115%;
   }
 
-  .redial-robot-right {
+  .auto-calls-robot-right {
     max-width: 252px;
     margin-bottom: -78px;
     margin-top: 25px;
   }
 
-  .redial-cases-button-wrapper {
+  .auto-calls-cases-button-wrapper {
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -589,25 +596,29 @@ audio.active ~ button.redial-player::after {
     margin-top: 55px;
   }
 
-  .redial-form-desc {
+  .auto-calls-form-desc {
     margin-top: 15px;
   }
 
-  .redial-list li {
+  .auto-calls-list li {
     font-size: 16px;
   }
 
-  .redial-answer-left {
+  .auto-calls-answer-left {
     margin-top: 30px;
+  }
+
+  .auto-calls-results p {
+    font-size: 15px;
   }
 }
 
 @media screen and (min-width: 610px) {
-  .redial-hero-image {
+  .auto-calls-hero-image {
     min-width: 85%;
   }
 
-  .redial-popover {
+  .auto-calls-popover {
     max-width: 238px;
     left: -17% !important;
   }
@@ -618,43 +629,43 @@ audio.active ~ button.redial-player::after {
 }
 
 @media screen and (min-width: 659px) {
-  .redial-hero-image {
+  .auto-calls-hero-image {
     min-width: 88%;
   }
 
-  .redial-popover {
+  .auto-calls-popover {
     max-width: 238px;
     left: -15.2% !important;
   }
 }
 
 @media screen and (min-width: 720px) {
-  .redial-hero {
+  .auto-calls-hero {
     overflow: visible;
   }
 
-  .redial-hero-imageblock {
+  .auto-calls-hero-imageblock {
     min-width: 90%;
     margin: 0;
     margin-top: -30px;
     margin-bottom: -10px;
   }
 
-  .redial-hero-image {
+  .auto-calls-hero-image {
     min-width: 100%;
   }
 
-  .redial-voice-card-desc {
+  .auto-calls-voice-card-desc {
     font-size: 14px;
   }
 
-  .redial-clients-desc {
+  .auto-calls-clients-desc {
     margin-bottom: 15px !important;
   }
 }
 
 @media screen and (min-width: 767px) {
-  .redial-popover {
+  .auto-calls-popover {
     max-width: 258px;
     left: -13% !important;
   }
@@ -663,22 +674,22 @@ audio.active ~ button.redial-player::after {
     display: none;
   }
 
-  .redial-hero-wrapper {
+  .auto-calls-hero-wrapper {
     margin-bottom: 60px;
   }
 
-  .redial-hero-image {
+  .auto-calls-hero-image {
     min-width: 85%;
   }
 
-  .redial-voice-cards {
+  .auto-calls-voice-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     margin: 0px;
   }
 
-  .redial-player-progressbar {
+  .auto-calls-player-progressbar {
     margin-left: 50px;
     margin-top: 9px;
     margin-right: 15px;
@@ -686,135 +697,141 @@ audio.active ~ button.redial-player::after {
     max-width: 200px;
   }
 
-  .redial-voice-card {
+  .auto-calls-voice-card {
     max-width: 350px;
     padding-bottom: 25px;
   }
 
-  .redial-voice-card-desc {
+  .auto-calls-voice-card-desc {
     font-size: 17px;
   }
 
-  .redial-clients-desc {
+  .auto-calls-clients-desc {
     margin-bottom: 43px !important;
   }
 
-  .redial-table-cell {
+  .auto-calls-table-cell {
     font-size: 17px;
   }
 
-  .redial-table-cell-header {
+  .auto-calls-table-cell-header {
     font-size: 15px;
   }
 
-  .redial-table-cell-logo {
+  .auto-calls-table-cell-logo {
     min-width: 232px;
     border-top-right-radius: 5px;
   }
 
-  .redial-zvonok-logo {
+  .auto-calls-zvonok-logo {
     min-width: 100px;
     min-height: 30px;
   }
 
-  .redial-focus-paragraph {
+  .auto-calls-focus-paragraph {
     font-size: 18px;
   }
 
-  .redial-focus-top {
+  .auto-calls-focus-top {
     margin-bottom: 35px;
   }
 
-  .redial-focus-card {
+  .auto-calls-focus-card {
     padding: 40px 25px;
   }
 
-  .redial-focus-card-header {
+  .auto-calls-focus-card-header {
     margin-bottom: 25px;
   }
 
-  .redial-robot-right {
+  .auto-calls-robot-right {
     max-width: 300px;
     margin-bottom: -40px;
     margin-top: 35px;
   }
 
-  .redial-client-header {
+  .auto-calls-client-header {
     margin-bottom: 25px;
   }
 
-  .redial-answer-left {
+  .auto-calls-answer-left {
     margin-top: 40px;
   }
 
-  .redial-list li {
+  .auto-calls-list li {
     font-size: 18px;
   }
 
-  .redial-circle:before {
+  .auto-calls-circle:before {
     width: 180px;
     bottom: -23px;
   }
 
-  .redial-accordion-header {
+  .auto-calls-accordion-header {
     font-size: 25px !important;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .redial-h2 {
+  .auto-calls-h2 {
     font-size: 30px;
   }
 
-  .radial-tooltip-activator {
+
+  .auto-calls-hero {
+    overflow:visible !important;
+  }
+  
+
+  .auto-calls-tooltip-activator {
     max-width: 22px;
     max-height: 22px;
     margin-bottom: 3px;
   }
 
-  .redial-voice-cards {
+  .auto-calls-voice-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     margin: 0px;
   }
 
-  .redial-voice-card {
+  .auto-calls-voice-card {
     margin: 0px;
     max-width: unset;
   }
 
-  .redial-voice-card-desc {
+  .auto-calls-voice-card-desc {
     margin-bottom: 25px;
     font-size: 18px;
   }
 
-  .redial-clients-desc {
+  .auto-calls-clients-desc {
     margin-bottom: 25px !important;
   }
 
-  .redial-player-progressbar {
+  .auto-calls-player-progressbar {
     max-width: 240px;
   }
 
-  .redial-popover {
+  .auto-calls-popover {
     left: -130px !important;
     text-align: center;
     font-size: 18px;
   }
 
-  .redial-check img {
+  .auto-calls-check img {
     max-width: 35px;
     max-height: 35px;
   }
 
-  .redial-arrow::before {
+  .auto-calls-arrow::before {
     content: "";
 
     left: 42%;
   }
 
-  .redial-flex {
+  .auto-calls-flex {
     display: flex;
   }
 
@@ -838,7 +855,7 @@ audio.active ~ button.redial-player::after {
     display: flex;
   }
 
-  .redial-hero-imageblock {
+  .auto-calls-hero-imageblock {
     margin: 0;
     max-width: 40%;
     max-height: 399px;
@@ -850,54 +867,54 @@ audio.active ~ button.redial-player::after {
     margin-top: -64px;
   }
 
-  .redial-hero-image {
+  .auto-calls-hero-image {
     max-width: 525px;
     max-height: 383px;
     min-width: 100%;
     min-height: 383px;
   }
 
-  .redial-hero-card {
+  .auto-calls-hero-card {
     width: 33%;
   }
 
-  .redial-hero-card:not(:first-child) {
+  .auto-calls-hero-card:not(:first-child) {
     margin-left: 20px;
   }
 
-  .redial-table-left {
+  .auto-calls-table-left {
     min-width: 552px;
     padding: 20px 30px;
   }
 
-  .redial-table-cell-mobile-empty {
+  .auto-calls-table-cell-mobile-empty {
     padding: 0px;
   }
 
-  .redial-table-cell-logo {
+  .auto-calls-table-cell-logo {
     min-width: 201px;
     max-width: 276px;
   }
 
-  .redial-table-cell-header {
+  .auto-calls-table-cell-header {
     font-size: 20px;
     padding: 42px;
     max-width: 24.85%;
   }
 
-  .redial-hero-desc {
+  .auto-calls-hero-desc {
     font-size: 16px;
   }
 
-  .redial-focus-top {
+  .auto-calls-focus-top {
     margin-bottom: 55px;
   }
 
-  .redial-focus-paragraph {
+  .auto-calls-focus-paragraph {
     font-size: 20px;
   }
 
-  .redial-focus-card {
+  .auto-calls-focus-card {
     padding: 0 30px;
     display: flex;
     flex-direction: column;
@@ -906,15 +923,15 @@ audio.active ~ button.redial-player::after {
     margin-left: 20px;
   }
 
-  .redial-focus-card-header {
+  .auto-calls-focus-card-header {
     font-size: 20px;
   }
 
-  .redial-robot-left {
+  .auto-calls-robot-left {
     width: 580px;
   }
 
-  .redial-robot-right {
+  .auto-calls-robot-right {
     max-width: 308px;
     max-height: 400px;
     min-height: 400px;
@@ -923,60 +940,60 @@ audio.active ~ button.redial-player::after {
     top: -1px;
   }
 
-  .redial-robot-image {
+  .auto-calls-robot-image {
     min-height: 442px;
   }
 
-  .redial-client-case {
+  .auto-calls-client-case {
     padding: 60px 95px;
   }
 
-  .redial-any:after {
+  .auto-calls-any:after {
     width: 100%;
   }
 
-  .redial-case-item {
+  .auto-calls-case-item {
     max-width: 230px;
   }
 
-  .redial-client-header {
+  .auto-calls-client-header {
     max-width: 469px;
   }
 
-  .redial-case-wrapper {
+  .auto-calls-case-wrapper {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
 
-  .redial-client-heading {
+  .auto-calls-client-heading {
     margin-bottom: 15px;
   }
 
-  .redial-heading-small {
+  .auto-calls-heading-small {
     max-width: 185px;
   }
 
-  .redial-faq-paragraph {
+  .auto-calls-faq-paragraph {
     max-width: 915px;
   }
 
-  .redial-scenario-header {
+  .auto-calls-scenario-header {
     max-width: 540px;
   }
 
-  .redial-answer {
+  .auto-calls-answer {
     padding-top: 55px;
   }
 
-  .redial-card-right {
+  .auto-calls-card-right {
     max-width: 505px;
   }
 
-  .redial-card-right h2 {
+  .auto-calls-card-right h2 {
     margin-bottom: 0px;
   }
 
-  .redial-register-form {
+  .auto-calls-register-form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -987,7 +1004,7 @@ audio.active ~ button.redial-player::after {
     grid-column-gap: 15px;
   }
 
-  .redial-form-desc {
+  .auto-calls-form-desc {
     grid-column-start: 1;
     grid-column-end: 3;
     max-width: 100%;
@@ -996,60 +1013,60 @@ audio.active ~ button.redial-player::after {
     max-height: 17px;
   }
 
-  .redial-try-card-desc {
+  .auto-calls-try-card-desc {
     margin-top: 15px;
   }
 
-  .redial-try-form {
+  .auto-calls-try-form {
     margin-left: 0px !important;
     margin-top: 20px;
     max-width: 461px;
     max-height: 68px;
   }
 
-  .redial-feedback {
+  .auto-calls-feedback {
     padding: 55px 55px 37px;
   }
 
-  .redial-feedback-big {
+  .auto-calls-feedback-big {
     padding: 55px;
   }
 
-  .redial-register-input {
+  .auto-calls-register-input {
     margin: 0px;
     padding: 10px;
   }
 
-  .redial-answer-left {
+  .auto-calls-answer-left {
     margin-top: 8px;
   }
 
-  .redial-time-list {
+  .auto-calls-time-list {
     margin-top: 0px;
   }
 
-  .redial-time-list li {
+  .auto-calls-time-list li {
     font-size: 16px;
   }
 
-  .redial-circle:before {
+  .auto-calls-circle:before {
     background-image: url("../img/decor/circle20.svg");
     width: 194px;
     bottom: -11px;
   }
 
-  .redial-focus-bottom {
+  .auto-calls-focus-bottom {
     padding: 55px 0px 55px 55px;
     position: relative;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .redial-hero-left {
+  .auto-calls-hero-left {
     max-width: 540px;
   }
 
-  .redial-hero-imageblock {
+  .auto-calls-hero-imageblock {
     margin: 0;
     max-width: 645px;
     max-height: 399px;
@@ -1061,58 +1078,58 @@ audio.active ~ button.redial-player::after {
     margin-top: -64px;
   }
 
-  .redial-hero-image {
+  .auto-calls-hero-image {
     max-width: 645px;
     max-height: 403px;
     min-width: 645px;
     min-height: 403px;
   }
 
-  .redial-hero-card:not(:first-child) {
+  .auto-calls-hero-card:not(:first-child) {
     margin-left: 30px;
   }
 
-  .redial-voice-cards {
+  .auto-calls-voice-cards {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
   }
 
-  .redial-voice-card {
+  .auto-calls-voice-card {
     padding: 35px 25px;
   }
 
-  .redial-table-cell {
+  .auto-calls-table-cell {
     font-size: 20px;
   }
 
-  .redial-zvonok-logo {
+  .auto-calls-zvonok-logo {
     min-width: 174px;
     min-height: 35px;
   }
 
-  .redial-hero-desc {
+  .auto-calls-hero-desc {
     font-size: 18px;
   }
 
-  .auto-redial-focus-wrapper {
+  .auto-auto-calls-focus-wrapper {
     padding-right: 95px;
   }
 
-  .redial-focus-card {
+  .auto-calls-focus-card {
     padding: 0px 35px;
     margin-left: 30px;
   }
 
-  .redial-focus-bottom {
+  .auto-calls-focus-bottom {
     padding: 55px 0px 55px 55px;
     position: relative;
   }
 
-  .redial-time-list {
+  .auto-calls-time-list {
     margin-left: 60px;
   }
 
-  .redial-robot-right {
+  .auto-calls-robot-right {
     max-width: 358px;
     max-height: 442px;
     min-height: 442px;
@@ -1122,7 +1139,7 @@ audio.active ~ button.redial-player::after {
     top: -25px;
   }
 
-  .redial-list li {
+  .auto-calls-list li {
     font-size: 18px;
   }
 
@@ -1130,36 +1147,36 @@ audio.active ~ button.redial-player::after {
     max-width: 469px;
   }
 
-  .redial-register-input {
+  .auto-calls-register-input {
     max-width: 285px;
     min-width: 285px;
   }
 
-  .redial-register-button {
+  .auto-calls-register-button {
     padding: 10px 32px;
     max-width: 161px;
   }
 
-  .redial-case-item:not(:last-child) {
+  .auto-calls-case-item:not(:last-child) {
     margin-bottom: 25px;
   }
 
-  .redial-client-header {
+  .auto-calls-client-header {
     max-width: 469px;
     margin-bottom: 45px;
   }
 
-  .redial-cases-right {
+  .auto-calls-cases-right {
     padding: 0px;
     max-width: 570px;
   }
 
-  .redial-better-card {
+  .auto-calls-better-card {
     padding-right: 35px;
     min-height: 313px;
   }
 
-  .redial-answer-left {
+  .auto-calls-answer-left {
     margin-top: 8px;
   }
 }
