@@ -1,7 +1,5 @@
 
-.auto-calls-results p {
-  font-size: 12px;
-}
+
 
 .desktop {
   display: none;
@@ -19,11 +17,16 @@
   color: #5a5a5b !important;
 }
 
+
+
+
 .auto-calls-results p {
   color: #5a5a5b !important;
 }
 
-
+.auto-calls-results p {
+  font-size: 12px;
+}
 
 .auto-calls-h2 {
   font-size: 20px;
@@ -778,8 +781,12 @@ audio.active ~ button.auto-calls-player::after {
   }
 
 
+  .auto-calls-breadcrumbs {
+    margin-bottom: 0px;
+  }
+
   .auto-calls-hero {
-    overflow:visible !important;
+    padding-top: 65px;
   }
   
 
