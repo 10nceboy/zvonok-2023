@@ -1,0 +1,20 @@
+@media screen and (min-width: 992px) {
+  .mailings-breadcrumbs {
+    margin-bottom: 0px;
+  }
+
+  .mailings-hero {
+    padding-top: 65px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mailings-hero-imageblock {
+    min-height: 377px;
+    margin-top: -44px;
+  }
+
+  .mailings-hero-image {
+    min-height: 377px;
+  }
+}

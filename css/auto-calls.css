@@ -277,7 +277,7 @@ audio.active ~ button.auto-calls-player::after {
 }
 
 .auto-calls-circle:before {
-  background-image: url("../img/decor/circle-auto-calls.svg");
+  background-image: url("../img/decor/circle-redial.svg");
   bottom: -28px;
   width: 155px;
 }
