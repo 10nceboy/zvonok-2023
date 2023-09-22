@@ -1,9 +1,8 @@
-
-
-
 .desktop {
   display: none;
 }
+
+
 
 .desktop-768 {
   display: none;
@@ -13,12 +12,11 @@
   display: none;
 }
 
+
+
 .auto-calls-text {
   color: #5a5a5b !important;
 }
-
-
-
 
 .auto-calls-results p {
   color: #5a5a5b !important;
@@ -32,8 +30,27 @@
   font-size: 20px;
 }
 
+.auto-calls-card-icon {
+  max-width: 25px;
+  max-height: 25px;
+}
+
 .auto-calls-hero-wrapper {
   margin-bottom: 85px;
+}
+
+.auto-calls-focus-cards {
+  margin-bottom: 25px;
+}
+
+.auto-calls-focus-card-small {
+  background-color: #fff;
+  width: 100%;
+  max-width: unset;
+}
+
+.auto-calls-focus-card-small:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .auto-calls-border-radius-left {
@@ -117,7 +134,7 @@ audio.active ~ button.auto-calls-player::after {
 }
 
 .auto-calls-voice-card-desc {
-  margin:10px 0 15px;
+  margin: 10px 0 15px;
 }
 
 .wave-wrapper {
@@ -226,7 +243,7 @@ audio.active ~ button.auto-calls-player::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-top-right-radius: ;
+  border-top-right-radius:;
   align-items: center;
   padding: 0px;
   min-width: 76px;
@@ -365,6 +382,11 @@ audio.active ~ button.auto-calls-player::after {
   width: 120%;
 }
 
+.auto-calls-any-free:after {
+  background-image: url("../img/decor/any-q-free.svg");
+  width: 110%;
+}
+
 .auto-calls-client-header {
   color: var(--color-text-dark, #3c3a3e);
   font-feature-settings:
@@ -387,6 +409,10 @@ audio.active ~ button.auto-calls-player::after {
 
 .auto-calls-col-second {
   color: #8c8c8d;
+}
+
+.auto-calls-try-form-free {
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 375px) {
@@ -526,6 +552,11 @@ audio.active ~ button.auto-calls-player::after {
 }
 
 @media screen and (min-width: 575px) {
+  .auto-calls-flex-column-sm {
+    display: flex;
+    flex-direction: column;
+  }
+
   .auto-calls-h2 {
     font-size: calc(1.325rem + 0.9vw);
   }
@@ -583,6 +614,12 @@ audio.active ~ button.auto-calls-player::after {
     height: 15px;
     bottom: -15px;
     width: 115%;
+  }
+
+  .auto-calls-any-free:after {
+    height: 11px;
+    bottom: -11px;
+    width: 100%;
   }
 
   .auto-calls-robot-right {
@@ -719,6 +756,9 @@ audio.active ~ button.auto-calls-player::after {
 
   .auto-calls-table-cell-header {
     font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .auto-calls-table-cell-logo {
@@ -773,13 +813,16 @@ audio.active ~ button.auto-calls-player::after {
   .auto-calls-accordion-header {
     font-size: 25px !important;
   }
+
+  .auto-calls-try-card-desc-free {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .auto-calls-h2 {
     font-size: 30px;
   }
-
 
   .auto-calls-breadcrumbs {
     margin-bottom: 0px;
@@ -788,7 +831,15 @@ audio.active ~ button.auto-calls-player::after {
   .auto-calls-hero {
     padding-top: 65px;
   }
-  
+
+  .auto-calls-focus-cards {
+    display: flex;
+    margin-bottom: 55px;
+  }
+
+  .auto-calls-focus-card-small {
+    background-color: transparent;
+  }
 
   .auto-calls-tooltip-activator {
     max-width: 22px;
@@ -832,9 +883,13 @@ audio.active ~ button.auto-calls-player::after {
     max-height: 35px;
   }
 
+  .auto-calls-card-icon {
+    max-width: 35px;
+    max-height: 35px;
+  }
+
   .auto-calls-arrow::before {
     content: "";
-
     left: 42%;
   }
 
@@ -842,7 +897,7 @@ audio.active ~ button.auto-calls-player::after {
     display: flex;
   }
 
-  .no-mb {
+  .no-mb-lg {
     margin-bottom: 0px;
   }
 
@@ -881,12 +936,22 @@ audio.active ~ button.auto-calls-player::after {
     min-height: 383px;
   }
 
-  .auto-calls-hero-card {
+  .auto-calls-hero-card,
+  .auto-calls-focus-card-small {
     width: 33%;
   }
 
   .auto-calls-hero-card:not(:first-child) {
     margin-left: 20px;
+  }
+
+  .auto-calls-focus-card-small:not(:first-child) {
+    margin-left: 20px;
+    margin-bottom: 0px;
+  }
+
+  .auto-calls-focus-card-small {
+    margin-bottom: 0px;
   }
 
   .auto-calls-table-left {
@@ -909,7 +974,8 @@ audio.active ~ button.auto-calls-player::after {
     max-width: 24.85%;
   }
 
-  .auto-calls-hero-desc {
+  .auto-calls-hero-desc,
+  .auto-calls-focus-card-small-desc {
     font-size: 16px;
   }
 
@@ -988,6 +1054,10 @@ audio.active ~ button.auto-calls-player::after {
     max-width: 540px;
   }
 
+  .auto-calls-cases-header {
+    max-width: 601px;
+  }
+
   .auto-calls-answer {
     padding-top: 55px;
   }
@@ -998,6 +1068,11 @@ audio.active ~ button.auto-calls-player::after {
 
   .auto-calls-card-right h2 {
     margin-bottom: 0px;
+  }
+
+  .auto-calls-try-card-desc-free {
+    margin-top: 0px !important;
+    max-width: 678px;
   }
 
   .auto-calls-register-form {
@@ -1066,6 +1141,21 @@ audio.active ~ button.auto-calls-player::after {
     padding: 55px 0px 55px 55px;
     position: relative;
   }
+
+  .auto-calls-any-free:after {
+    background-image: url("../img/decor/any-q-free-big.svg");
+    width: 176px;
+    height: 15px;
+    bottom: -15px;
+  }
+
+  .auto-calls-try-card-header-free {
+    margin-bottom: 15px;
+  }
+
+  .auto-calls-try-form-free {
+    margin-top: 25px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1096,6 +1186,10 @@ audio.active ~ button.auto-calls-player::after {
     margin-left: 30px;
   }
 
+  .auto-calls-focus-card-small:not(:first-child) {
+    margin-left: 30px;
+  }
+
   .auto-calls-voice-cards {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
@@ -1114,7 +1208,8 @@ audio.active ~ button.auto-calls-player::after {
     min-height: 35px;
   }
 
-  .auto-calls-hero-desc {
+  .auto-calls-hero-desc,
+  .auto-calls-focus-card-small-desc {
     font-size: 18px;
   }
 
@@ -1152,6 +1247,10 @@ audio.active ~ button.auto-calls-player::after {
 
   .cases-clients-logo {
     max-width: 469px;
+  }
+
+  .auto-calls-video-left-big {
+    min-width: 540px;
   }
 
   .auto-calls-register-input {

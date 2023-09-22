@@ -2,11 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".audio").forEach((audioz) => {
     audioz.addEventListener("timeupdate", (event) => {
       let orangeBar = event.currentTarget
-        .closest(".redial-player-wrapper")
+        .closest(".auto-calls-player-wrapper")
         .querySelector("#p-orange");
 
       let grayBar = event.currentTarget
-        .closest(".redial-player-wrapper")
+        .closest(".auto-calls-player-wrapper")
         .querySelector("#p-gray");
 
       let perzent =
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".audio-mobile").forEach((audiom) => {
     audiom.addEventListener("timeupdate", (event) => {
       let orangeMobileBar = event.currentTarget
-        .closest(".redial-player-wrapper-mobile")
+        .closest(".auto-calls-player-wrapper-mobile")
         .querySelector(".wave-orange");
 
       let percent = Math.floor((audiom.currentTime / audiom.duration) * 100);
@@ -94,11 +94,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  document
-    .querySelector(".advantages-slider2")
-    .addEventListener("click", (e) => {
-      e.stopPropagation();
-    });
+  document.querySelector(".players-slider").addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
 
   function cabinetRegisterRedirect(e) {
     let phone = e["phone"].value.replace("(", "").replace(")", "");

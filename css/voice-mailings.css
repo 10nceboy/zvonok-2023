@@ -1,14 +1,38 @@
-@media screen and (min-width: 992px) {
-  
+.mailings-hero-imageblock {
+  min-width: 320px;
 }
 
-@media screen and (min-width: 1200px) {
+.mailings-hero-image {
+  min-height: 301px;
+}
+
+@media screen and (min-width: 992px) {
   .mailings-hero-imageblock {
     min-height: 377px;
     margin-top: -44px;
   }
 
+  .mailings-focus-card {
+    justify-content: start;
+    padding: 30px 35px 30px 30px;
+  }
+
+  .mailings-focus-card-header {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .mailings-hero-image {
     min-height: 377px;
   }
+
+  .mailings-focus-card {
+    padding: 40px 35px 40px 30px;
+  }
+
+  .mailings-focus-card-header {
+    font-size: 20px;
+  }
 }
+
