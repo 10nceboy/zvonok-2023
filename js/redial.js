@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   document
-    .querySelectorAll(".redial-player-progressbar")
+    .querySelectorAll(".auto-calls-player-progressbar")
     .forEach((timeline) => {
       timeline.addEventListener("click", handleTimeLineClick);
     });
