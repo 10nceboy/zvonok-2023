@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const handleTimeLineClick = (event) => {
     const { target: timeline, clientX } = event;
     const audioa = timeline
-      .closest(".redial-player-wrapper")
+      .closest(".auto-calls-player-wrapper")
       .querySelector("audio");
 
     const rect = timeline.getBoundingClientRect();
