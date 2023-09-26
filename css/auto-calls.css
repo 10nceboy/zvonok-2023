@@ -1,8 +1,6 @@
-.desktop {
+.desktop-only {
   display: none;
 }
-
-
 
 .desktop-768 {
   display: none;
@@ -12,14 +10,8 @@
   display: none;
 }
 
-
-
-.auto-calls-text {
-  color: #5a5a5b !important;
-}
-
-.auto-calls-results p {
-  color: #5a5a5b !important;
+.lh-13-14 {
+  line-height: 130%;
 }
 
 .auto-calls-results p {
@@ -43,6 +35,10 @@
   margin-bottom: 25px;
 }
 
+.orphans-4 {
+  orphans: 4;
+}
+
 .auto-calls-focus-card-small {
   background-color: #fff;
   width: 100%;
@@ -61,13 +57,16 @@
   border-bottom-right-radius: 5px;
 }
 
+.auto-calls-player:hover {
+  background-color: transparent !important;
+}
+
+.auto-calls-player:hover:before {
+  background-color: #f25f2d;
+}
+
 audio.active ~ button.auto-calls-player::after {
   background-image: url("../img/icons/pause-white.svg") !important;
-}
-@media screen and (max-width: 767.98px) {
-  audio.active ~ button.audio-play::after {
-    background-image: url("../img/icons/pause-white.svg") !important ;
-  }
 }
 
 .players-slider .swiper-slide {
@@ -84,34 +83,22 @@ audio.active ~ button.auto-calls-player::after {
   transition-timing-function: linear !important;
   position: relative;
 }
+
 @media screen and (max-width: 767.98px) {
   .players-slider .swiper-wrapper {
     transition-timing-function: ease !important;
   }
+
+  audio.active ~ button.audio-play::after {
+    background-image: url("../img/icons/pause-white.svg") !important ;
+  }
 }
 
 .auto-calls-player:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -0.6px;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-position: center center;
-  background-repeat: no-repeat;
   background-image: url("../img/icons/play-secondary-white.svg") !important;
-  transition: all 0.3s ease;
 }
 
 .auto-calls-player:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -0.6px;
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
   background-color: #f4774c;
 }
 
@@ -125,8 +112,8 @@ audio.active ~ button.auto-calls-player::after {
 
 .auto-calls-player-progressbar {
   margin-left: 30px;
-  cursor: pointer;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .auto-calls-voice-card {
@@ -146,14 +133,14 @@ audio.active ~ button.auto-calls-player::after {
   min-width: 170px;
   margin-left: 40px;
   height: 40px;
-  background-image: url("../img/wave.svg") !important;
+  background-image: url("../img/wave.svg");
   background-repeat: no-repeat;
 }
 
 .wave-orange {
   width: 0%;
   height: 40px;
-  background-image: url("../img/wave.orange.svg") !important;
+  background-image: url("../img/wave.orange.svg");
   background-repeat: no-repeat;
 }
 
@@ -176,12 +163,11 @@ audio.active ~ button.auto-calls-player::after {
 
 .auto-calls-popover {
   max-width: 193px;
-  left: -28% !important;
+  left: -12% !important;
   margin-top: -10px;
 }
 
 .auto-calls-popover .popover-body {
-  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.07));
   font-size: 14px;
   padding: 10px;
 }
@@ -201,7 +187,6 @@ audio.active ~ button.auto-calls-player::after {
   margin-right: 2px;
   flex: 1 1;
   font-size: 14px;
-  color: #5a5a5b;
   line-height: 130%;
   background-color: #f5f5f5;
 }
@@ -209,9 +194,9 @@ audio.active ~ button.auto-calls-player::after {
 .auto-calls-table-cell-header {
   color: var(--color-text-dark, #3c3a3e);
   text-align: center;
-  font-size: auto-calls;
+  font-size: 12px;
   font-weight: 700;
-  line-height: 130%; /* 15.6px */
+  line-height: 130%;
   padding: 10px 2px 10px 1px;
   min-width: 84px;
   border-top-left-radius: 5px;
@@ -227,23 +212,11 @@ audio.active ~ button.auto-calls-player::after {
   max-height: 15px;
 }
 
-.auto-calls-arrow::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 14px;
-  bottom: -14px;
-  left: 30%;
-  background-image: url("../img/icons/arrow-white-tooltip.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .auto-calls-table-cell-logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-top-right-radius:;
+  border-top-right-radius: 12px;
   align-items: center;
   padding: 0px;
   min-width: 76px;
@@ -288,10 +261,6 @@ audio.active ~ button.auto-calls-player::after {
   min-width: 76px;
 }
 
-.lh-13-14 {
-  line-height: 130%;
-}
-
 .auto-calls-list li {
   line-height: 140%;
 }
@@ -308,6 +277,35 @@ audio.active ~ button.auto-calls-player::after {
 
 .auto-calls-focus-bottom {
   padding: 25px 15px 0px;
+}
+
+.auto-calls-priceblock {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.auto-calls-price-header {
+  margin-bottom: 10px;
+}
+
+.auto-calls-price-wrapper {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px !important;
+}
+
+.auto-calls-price {
+  font-size: 28px;
+  margin-right: 5px;
+  color: #3c3a3e;
+}
+
+.autoc-calls-price-minute {
+  margin-left: 5px;
+}
+
+.auto-calls-price-list {
+  margin-top: 30px !important;
 }
 
 .auto-calls-robot-right {
@@ -347,12 +345,8 @@ audio.active ~ button.auto-calls-player::after {
   margin-top: 30px;
 }
 
-.auto-calls-answer-left {
+.auto-calls-answer-right {
   margin-top: 20px;
-}
-
-.auto-calls-cases-button-wrapper {
-  margin-top: 40px;
 }
 
 .auto-calls-hero-imageblock {
@@ -360,6 +354,7 @@ audio.active ~ button.auto-calls-player::after {
   margin-bottom: -15px;
   margin-left: -12px;
   margin-top: -30px;
+  min-width: 320px;
 }
 
 .auto-calls-hero-image {
@@ -387,13 +382,17 @@ audio.active ~ button.auto-calls-player::after {
   width: 110%;
 }
 
+.auto-calls-cases-header {
+  max-width: 295px;
+}
+
+.auto-calls-cases-button-wrapper {
+  margin-top: 40px;
+}
+
 .auto-calls-client-header {
   color: var(--color-text-dark, #3c3a3e);
-  font-feature-settings:
-    "clig" off,
-    "liga" off;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 140%;
   margin-bottom: -2.5px;
@@ -422,7 +421,7 @@ audio.active ~ button.auto-calls-player::after {
 
   .auto-calls-popover {
     max-width: 198px;
-    left: -30% !important;
+    left: -17% !important;
   }
 
   .auto-calls-clients-desc {
@@ -444,8 +443,11 @@ audio.active ~ button.auto-calls-player::after {
   }
 
   .auto-calls-popover {
-    max-width: 198px;
-    left: -28% !important;
+    left: -15% !important;
+  }
+
+  .auto-calls-cases-header {
+    max-width: unset;
   }
 }
 
@@ -470,7 +472,7 @@ audio.active ~ button.auto-calls-player::after {
 
   .auto-calls-popover {
     max-width: 208px;
-    left: -26% !important;
+    left: -13% !important;
   }
 
   .auto-calls-clients-desc {
@@ -506,7 +508,14 @@ audio.active ~ button.auto-calls-player::after {
   }
 
   .auto-calls-popover {
-    left: -24% !important;
+    left: -12% !important;
+  }
+}
+
+
+@media screen and (min-width: 475px) {
+  .auto-calls-clients-desc {
+    margin-bottom: 35px !important;
   }
 }
 
@@ -525,25 +534,18 @@ audio.active ~ button.auto-calls-player::after {
   }
 
   .auto-calls-popover {
-    left: -21% !important;
+    left: -11% !important;
   }
 
   .auto-calls-voice-card-desc {
     font-size: 17px;
   }
-}
 
-@media screen and (min-width: 475px) {
-  .auto-calls-clients-desc {
-    margin-bottom: 35px !important;
-  }
-}
-
-@media screen and (min-width: 520px) {
   .auto-calls-clients-desc {
     margin-bottom: 15px !important;
   }
 }
+
 
 @media screen and (min-width: 540px) {
   .auto-calls-clients-desc {
@@ -552,6 +554,10 @@ audio.active ~ button.auto-calls-player::after {
 }
 
 @media screen and (min-width: 575px) {
+  .md-inline {
+    display: inline !important;
+  }
+
   .auto-calls-flex-column-sm {
     display: flex;
     flex-direction: column;
@@ -563,7 +569,7 @@ audio.active ~ button.auto-calls-player::after {
 
   .auto-calls-popover {
     max-width: 228px;
-    left: -18% !important;
+    left: -8% !important;
   }
 
   .auto-calls-table-cell {
@@ -633,7 +639,7 @@ audio.active ~ button.auto-calls-player::after {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 55px;
+    margin-top: 45px;
   }
 
   .auto-calls-form-desc {
@@ -644,12 +650,16 @@ audio.active ~ button.auto-calls-player::after {
     font-size: 16px;
   }
 
-  .auto-calls-answer-left {
+  .auto-calls-answer-right {
     margin-top: 30px;
   }
 
   .auto-calls-results p {
     font-size: 15px;
+  }
+
+  .auto-calls-price {
+    font-size: 30px;
   }
 }
 
@@ -660,7 +670,7 @@ audio.active ~ button.auto-calls-player::after {
 
   .auto-calls-popover {
     max-width: 238px;
-    left: -17% !important;
+    left: -7% !important;
   }
 
   .wave {
@@ -675,7 +685,7 @@ audio.active ~ button.auto-calls-player::after {
 
   .auto-calls-popover {
     max-width: 238px;
-    left: -15.2% !important;
+    left: -6.2% !important;
   }
 }
 
@@ -707,7 +717,7 @@ audio.active ~ button.auto-calls-player::after {
 @media screen and (min-width: 767px) {
   .auto-calls-popover {
     max-width: 258px;
-    left: -13% !important;
+    left: -4% !important;
   }
 
   .mobile-768 {
@@ -797,7 +807,7 @@ audio.active ~ button.auto-calls-player::after {
     margin-bottom: 25px;
   }
 
-  .auto-calls-answer-left {
+  .auto-calls-answer-right {
     margin-top: 40px;
   }
 
@@ -873,7 +883,7 @@ audio.active ~ button.auto-calls-player::after {
   }
 
   .auto-calls-popover {
-    left: -130px !important;
+    left: -3% !important;
     text-align: center;
     font-size: 18px;
   }
@@ -909,7 +919,7 @@ audio.active ~ button.auto-calls-player::after {
     display: none;
   }
 
-  .desktop {
+  .desktop-only {
     display: block;
   }
 
@@ -1001,7 +1011,7 @@ audio.active ~ button.auto-calls-player::after {
   }
 
   .auto-calls-robot-left {
-    width: 580px;
+    width: 600px;
   }
 
   .auto-calls-robot-right {
@@ -1062,11 +1072,11 @@ audio.active ~ button.auto-calls-player::after {
     padding-top: 55px;
   }
 
-  .auto-calls-card-right {
+  .auto-calls-card-left {
     max-width: 505px;
   }
 
-  .auto-calls-card-right h2 {
+  .auto-calls-card-left h2 {
     margin-bottom: 0px;
   }
 
@@ -1119,7 +1129,7 @@ audio.active ~ button.auto-calls-player::after {
     padding: 10px;
   }
 
-  .auto-calls-answer-left {
+  .auto-calls-answer-right {
     margin-top: 8px;
   }
 
@@ -1156,9 +1166,42 @@ audio.active ~ button.auto-calls-player::after {
   .auto-calls-try-form-free {
     margin-top: 25px;
   }
+
+  .auto-calls-price-left {
+    max-width: 515px;
+    margin-right: 65px;
+  }
+
+  .auto-calls-priceblock {
+    padding-right: 55px !important;
+  }
+
+  .auto-calls-price-header {
+    margin-bottom: 15px !important;
+  }
+
+  .auto-calls-price {
+    font-size: 32px;
+  }
+
+  .auto-calls-price-minute-wrapper {
+    margin-top: 6px;
+  }
+
+  .auto-calls-price-button {
+    max-width: 247px;
+  }
+
+  .auto-calls-price-list {
+    margin-top: 5px !important;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .auto-calls-popover {
+    left: -1.5% !important;
+  }
+
   .auto-calls-hero-left {
     max-width: 540px;
   }
@@ -1282,7 +1325,11 @@ audio.active ~ button.auto-calls-player::after {
     min-height: 313px;
   }
 
-  .auto-calls-answer-left {
+  .auto-calls-answer-right {
     margin-top: 8px;
+  }
+
+  .auto-calls-price {
+    font-size: 35px;
   }
 }
