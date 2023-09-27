@@ -38,7 +38,8 @@
   .call-programm-card-left {
     min-width: 533px;
   }
-}
+
+
 
 @media screen and (min-width: 1200px) {
   .call-programm-hero-imageblock {
@@ -56,4 +57,10 @@
     min-width: 580px;
     max-width: 580px;
   }
+
+  .call-programm-register-input {
+    max-width:239px;
+    min-width: 239px;
+  }
+}
 }
