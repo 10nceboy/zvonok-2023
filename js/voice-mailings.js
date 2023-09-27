@@ -46,10 +46,19 @@ function createRangeSlider(containerSelector, tickValues) {
   function updateValueLabel() {
     const realValue = convertToRealValue(parseFloat(rangeInput.value));
     valueLabel.textContent = Math.round(realValue);
+
     valueLabel.style.left = parseFloat(rangeInput.value) * segmentLength + "%";
-    valueLabel.style.transform = `translate(-${
-      parseFloat(rangeInput.value) * segmentLength
-    }%)`;
+    if (realValue < 10) {
+      valueLabel.style.transform = `translate(8px)`;
+    } else if (realValue >= 10 && realValue < 20) {
+      valueLabel.style.transform = `translate(4px)`;
+    } else if (realValue >= 20 && realValue < 30) {
+      valueLabel.style.transform = `translate(2px)`;
+    } else {
+      valueLabel.style.transform = `translate(-${
+        parseFloat(rangeInput.value) * segmentLength
+      }%)`;
+    }
 
     const quantity = document.querySelector(
       ".mailings-calc-quantity-value"
