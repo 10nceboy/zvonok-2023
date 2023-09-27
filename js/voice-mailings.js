@@ -1,83 +1,88 @@
-function createRangeSlider(containerSelector, tickValues) {
-  const container = document.querySelector(containerSelector);
-  const rangeInput = container.querySelector('input[type="range"]');
-  const valueLabel = container.querySelector(".value-label");
-  const segmentLength = 100 / (tickValues.length - 1);
+document.addEventListener("DOMContentLoaded", () => {
+  cabinetRegisterUrl = "https://zvonok.com/manager/users/add/?country=ru";
 
-  function convertToRealValue(value) {
-    const index = Math.floor(value);
-    const fraction = value - index;
+  function createRangeSlider(containerSelector, tickValues) {
+    const container = document.querySelector(containerSelector);
+    const rangeInput = container.querySelector('input[type="range"]');
+    const valueLabel = container.querySelector(".value-label");
+    const segmentLength = 100 / (tickValues.length - 1);
 
-    if (index === tickValues.length - 1) {
-      return tickValues[tickValues.length - 1];
+    function convertToRealValue(value) {
+      const index = Math.floor(value);
+      const fraction = value - index;
+
+      if (index === tickValues.length - 1) {
+        return tickValues[tickValues.length - 1];
+      }
+
+      const start = tickValues[index];
+      const end = tickValues[index + 1];
+
+      return start + (end - start) * fraction;
     }
 
-    const start = tickValues[index];
-    const end = tickValues[index + 1];
+    tickValues.forEach((value, i) => {
+      const tickLabel = document.createElement("span");
+      tickLabel.className = "mailings-calc-milestone color-light";
+      tickLabel.textContent = value;
+      tickLabel.style.left = `calc(${i * segmentLength + "%"} + 2px)`;
+      tickLabel.style.transform = `translate(-${i * segmentLength}%)`;
 
-    return start + (end - start) * fraction;
-  }
+      tickLabel.addEventListener("click", () => {
+        rangeInput.value = i;
+        updateValueLabel();
+      });
 
-  tickValues.forEach((value, i) => {
-    const tickLabel = document.createElement("span");
-    tickLabel.className = "mailings-calc-milestone color-light";
-    tickLabel.textContent = value;
-    tickLabel.style.left = `calc(${i * segmentLength + "%"} + 2px)`;
-    tickLabel.style.transform = `translate(-${i * segmentLength}%)`;
-
-    tickLabel.addEventListener("click", () => {
-      rangeInput.value = i;
-      updateValueLabel();
+      container.appendChild(tickLabel);
     });
 
-    container.appendChild(tickLabel);
-  });
+    rangeInput.addEventListener("input", updateValueLabel);
 
-  rangeInput.addEventListener("input", updateValueLabel);
-
-  function calculateTotalPrice(quantity, duration) {
-    const totalPriceSpan = document.querySelector(".mailings-calc-total");
-    totalPriceSpan.innerHTML = `${parseFloat(
-      quantity * 0.1 + duration * 0.32,
-      10
-    ).toFixed(1)}&nbsp;₽`.replace(/\.0([^\d])/g, "$1");
-  }
-
-  function updateValueLabel() {
-    const realValue = convertToRealValue(parseFloat(rangeInput.value));
-    valueLabel.textContent = Math.round(realValue);
-
-    valueLabel.style.left = parseFloat(rangeInput.value) * segmentLength + "%";
-    if (realValue < 10) {
-      valueLabel.style.transform = `translate(8px)`;
-    } else if (realValue >= 10 && realValue < 20) {
-      valueLabel.style.transform = `translate(4px)`;
-    } else if (realValue >= 20 && realValue < 30) {
-      valueLabel.style.transform = `translate(2px)`;
-    } else {
-      valueLabel.style.transform = `translate(-${
-        parseFloat(rangeInput.value) * segmentLength
-      }%)`;
+    function calculateTotalPrice(quantity, duration) {
+      const totalPriceSpan = document.querySelector(".mailings-calc-total");
+      totalPriceSpan.innerHTML = `${parseFloat(
+        quantity * 0.1 + duration * 0.32,
+        10
+      ).toFixed(1)}&nbsp;₽`.replace(/\.0([^\d])/g, "$1");
     }
 
-    const quantity = document.querySelector(
-      ".mailings-calc-quantity-value"
-    ).textContent;
-    const duration = document.querySelector(
-      ".mailings-calc-duration-value"
-    ).textContent;
+    function updateValueLabel() {
+      const realValue = convertToRealValue(parseFloat(rangeInput.value));
+      valueLabel.textContent = Math.round(realValue);
 
-    calculateTotalPrice(quantity, duration);
+      valueLabel.style.left =
+        parseFloat(rangeInput.value) * segmentLength + "%";
+      if (realValue < 10) {
+        valueLabel.style.transform = `translate(8px)`;
+      } else if (realValue >= 10 && realValue < 20) {
+        valueLabel.style.transform = `translate(4px)`;
+      } else if (realValue >= 20 && realValue < 30) {
+        valueLabel.style.transform = `translate(2px)`;
+      } else {
+        valueLabel.style.transform = `translate(-${
+          parseFloat(rangeInput.value) * segmentLength
+        }%)`;
+      }
+
+      const quantity = document.querySelector(
+        ".mailings-calc-quantity-value"
+      ).textContent;
+      const duration = document.querySelector(
+        ".mailings-calc-duration-value"
+      ).textContent;
+
+      calculateTotalPrice(quantity, duration);
+    }
+
+    updateValueLabel();
   }
 
-  updateValueLabel();
-}
-
-createRangeSlider(
-  ".mailings-calc-range-container-quantity",
-  [1, 100, 500, 1000, 1500, 2000]
-);
-createRangeSlider(
-  ".mailings-calc-range-container-duration",
-  [10, 30, 60, 120, 240, 360]
-);
+  createRangeSlider(
+    ".mailings-calc-range-container-quantity",
+    [1, 100, 500, 1000, 1500, 2000]
+  );
+  createRangeSlider(
+    ".mailings-calc-range-container-duration",
+    [10, 30, 60, 120, 240, 360]
+  );
+});

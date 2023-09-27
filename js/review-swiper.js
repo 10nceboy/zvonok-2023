@@ -1,7 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-  cabinetRegisterUrl = "https://zvonok.com/manager/users/add/?country=ru";
-});
-
 if (document.querySelector(".reviews-swiper")) {
   let paginationEl = document.querySelector(".slider-pagination-review");
   let reviewSlider = new Swiper(".reviews-swiper", {
