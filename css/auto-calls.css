@@ -300,6 +300,10 @@ audio.active ~ button.auto-calls-player::after {
   color: #3c3a3e;
 }
 
+.auto-calls-price-minute-wrapper {
+  margin-top: 12px;
+}
+
 .autoc-calls-price-minute {
   margin-left: 5px;
 }
@@ -320,8 +324,11 @@ audio.active ~ button.auto-calls-player::after {
 
 .auto-calls-focus-paragraph {
   margin-bottom: 10px;
-  line-height: 140%;
 }
+
+.auto-calls-focus-paragraph-big {
+  min-width: 300px;
+ }
 
 .auto-calls-focus-card-header {
   font-size: 18px;
@@ -783,6 +790,8 @@ audio.active ~ button.auto-calls-player::after {
     font-size: 18px;
   }
 
+
+
   .auto-calls-focus-top {
     margin-bottom: 35px;
   }
@@ -1183,7 +1192,7 @@ audio.active ~ button.auto-calls-player::after {
   }
 
   .auto-calls-price-minute-wrapper {
-    margin-top: 6px;
+    margin-top: 15px;
   }
 
   .auto-calls-price-button {
@@ -1191,7 +1200,7 @@ audio.active ~ button.auto-calls-player::after {
   }
 
   .auto-calls-price-list {
-    margin-top: 5px !important;
+    margin-top: 10px !important;
   }
 }
 
