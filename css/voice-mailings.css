@@ -121,7 +121,7 @@ input[type="range"]::-ms-track {
 
 @media screen and (min-width: 520px) {
   .mailings-calc-header {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .mailings-choose-caption {
@@ -227,8 +227,8 @@ input[type="range"]::-ms-track {
   }
 
   .mailings-calc-price-wrapper {
-    max-width: 276px;
-    min-width: 266px;
+    max-width: 286px;
+    min-width: 286px;
     margin: 0px !important;
   }
 
