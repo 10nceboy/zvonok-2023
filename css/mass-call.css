@@ -1,0 +1,352 @@
+.mass-call-promo-card {
+  margin: 0 0 25px 0;
+}
+
+.mass-calls-promo-list {
+  margin: 25px 0px;
+}
+
+.mass-call-steps-h2 {
+  margin-bottom: 10px;
+}
+
+.mass-call-detail-instruction {
+  margin-bottom: 45px;
+  max-width: 500px;
+}
+
+.mass-call-detail-instruction-desc {
+  margin-bottom: 0px;
+}
+
+.mass-call-step-h4 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.mass-call-step-icon {
+  min-width: 20px !important;
+  margin-right: 10px !important;
+  margin-top: 0px !important;
+}
+
+.mass-call-form-link {
+  color: inherit !important;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.mass-call-modal-header {
+  padding-top: 40px !important;
+}
+
+.mass-call-modal-desc {
+  margin-bottom: 20px !important;
+}
+
+.mass-call-step-box {
+  padding: 0px 0 25px 0;
+  display: none;
+  animation: flash 0.3s linear;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.mass-call-step-3-box {
+  padding: 10px 0 25px 0;
+}
+
+.mass-call-step-imageblock {
+  margin-left: -12px;
+  min-width: 320px;
+  margin-bottom: 20px;
+}
+
+.mass-call-step-image {
+  max-height: 100%;
+}
+
+.mass-call-steps-list li {
+  color: #3c3a3e;
+}
+
+.mass-call-steps-list li.active span {
+  color: #f4774c !important;
+  transition: all 0.3s ease;
+}
+
+.mass-call-know-button {
+  color: #f4774c;
+  padding-bottom: 0px;
+  padding-top: 4px;
+}
+
+@media screen and (min-width: 375px) {
+  .mass-call-step-imageblock {
+    min-width: 125%;
+  }
+
+  .mass-call-step-image {
+    min-width: 81%;
+    max-width: 85%;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .mass-call-step-imageblock {
+    min-width: 100%;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .mass-call-step-icon {
+    min-width: 30px !important;
+    margin-right: 15px !important;
+  }
+
+  .mass-call-detail-instruction {
+    max-width: unset;
+  }
+
+  .mass-call-detail-instruction-desc {
+    font-size: 16px;
+  }
+
+  .mass-call-steps-list {
+    max-width: unset !important;
+  }
+
+  .mass-call-step-image {
+    min-width: 615px;
+  }
+
+  .mass-call-step-2-image {
+    min-width: 629px;
+  }
+
+  .mass-call-step-desc,
+  .mass-call-register-form {
+    max-width: 595px;
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mass-call-hero-imageblock {
+    margin-left: 10px;
+    margin-top: -49px;
+  }
+
+  .mass-call-hero-image {
+    max-width: 489px;
+    min-height: 343px;
+  }
+
+  .mass-call-robot-right {
+    right: 10px;
+    top:35px;
+  }
+
+  .mass-call-promo-card {
+    margin: 0 0 35px 0;
+    padding: 45px;
+  }
+
+  .mass-calls-promo-card-left {
+    max-width: 434px;
+    margin-right: 31px;
+  }
+
+  .mass-call-promo-card-top {
+    margin-bottom: 40px;
+  }
+
+  .mass-call-promo-card-header {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .mass-call-promo-header {
+    max-width: 604px;
+  }
+
+  .mass-call-promo-desc {
+    max-width: 665px;
+  }
+
+  .mass-calls-promo-list {
+    margin: -17px 0px 0px 0px;
+  }
+
+  .mass-call-promo-button {
+    max-width: 247px;
+  }
+
+  .mass-call-steps-list {
+    max-width: 350px !important;
+    margin-right: 20px;
+  }
+
+  .mass-call-steps-list span {
+    min-width: 350px !important;
+  }
+
+  .mass-call-step-h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .mass-call-steps-header {
+    margin-bottom: 60px;
+  }
+
+  .mass-call-steps {
+    flex-wrap: nowrap;
+  }
+
+  .mass-call-steps-left {
+    max-width: 400px;
+  }
+
+  .mass-call-steps-right {
+    max-width: 800px;
+    min-width: 800px;
+    padding: 0px;
+    width: unset;
+    margin-left: 30px;
+    max-height: 660px;
+    margin-top: 26px;
+    border-radius: 5px 0px 0px 5px;
+  }
+
+  .mass-call-step-image {
+    max-width: 70%;
+    min-width: 495px;
+  }
+
+  .mass-call-step-desc,
+  .mass-call-register-form {
+    max-width: 495px;
+    padding: 0 15px;
+  }
+
+  .mass-call-step-desc {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .mass-call-step-3-desc {
+    margin-bottom: 15px;
+    max-width: 495px;
+  }
+
+  .mass-call-step-imageblock {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mass-call-hero-imageblock {
+    max-width: 592px;
+    min-width: 592px;
+    max-height: 381px;
+    min-height: 381px;
+    margin-top: -16px;
+  }
+
+  .mass-call-hero-image {
+    max-width: 592px;
+    min-height: 381px;
+    max-height: 381px;
+    min-width: 592px;
+  }
+
+  .mass-call-robot-right {
+    right: 39px;
+    max-width: 394px;
+  margin-left: 0px;
+  }
+
+  .mass-calls-promo-card-left {
+    max-width: 484px;
+    margin-right: 56px;
+  }
+
+  .mass-calls-promo-card-left-hot {
+    max-width: 455px;
+    margin-right: 85px;
+  }
+
+  .mass-call-promo-card-header {
+    font-size: 30px;
+  }
+
+  .mass-call-steps-left {
+    max-width: 400px;
+    min-width: 400px;
+    padding: 0px;
+    flex-shrink: 1;
+  }
+
+  .mass-call-step-box {
+    padding: 29px 0px 55px 40px;
+  }
+
+  .mass-call-step-3-box {
+    padding: 19px 0px 40px 49px;
+  }
+
+  .mass-call-step-3-desc {
+    max-width: 580px;
+  }
+
+  .mass-call-steps-right {
+    max-height: 640px;
+    margin-left: 78px;
+  }
+
+  .mass-call-step-image,
+  .mass-call-step-imageblock {
+    min-width: 595px;
+    max-width: 595px;
+    max-height: 380px;
+    min-height: 380px;
+  }
+
+  .mass-call-step-2-image {
+    min-width: 629px;
+    max-width: 629px;
+  }
+
+  .mass-call-step-desc,
+  .mass-call-register-form {
+    max-width: 595px;
+  }
+
+  .mass-call-register-button {
+    max-width: 209px;
+  }
+
+  .mass-call-register-input {
+    min-width: 356px;
+  }
+
+  .mass-call-steps-list li {
+    min-width: 445px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .mass-call-hero-imageblock {
+    margin-left: 43px;
+  }
+}

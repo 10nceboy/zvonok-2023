@@ -107,6 +107,10 @@
   min-height: 310px;
 }
 
+.review-card-gray {
+  background-color: #F5F5F5;
+}
+
 .review-card-header {
   font-size: 18px;
   margin-bottom: 5px;
