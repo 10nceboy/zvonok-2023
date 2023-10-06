@@ -316,6 +316,10 @@
   .mass-call-step-imageblock {
     margin-bottom: 32px;
   }
+
+  .mass-call-promo-button-hot {
+    margin-top: -25px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -406,6 +410,10 @@
 
   .mass-call-steps-list li {
     min-width: 445px;
+  }
+
+  .mass-call-promo-button-hot {
+    margin-top: 0px;
   }
 }
 
