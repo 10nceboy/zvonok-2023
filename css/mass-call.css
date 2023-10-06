@@ -74,6 +74,64 @@
   max-height: 100%;
 }
 
+.mass-call-steps-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-width: 380px;
+}
+.mass-call-steps-list li {
+  padding: 30px 0;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  display: flex;
+}
+.mass-call-steps-list li:not(:last-child) {
+  border-bottom: 1px solid #d4d4d4;
+}
+@media screen and (max-width: 575.98px) {
+  .mass-call-steps-list li:last-child {
+    padding-bottom: 0;
+  }
+}
+.mass-call-steps-list li.active {
+  color: #f4774c;
+}
+
+.mass-call-steps-list li.active svg path {
+  fill: #f4774c !important;
+}
+
+.mass-call-steps-list li.active svg path {
+  fill: #f4774c !important;
+}
+
+.steps .mass-call-steps-list {
+  max-width: 380px;
+}
+
+.steps .mass-call-steps-list li {
+  font-size: 18px;
+  display: flex;
+}
+@media screen and (max-width: 575.98px) {
+  .steps .mass-call-steps-list li {
+    font-size: 15px;
+  }
+}
+.steps .mass-call-steps-list li span {
+  display: inline-block;
+}
+.steps .mass-call-steps-list li svg {
+  min-width: 30px;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+.steps .mass-call-steps-list li svg path {
+  fill: #5a5a5b;
+  transition: fill 0.3s ease;
+}
+
 .mass-call-steps-list li {
   color: #3c3a3e;
 }
@@ -100,10 +158,20 @@
   }
 }
 
+@media screen and (min-width: 520px) {
+  .mass-call-steps-list {
+    max-width: 90% !important;
+  }
+}
+
 @media screen and (min-width: 575px) {
   .mass-call-step-imageblock {
     min-width: 100%;
     margin-left: 0px;
+  }
+
+  .mass-call-steps-list {
+    max-width: unset !important;
   }
 }
 
@@ -119,10 +187,6 @@
 
   .mass-call-detail-instruction-desc {
     font-size: 16px;
-  }
-
-  .mass-call-steps-list {
-    max-width: unset !important;
   }
 
   .mass-call-step-image {
@@ -153,7 +217,7 @@
 
   .mass-call-robot-right {
     right: 10px;
-    top:35px;
+    top: 35px;
   }
 
   .mass-call-promo-card {
@@ -273,7 +337,7 @@
   .mass-call-robot-right {
     right: 39px;
     max-width: 394px;
-  margin-left: 0px;
+    margin-left: 0px;
   }
 
   .mass-calls-promo-card-left {
