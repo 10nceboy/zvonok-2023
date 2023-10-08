@@ -58,6 +58,7 @@
     <link rel="stylesheet" href="css/swiper.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/auto-calls.css" />
     <link rel="icon" href="img/favicon.svg" />
     <script src="js/swiper.js"></script>
@@ -392,31 +393,37 @@
       </div>
     </header>
     <main>
-      <div class="container mb-brc auto-calls-breadcrumbs">
-        <nav class="breadcrumbs-wrapper" aria-label="breadcrumb">
+      <div class="container mb-brc mb-lg-0">
+        <nav class="breadcrumbs-wrapper" aria-label="Главная">
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
               <a href="/">Главная</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">
+            <li class="breadcrumb-item active" aria-current="Автодозвон">
               <span>Автодозвон</span>
             </li>
           </ol>
         </nav>
       </div>
-      <section class="overflow-hidden pb115 auto-calls-hero">
+      <section class="overflow-hidden pb115 lg-pt-65">
         <div class="container">
-          <div class="auto-calls-flex mb85-60 auto-calls-hero-wrapper">
+          <div class="auto-calls-flex mb85-60 hero-wrapper">
             <div class="col-lg-6 col-12 auto-calls-hero-left">
               <div class="auto-calls-hero-header">
                 <h1 class="h1-styled lh-13-14 h1-noindex">
                   Запустите автодозвон по базе клиентов за&nbsp;5&nbsp;минут
                 </h1>
               </div>
-              <div class="auto-calls-hero-imageblock mobile">
+              <div class="auto-calls-hero-imageblock d-lg-none">
                 <img
-                  class="auto-calls-hero-image mobile"
+                  class="auto-calls-hero-image d-720-none"
                   src="img/decor/auto-redial-hero-mobile.png"
+                  alt="Аводозвоны"
+                  loading="lazy"
+                />
+                <img
+                  class="auto-calls-hero-image d-720-block d-lg-none"
+                  src="img/decor/auto-redial-hero.png"
                   alt="Аводозвоны"
                   loading="lazy"
                 />
@@ -427,7 +434,7 @@
                 сотни звонков в&nbsp;секунду.
               </div>
               <button
-                class="btn btn-primary btn-p10-31 auto-calls-hero-button lh14"
+                class="btn btn-primary btn-p10-31 hero-button lh14"
                 data-bs-toggle="modal"
                 data-bs-target="#presentationModal"
               >
@@ -436,7 +443,7 @@
             </div>
             <div class="auto-calls-hero-imageblock">
               <img
-                class="auto-calls-hero-image desktop-only"
+                class="auto-calls-hero-image d-none d-lg-block"
                 src="img/decor/auto-redial-hero.png"
                 alt="Аводозвоны"
                 loading="lazy"
@@ -445,8 +452,8 @@
               />
             </div>
           </div>
-          <div class="auto-calls-hero-cards desktop-flex lh14">
-            <div class="advantages-slide auto-calls-hero-card">
+          <div class="hero-cards d-none d-lg-flex lh14">
+            <div class="advantages-slide hero-card">
               <div class="advantages-slide-head">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -462,11 +469,11 @@
                   />
                 </svg>
               </div>
-              <div class="advantages-slide-desc auto-calls-hero-desc lh14">
+              <div class="advantages-slide-desc new-hero-desc lh14">
                 Загрузите готовый аудиоролик или выберите вариант озвучки
               </div>
             </div>
-            <div class="advantages-slide auto-calls-hero-card">
+            <div class="advantages-slide hero-card">
               <div class="advantages-slide-head">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -482,22 +489,22 @@
                   />
                 </svg>
               </div>
-              <div class="advantages-slide-desc auto-calls-hero-desc lh14">
+              <div class="advantages-slide-desc new-hero-desc lh14">
                 Добавьте базу контактов вручную или через XLS-файл
               </div>
             </div>
-            <div class="advantages-slide auto-calls-hero-card">
+            <div class="advantages-slide hero-card">
               <div class="advantages-slide-head">
-                <div class="advantages-slide-head auto-calls-check">
+                <div class="advantages-slide-head check-new">
                   <img src="img/icons/check.png" alt="Готово!" />
                 </div>
               </div>
-              <div class="advantages-slide-desc auto-calls-hero-desc lh14">
+              <div class="advantages-slide-desc new-hero-desc lh14">
                 Готово! Робот обзвонит клиентов и&nbsp;соберёт отчёт
               </div>
             </div>
           </div>
-          <div class="advantages-slider mobile lh14">
+          <div class="advantages-slider d-lg-none lh14">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="advantages-slide">
@@ -545,7 +552,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="advantages-slide">
-                  <div class="advantages-slide-head auto-calls-check">
+                  <div class="advantages-slide-head check-new">
                     <img src="img/icons/check.png " alt="Готово!" />
                   </div>
                   <div class="advantages-slide-desc">
@@ -561,20 +568,20 @@
         <div class="container">
           <div class="auto-calls-flex auto-calls-focus-top">
             <div class="col-lg-6 col-12 lg-mw-540">
-              <h2 class="h2-styled lh-13-14 auto-calls-h2">
+              <h2 class="h2-styled lh-13-14 h2">
                 Сервис для&nbsp;автоматических звонков клиентам
               </h2>
-              <div class="h2-desc no-mb-lg lh14">
-                <p class="auto-calls-focus-paragraph color-light">
+              <div class="h2-desc mb-lg-0 lh14">
+                <p class="focus-paragrpah color-light">
                   Автодозвон помогает бизнесу автоматически совершать звонки
                   клиентам и&nbsp;проигрывать сообщение во&nbsp;время разговора.
                 </p>
-                <p class="auto-calls-focus-paragraph color-light">
+                <p class="focus-paragrpah color-light">
                   Робот звонит по&nbsp;номерам из&nbsp;вашей базы
                   и&nbsp;воспроизводит заранее записанный ролик при&nbsp;подъёме
                   трубки
                 </p>
-                <p class="auto-calls-focus-paragraph color-light">
+                <p class="focus-paragrpah color-light">
                   После звонка робот сохранит запись разговора и&nbsp;соберёт
                   ответы клиента в&nbsp;подробный отчёт. Записи&nbsp;разговоров
                   хранятся 3 года.
@@ -586,7 +593,7 @@
                 <h3 class="auto-calls-focus-card-header lh-13-14">
                   Добавляйте аудиоролики для&nbsp;автодозвона любым способом:
                 </h3>
-                <ul class="time-block-list auto-calls-list lh14">
+                <ul class="time-block-list new-list lh14">
                   <li>Запишите свой голос онлайн</li>
                   <li>Загрузите готовый аудиоролик</li>
                   <li>Синтезируйте речь с&nbsp;помощью робота</li>
@@ -597,15 +604,15 @@
           </div>
           <div class="auto-calls-flex auto-calls-focus-bottom confirm-card">
             <div class="col-lg-6 col-12 auto-calls-robot-left">
-              <h2 class="h2-styled lh-13-14 auto-calls-h2">
+              <h2 class="h2-styled lh-13-14 h2">
                 Робот умеет больше, чем&nbsp;просто проигрывать ролик
               </h2>
-              <p class="auto-calls-focus-paragraph color-light lh14">
+              <p class="focus-paragrpah color-light lh14">
                 Настройте звонки так, чтобы робот задавал клиентам вопросы
                 и&nbsp;реагировал на&nbsp;ответы с&nbsp;помощью голоса или
                 нажатия цифр на&nbsp;телефоне, а&nbsp;после формировал отчёт.
               </p>
-              <p class="auto-calls-focus-paragraph color-light lh14">
+              <p class="focus-paragrpah color-light lh14">
                 Например, при определённых ответах, робот сможет отправить
                 клиенту смс с&nbsp;детальной информацией или&nbsp;переключить
                 звонок на&nbsp;живого оператора.
@@ -624,11 +631,11 @@
       <section class="pt115 pb115">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-lg-6 col-12 auto-auto-calls-focus-wrapper">
-              <h2 class="h2-styled lh-13-14 auto-calls-h2">
+            <div class="col-lg-6 col-12">
+              <h2 class="h2-styled lh-13-14 h2 lg-mw-475">
                 Узнайте, как работает автодозвон за&nbsp;пару минут
               </h2>
-              <div class="h2-desc lh14">
+              <div class="h2-desc lh14 lg-mw-475">
                 Показываем на&nbsp;практике, как робот помогает бизнесу
                 экономить деньги и&nbsp;достигать цели.
               </div>
@@ -680,14 +687,14 @@
       </section>
       <section class="pb115 pt115 bg-grey-main conversation overflow-hidden">
         <div class="container">
-          <h2 class="h2-styled lh-13-14 lg-mw-540 auto-calls-h2">
+          <h2 class="h2-styled lh-13-14 lg-mw-540 h2">
             Посмотрите примеры сценариев, с&nbsp;которыми поможет автодозвон
           </h2>
           <div class="h2-desc mb55-45 lh14 lg-mw-540">
             Напоминайте клиентам о&nbsp;себе, рассказывайте об&nbsp;акциях или
             приглашайте на&nbsp;мероприятия.
           </div>
-          <div class="row gx-3 gx-xl-5 gy-3 auto-calls-voice-cards desktop-768">
+          <div class="row gx-3 gx-xl-5 gy-3 d-none auto-calls-voice-cards">
             <div class="voice-card auto-calls-voice-card">
               <div
                 class="voice-card-title auto-calls-voice-card-title lh-13-14"
@@ -695,7 +702,7 @@
                 Получите новых клиентов
               </div>
               <div
-                class="voice-card-desc auto-calls-voice-card-desc auto-calls-clients-desc lh14"
+                class="voice-card-desc auto-calls-voice-card-desc new-client-headers-desc lh14"
               >
                 Обзвоните базу холодных клиентов и&nbsp;выявите интерес
                 к&nbsp;продукту.
@@ -2126,7 +2133,7 @@
               </div>
             </div>
           </div>
-          <div class="players-slider mobile-768">
+          <div class="players-slider d-md-none">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="voice-card auto-calls-voice-card">
@@ -2136,7 +2143,7 @@
                     Получите новых клиентов
                   </div>
                   <div
-                    class="voice-card-desc auto-calls-voice-card-desc auto-calls-clients-desc lh14"
+                    class="voice-card-desc auto-calls-voice-card-desc new-client-headers-desc lh14"
                   >
                     Обзвоните базу холодных клиентов и&nbsp;выявите интерес
                     к&nbsp;продукту.
@@ -2427,7 +2434,7 @@
       <section class="auto-calls-table-section pt115">
         <div class="container">
           <h2
-            class="h2-styled lh-13-14 mb55-45 mobile auto-calls-h2"
+            class="h2-styled lh-13-14 mb55-45 d-lg-none h2"
             aria-describedby="advantage-table"
           >
             Оцените преимущества автодозвона перед колл&#8209;центром
@@ -2442,7 +2449,7 @@
                   class="auto-calls-table-cell color-light auto-calls-table-left auto-calls-table-cell-mobile-empty"
                 >
                   <h2
-                    class="h2-styled desktop-only auto-calls-h2"
+                    class="h2-styled d-none d-lg-blockh2"
                     aria-describedby="advantage-table"
                   >
                     Оцените преимущества автодозвона перед колл&#8209;центром
@@ -2655,7 +2662,7 @@
               </tr>
               <tr class="auto-calls-table-row">
                 <td
-                  class="auto-calls-table-cell color-light auto-calls-table-left auto-calls-border-radius-left"
+                  class="auto-calls-table-cell color-light auto-calls-table-left border-radius-left"
                 >
                   Записывает каждый звонок
                 </td>
@@ -2665,7 +2672,7 @@
                   Нет
                 </td>
                 <td
-                  class="auto-calls-table-cell color-light auto-calls-table-cell-zvonok auto-calls-border-radius-right"
+                  class="auto-calls-table-cell color-light auto-calls-table-cell-zvonok border-radius-left"
                 >
                   Да
                 </td>
@@ -2674,38 +2681,38 @@
           </table>
         </div>
       </section>
-      <section class="auto-calls-answer pb115">
+      <section class="answer pb115">
         <div class="container">
           <div class="row gx-sm-5 gx-2 gy-0 mt-0">
             <div class="col-12">
-              <div class="feedback-block auto-calls-feedback">
+              <div class="feedback-block new-feedback">
                 <div class="auto-calls-flex">
                   <div class="auto-calls-card-left">
                     <h2 class="h2-styled lh-13-14">
                       Поможем запустить автодозвон и&nbsp;ответим на&nbsp;<span
-                        class="any-q auto-calls-any"
+                        class="any-q new-any"
                         >любые&nbsp;вопросы</span
                       >
                     </h2>
                   </div>
                   <form
                     action="#"
-                    class="auto-calls-register-form auto-calls-answer-right"
+                    class="new-register-form answer-right"
                     onsubmit="event.preventDefault(); cabinetRegisterRedirect(this)"
                   >
                     <input
-                      class="form-input form-number auto-calls-register-input w-100"
+                      class="form-input form-number new-register-input w-100"
                       type="tel"
                       name="phone"
                       placeholder="Номер телефона"
                     />
                     <button
-                      class="btn btn-primary auto-calls-register-button w-100"
+                      class="btn btn-primary new-register-button w-100"
                       type="submit"
                     >
                       Регистрация
                     </button>
-                    <div class="form-desc auto-calls-form-desc">
+                    <div class="form-desc new-form-desc">
                       Отправляя форму, вы даете согласие на обработку
                       <a
                         class="form-link"
@@ -2723,9 +2730,7 @@
       </section>
       <section class="pb115">
         <div class="container">
-          <h2
-            class="h2-styled mb55-45 lh-13-14 auto-calls-h2 auto-calls-cases-header"
-          >
+          <h2 class="h2-styled mb55-45 lh-13-14 h2 new-cases-header">
             Делимся успешными кейсами автодозвона
           </h2>
           <div class="position-relative">
@@ -2733,38 +2738,37 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div
-                    class="client-case client-case-grey auto-calls-client-case"
+                    class="client-case client-case-grey new-client-header-case"
                   >
                     <div
-                      class="row align-items-center auto-calls-client-header lh-13-14"
+                      class="row align-items-center new-client-header-header lh-13-14"
                     >
                       <div class="col-12 mb-md-0 mb-4">
-                        <span class="mobile">ИП Петункина О. Ю. — вебинары</span
-                        ><span class="desktop-only"
+                        <span class="d-lg-none"
+                          >ИП Петункина О. Ю. — вебинары</span
+                        ><span class="d-none d-lg-block"
                           >Индивидуальный предприниматель Петункина О. Ю. —
                           вебинары</span
                         >
                       </div>
                     </div>
-                    <div class="row auto-calls-case-wrapper lh14">
+                    <div class="row new-case-wrapper lh14">
                       <div class="col-md-4 col-12 order-md-0 order-1">
-                        <div class="client-case-item auto-calls-case-item">
+                        <div class="client-case-item new-case-item">
                           <h3 class="client-heading">до&nbsp;5 минут</h3>
                           <div class="client-heading-desc">
                             Сократили время обзвона базы
                           </div>
                         </div>
-                        <div class="client-case-item auto-calls-case-item">
+                        <div class="client-case-item new-case-item">
                           <h3 class="client-heading client-heading-stonks">
                             15%
                           </h3>
-                          <div
-                            class="client-heading-desc auto-calls-heading-small"
-                          >
+                          <div class="client-heading-desc heading-small">
                             Увеличили конверсию
                           </div>
                         </div>
-                        <div class="client-case-item auto-calls-case-item">
+                        <div class="client-case-item new-case-item">
                           <h3 class="client-heading">30 000 ₽ / мес</h3>
                           <div class="client-heading-desc">
                             Отказались от&nbsp;допуслуг и&nbsp;сэкономили
@@ -2772,10 +2776,10 @@
                         </div>
                       </div>
                       <div
-                        class="col-md-8 col-12 mb-md-0 mb-3 order-md-1 order-0 auto-calls-cases-right"
+                        class="col-md-8 col-12 mb-md-0 mb-3 order-md-1 order-0 new-cases-right"
                       >
                         <div class="client-case-item">
-                          <h3 class="client-heading auto-calls-client-heading">
+                          <h3 class="client-heading new-client-header-heading">
                             Хотели напомнить клиентам о&nbsp;вебинаре
                           </h3>
                           <div class="client-advantages-desc">
@@ -2785,7 +2789,7 @@
                           </div>
                         </div>
                         <div class="client-case-item">
-                          <h3 class="client-heading auto-calls-client-heading">
+                          <h3 class="client-heading new-client-header-heading">
                             Настроили автообзвон по&nbsp;своей базе
                           </h3>
                           <div class="client-advantages-desc">
@@ -2801,24 +2805,24 @@
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="client-case client-case-grey auto-calls-client-case"
+                    class="client-case client-case-grey new-client-header-case"
                   >
                     <div
-                      class="row align-items-center auto-calls-client-header lh-13-14"
+                      class="row align-items-center new-client-header-header lh-13-14"
                     >
                       <div class="col-12 mb-md-0 mb-4">
                         ООО «Страховые партнёры
                       </div>
                     </div>
-                    <div class="row auto-calls-case-wrapper lh14">
+                    <div class="row new-case-wrapper lh14">
                       <div class="col-md-4 col-12 order-md-0 order-1">
-                        <div class="client-case-item auto-calls-case-item">
+                        <div class="client-case-item new-case-item">
                           <h3 class="client-heading">на&nbsp;18%</h3>
                           <div class="client-heading-desc">
                             Увеличилось количество заявок
                           </div>
                         </div>
-                        <div class="client-case-item auto-calls-case-item">
+                        <div class="client-case-item new-case-item">
                           <h3 class="client-heading client-heading-stonks">
                             24%
                           </h3>
@@ -2826,7 +2830,7 @@
                             Рост положительных отзывов
                           </div>
                         </div>
-                        <div class="client-case-item auto-calls-case-item">
+                        <div class="client-case-item new-case-item">
                           <h3 class="client-heading">в 3 раза</h3>
                           <div class="client-heading-desc">
                             Снизилась нагрузка на&nbsp;операторов
@@ -2834,10 +2838,10 @@
                         </div>
                       </div>
                       <div
-                        class="col-md-8 col-12 mb-md-0 mb-3 order-md-1 order-0 auto-calls-cases-right"
+                        class="col-md-8 col-12 mb-md-0 mb-3 order-md-1 order-0 new-cases-right"
                       >
                         <div class="client-case-item">
-                          <h3 class="client-heading auto-calls-client-heading">
+                          <h3 class="client-heading new-client-header-heading">
                             Тратили время на&nbsp;простые вопросы
                           </h3>
                           <div class="client-advantages-desc">
@@ -2848,7 +2852,7 @@
                           </div>
                         </div>
                         <div class="client-case-item">
-                          <h3 class="client-heading auto-calls-client-heading">
+                          <h3 class="client-heading new-client-header-heading">
                             Нашли подходящий сервис и&nbsp;настроили робота
                           </h3>
                           <div class="client-advantages-desc">
@@ -2863,37 +2867,35 @@
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="client-case client-case-grey auto-calls-client-case"
+                    class="client-case client-case-grey new-client-header-case"
                   >
                     <div
-                      class="row align-items-center auto-calls-client-header lh-13-14"
+                      class="row align-items-center new-client-header-header lh-13-14"
                     >
                       <div class="col-12 mb-md-0 mb-4">
-                        <span class="mobile">ИП Калашникова Н.А.</span
-                        ><span class="desktop-only"
+                        <span class="d-lg-none">ИП Калашникова Н.А.</span
+                        ><span class="d-none d-lg-block"
                           >Индивидуальный предприниматель Калашникова Н.А.</span
                         >
                       </div>
                     </div>
-                    <div class="row auto-calls-case-wrapper lh14">
+                    <div class="row new-case-wrapper lh14">
                       <div class="col-md-4 col-12 order-md-0 order-1">
-                        <div class="client-case-item auto-calls-case-item">
+                        <div class="client-case-item new-case-item">
                           <h3 class="client-heading">24/7</h3>
                           <div class="client-heading-desc">
                             Сделали приём звонков круглосуточным
                           </div>
                         </div>
-                        <div class="client-case-item auto-calls-case-item">
+                        <div class="client-case-item new-case-item">
                           <h3 class="client-heading client-heading-stonks">
                             23%
                           </h3>
-                          <div
-                            class="client-heading-desc auto-calls-heading-small"
-                          >
+                          <div class="client-heading-desc heading-small">
                             Увеличилось число клиентов
                           </div>
                         </div>
-                        <div class="client-case-item auto-calls-case-item">
+                        <div class="client-case-item new-case-item">
                           <h3 class="client-heading">до 5 секунд</h3>
                           <div class="client-heading-desc">
                             Сократили время ожидания ответа
@@ -2901,10 +2903,10 @@
                         </div>
                       </div>
                       <div
-                        class="col-md-8 col-12 mb-md-0 mb-3 order-md-1 order-0 auto-calls-cases-right"
+                        class="col-md-8 col-12 mb-md-0 mb-3 order-md-1 order-0 new-cases-right"
                       >
                         <div class="client-case-item">
-                          <h3 class="client-heading auto-calls-client-heading">
+                          <h3 class="client-heading new-client-header-heading">
                             Пропускали звонки в нерабочее время
                           </h3>
                           <div class="client-advantages-desc">
@@ -2914,7 +2916,7 @@
                           </div>
                         </div>
                         <div class="client-case-item">
-                          <h3 class="client-heading auto-calls-client-heading">
+                          <h3 class="client-heading new-client-header-heading">
                             Запустили кампанию для&nbsp;приёма входящих
                           </h3>
                           <div class="client-advantages-desc">
@@ -2965,9 +2967,9 @@
               </button>
             </div>
           </div>
-          <div class="auto-calls-cases-button-wrapper">
+          <div class="new-cases-button-wrapper">
             <a
-              class="btn btn-primary auto-calls-register-button"
+              class="btn btn-primary new-register-button"
               href="https://zvonok.com/manager/users/add/?country=ru&phone="
               role="button"
               aria-label="Хочу так же"
@@ -2981,7 +2983,7 @@
         <div class="container">
           <div class="row mb55-45">
             <div class="col-12">
-              <h2 class="h2-styled lh-13-14 mb-0 auto-calls-h2 lh-13-14">
+              <h2 class="h2-styled lh-13-14 mb-0 h2 lh-13-14">
                 Ответы на&nbsp;часто задаваемые вопросы
               </h2>
             </div>
@@ -3000,7 +3002,7 @@
               >
                 <h3 class="accordion-header" id="panelsStayOpen-heading1">
                   <button
-                    class="accordion-button auto-calls-accordion-header"
+                    class="accordion-button accordion-header-new"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapse1"
@@ -3022,7 +3024,7 @@
                     itemprop="acceptedAnswer"
                     itemtype="https://schema.org/Answer"
                   >
-                    <p itemprop="text" class="auto-calls-faq-paragraph">
+                    <p itemprop="text" class="faq-paragrpah">
                       Для начала проверьте формат загружаемого аудиоролика.
                       Сервис поддерживает форматы .wav, .mp3, .ogg. Если ваш
                       аудиоролик в другом формате, воспользуйтесь конвертером и
@@ -3041,7 +3043,7 @@
               >
                 <h3 class="accordion-header" id="panelsStayOpen-heading2">
                   <button
-                    class="accordion-button collapsed auto-calls-accordion-header"
+                    class="accordion-button collapsed accordion-header-new"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapse2"
@@ -3063,7 +3065,7 @@
                     itemprop="acceptedAnswer"
                     itemtype="https://schema.org/Answer"
                   >
-                    <p itemprop="text" class="auto-calls-faq-paragraph">
+                    <p itemprop="text" class="faq-paragrpah">
                       Да, конечно. Это значительно сэкономит время
                       и&nbsp;деньги: робот быстро обзвонит холодную базу
                       и&nbsp;отсеет тех, кому товар или услуга совсем
@@ -3084,7 +3086,7 @@
               >
                 <h3 class="accordion-header" id="panelsStayOpen-heading3">
                   <button
-                    class="accordion-button collapsed auto-calls-accordion-header"
+                    class="accordion-button collapsed accordion-header-new"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapse3"
@@ -3124,11 +3126,11 @@
                 itemtype="https://schema.org/Question"
               >
                 <h3
-                  class="accordion-header auto-calls-accordion-header"
+                  class="accordion-header accordion-header-new"
                   id="panelsStayOpen-heading4"
                 >
                   <button
-                    class="accordion-button collapsed auto-calls-accordion-header"
+                    class="accordion-button collapsed accordion-header-new"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapse4"
@@ -3167,7 +3169,7 @@
               >
                 <h3 class="accordion-header" id="panelsStayOpen-heading5">
                   <button
-                    class="accordion-button collapsed auto-calls-accordion-header"
+                    class="accordion-button collapsed accordion-header-new"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapse5"
@@ -3208,7 +3210,7 @@
               >
                 <h3 class="accordion-header" id="panelsStayOpen-heading6">
                   <button
-                    class="accordion-button collapsed auto-calls-accordion-header"
+                    class="accordion-button collapsed accordion-header-new"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapse6"
@@ -3245,36 +3247,36 @@
         <div class="container">
           <div class="row gx-sm-5 gx-2 gy-lg-0 gy-3">
             <div class="col-12">
-              <div class="feedback-block auto-calls-feedback-big">
+              <div class="feedback-block new-feedback-big">
                 <div class="auto-calls-flex align-items-center">
                   <div class="col-lg-8 col-12 auto-calls-card-left">
                     <h2 class="h2-styled lh-13-14">
                       Попробуйте Звонок бесплатно
                     </h2>
-                    <div class="h2-desc mb-0 auto-calls-try-card-desc lh14">
+                    <div class="h2-desc mb-0 try-card-desc lh14">
                       При регистрации начислим
-                      <span class="circle20 circle20-2 auto-calls-circle"
+                      <span class="circle20 circle20-2 new-circle"
                         >20&nbsp;рублей&nbsp;на&nbsp;счёт</span
                       >. Этого хватит, чтобы сделать несколько десятков звонков.
                     </div>
                     <form
                       action="#"
                       onsubmit="event.preventDefault(); cabinetRegisterRedirect(this)"
-                      class="auto-calls-register-form auto-calls-try-form"
+                      class="new-register-form try-form"
                     >
                       <input
-                        class="form-input form-number auto-calls-register-input w-100"
+                        class="form-input form-number new-register-input w-100"
                         type="tel"
                         name="phone"
                         placeholder="Номер телефона"
                       />
                       <button
-                        class="btn btn-primary auto-calls-register-button w-100"
+                        class="btn btn-primary new-register-button w-100"
                         type="submit"
                       >
                         Регистрация
                       </button>
-                      <div class="form-desc auto-calls-form-desc">
+                      <div class="form-desc new-form-desc">
                         Отправляя форму, вы даете согласие на обработку
                         <a
                           class="form-link"
@@ -3285,9 +3287,7 @@
                       </div>
                     </form>
                   </div>
-                  <ul
-                    class="time-block-list auto-calls-list auto-calls-time-list lh14"
-                  >
+                  <ul class="time-block-list new-list new-time-list lh14">
                     <li>Посекундная тарификация</li>
                     <li>Более 10 000 звонков одновременно</li>
                     <li>Фильтр автоответчиков для&nbsp;экономии</li>
@@ -3302,7 +3302,7 @@
       </section>
       <section class="pb115 pt115 bg-grey-main">
         <div class="container">
-          <h2 class="h2-styled mb55-45 lh14 auto-calls-h2 lh-13-14">
+          <h2 class="h2-styled mb55-45 lh14 h2 lh-13-14">
             Звонок умеет гораздо больше!
           </h2>
           <div class="row gx-sm-5 gx-2 gy-lg-5 gy-3">
@@ -3341,12 +3341,12 @@
             </div>
             <div class="col-lg-4 col-12">
               <a
-                class="card-default card-default-white auto-calls-better-card"
+                class="card-default card-default-white better-card"
                 href="/confirmation.html"
                 aria-label="Подтверждение номера"
               >
                 <div>
-                  <h3 class="h3-styled-card auto-calls-better-header lh-13-14">
+                  <h3 class="h3-styled-card better-header lh-13-14">
                     Подтверждение номера
                   </h3>
                   <div class="card-desc lh14">
@@ -3376,12 +3376,12 @@
           <div class="row gx-lg-5 gx-3 gy-lg-5 gy-3 mt-0">
             <div class="col-lg-4 col-md-6">
               <a
-                class="card-default card-default-white auto-calls-better-card"
+                class="card-default card-default-white better-card"
                 href="/incoming.html"
                 aria-label="Входящие звонки"
               >
                 <div>
-                  <h3 class="h3-styled-card auto-calls-better-header lh-13-14">
+                  <h3 class="h3-styled-card better-header lh-13-14">
                     Входящие звонки
                   </h3>
                   <div class="card-desc lh14">
@@ -3411,12 +3411,12 @@
             </div>
             <div class="col-lg-4 col-md-6">
               <a
-                class="card-default card-default-white auto-calls-better-card"
+                class="card-default card-default-white better-card"
                 href="/predictive-calls.html"
                 aria-label="Автозвонки для колл&#8209;центра"
               >
                 <div>
-                  <h3 class="h3-styled-card auto-calls-better-header lh-13-14">
+                  <h3 class="h3-styled-card better-header lh-13-14">
                     Автозвонки для колл&#8209;центра
                   </h3>
                   <div class="card-desc lh14">
@@ -3446,18 +3446,16 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-4 col-12 auto-calls-delofon">
+            <div class="col-lg-4 col-12 delofon-new">
               <a
-                class="card-default card-default-white auto-calls-better-card"
+                class="card-default card-default-white better-card"
                 href="https://delofon.ru/"
                 target="_blank"
                 rel="noopener norefferer"
                 aria-label="Delofon.ru"
               >
                 <div>
-                  <h3 class="h3-styled-card auto-calls-better-header lh-13-14">
-                    Делофон
-                  </h3>
+                  <h3 class="h3-styled-card better-header lh-13-14">Делофон</h3>
                   <div class="card-desc lh14">
                     Виртуальная АТС для&nbsp;бизнеса.
                   </div>
@@ -3489,7 +3487,7 @@
           </div>
         </div>
       </section>
-      <section class="pt115 pb115 auto-calls-results">
+      <section class="pt115 pb115 results">
         <div class="container">
           <h3 class="h3-styled lh14">Удобный сервис для&nbsp;автодозвона</h3>
           <article class="columns-2 mb55-45 lh14">
@@ -3504,7 +3502,7 @@
               продукты и&nbsp;услуги, уведомлять клиентов о&nbsp;новостях
               и&nbsp;акциях вашей компании.
             </p>
-            <p class="no-mb-lg color-light">
+            <p class="mb-lg-0 color-light">
               Используйте автодозвон для любого сценария. Неважно, в&nbsp;какой
               сфере вы работаете — робот подойдет как для&nbsp;онлайн-магазинов,
               так и&nbsp;для производственных предприятий, строительных
@@ -3523,7 +3521,7 @@
               количество дозвонов, прослушать ответы клиентов. Все&nbsp;записи
               хранятся 3 года
             </p>
-            <p class="color-light no-mb-lg">
+            <p class="color-light mb-lg-0">
               Экономьте время и&nbsp;деньги на&nbsp;автоматических звонках. Наш
               робот делает до&nbsp;610 звонков в секунду. Это в&nbsp;разы
               быстрее и&nbsp;дешевле, чем&nbsp;в&nbsp;колл-центре.
@@ -3541,7 +3539,7 @@
               Но&nbsp;с&nbsp;каждым днём этот показатель увеличивается
               за&nbsp;счёт машинного обучения голосового фильтра.
             </p>
-            <p class="no-mb-lg color-light">
+            <p class="mb-lg-0 color-light">
               Автоматические звонки помогут повысить качество обслуживания
               и&nbsp;улучшить взаимодействие с&nbsp;клиентами. Мониторинг
               звонков в&nbsp;реальном времени поможет более глубоко погрузиться
@@ -3559,7 +3557,7 @@
               Например, при нажатии цифры, робот будет переводить разговор
               на&nbsp;живого оператора или отправлять сообщение.
             </p>
-            <p class="no-mb-lg color-light">
+            <p class="mb-lg-0 color-light">
               Воспользуйтесь автоматическими роботизированными звонками
               и&nbsp;не&nbsp;переживайте о&nbsp;лишних тратах. Робот поможет вам
               сэкономить на&nbsp;обзвонах, но при&nbsp;этом сделать

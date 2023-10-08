@@ -1,51 +1,5 @@
-.desktop-only {
-  display: none;
-}
-
-.mb-10 {
-  margin-bottom: 10px;
-}
-
-.desktop-768 {
-  display: none;
-}
-
-.desktop-flex {
-  display: none;
-}
-
-.lh-13-14 {
-  line-height: 130%;
-}
-
-.auto-calls-results p, .auto-calls-results li {
-  font-size: 12px;
-}
-
-.auto-calls-results-list {
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-
-.auto-calls-h2 {
-  font-size: 20px;
-}
-
-.auto-calls-card-icon {
-  max-width: 25px;
-  max-height: 25px;
-}
-
-.auto-calls-hero-wrapper {
-  margin-bottom: 85px;
-}
-
 .auto-calls-focus-cards {
   margin-bottom: 25px;
-}
-
-.orphans-4 {
-  orphans: 4;
 }
 
 .auto-calls-focus-card-small {
@@ -54,20 +8,8 @@
   max-width: unset;
 }
 
-.border-none {
-  border:none;
-}
-
 .auto-calls-focus-card-small:not(:last-child) {
   margin-bottom: 15px;
-}
-
-.auto-calls-border-radius-left {
-  border-bottom-left-radius: 5px;
-}
-
-.auto-calls-border-radius-right {
-  border-bottom-right-radius: 5px;
 }
 
 .auto-calls-player:hover {
@@ -157,23 +99,6 @@ audio.active ~ button.auto-calls-player::after {
   background-repeat: no-repeat;
 }
 
-.auto-calls-accordion-header {
-  font-size: 18px !important;
-}
-
-.auto-calls-hero-button {
-  background-color: #f4774c;
-}
-
-.auto-calls-check img {
-  max-width: 25px;
-  max-height: 25px;
-}
-
-.auto-calls-delofon:hover .auto-calls-better-header {
-  color: #1d71b8;
-}
-
 .auto-calls-popover {
   max-width: 193px;
   left: -12% !important;
@@ -205,7 +130,7 @@ audio.active ~ button.auto-calls-player::after {
 }
 
 .auto-calls-table-cell-header {
-  color: var(--color-text-dark, #3c3a3e);
+  color: #3c3a3e;
   text-align: center;
   font-size: 12px;
   font-weight: 700;
@@ -274,60 +199,12 @@ audio.active ~ button.auto-calls-player::after {
   min-width: 76px;
 }
 
-.auto-calls-list li {
-  line-height: 140%;
-}
-
-.auto-calls-circle:before {
-  background-image: url("../img/decor/circle-redial.svg");
-  bottom: -28px;
-  width: 155px;
-}
-
 .auto-calls-focus-top {
   margin-bottom: 25px;
 }
 
 .auto-calls-focus-bottom {
   padding: 25px 15px 0px;
-}
-
-.auto-calls-priceblock {
-  padding-bottom: 40px;
-  padding-top: 40px;
-}
-
-.auto-calls-price-header {
-  margin-bottom: 10px;
-}
-
-.auto-calls-price-wrapper {
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px !important;
-}
-
-.auto-calls-price {
-  font-size: 28px;
-  margin-right: 5px;
-  color: #3c3a3e;
-}
-
-.auto-calls-faq-paragraph {
-  max-width: 238px;
-  margin-bottom: 0px !important;
-}
-
-.auto-calls-price-minute-wrapper {
-  margin-top: 12px;
-}
-
-.autoc-calls-price-minute {
-  margin-left: 5px;
-}
-
-.auto-calls-price-list {
-  margin-top: 30px !important;
 }
 
 .auto-calls-robot-right {
@@ -340,14 +217,6 @@ audio.active ~ button.auto-calls-player::after {
   margin-right: auto;
 }
 
-.auto-calls-focus-paragraph {
-  margin-bottom: 10px;
-}
-
-.auto-calls-focus-paragraph-big {
-  min-width: 300px;
-}
-
 .auto-calls-focus-card-header {
   font-size: 18px;
   margin-bottom: -15px;
@@ -356,22 +225,6 @@ audio.active ~ button.auto-calls-player::after {
 .auto-calls-focus-card {
   padding: 25px 15px;
   border-radius: 5px;
-}
-
-.auto-calls-focus-paragraph:last-child {
-  margin-bottom: 0px;
-}
-
-.auto-calls-form-desc {
-  max-width: unset;
-}
-
-.auto-calls-time-list {
-  margin-top: 30px;
-}
-
-.auto-calls-answer-right {
-  margin-top: 20px;
 }
 
 .auto-calls-hero-imageblock {
@@ -387,58 +240,6 @@ audio.active ~ button.auto-calls-player::after {
   min-height: 317px;
 }
 
-.auto-calls-better-header {
-  margin-bottom: 10px;
-}
-
-.auto-calls-answer {
-  padding-top: 50px;
-}
-
-.auto-calls-any:after {
-  display: block;
-  height: 8px;
-  bottom: -8px;
-  width: 120%;
-}
-
-.auto-calls-any-free:after {
-  background-image: url("../img/decor/any-q-free.svg");
-  width: 110%;
-}
-
-.auto-calls-cases-header {
-  max-width: 295px;
-}
-
-.auto-calls-cases-button-wrapper {
-  margin-top: 40px;
-}
-
-.auto-calls-client-header {
-  color: var(--color-text-dark, #3c3a3e);
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 140%;
-  margin-bottom: -2.5px;
-}
-
-.auto-calls-client-header h2 {
-  font-size: 20px;
-}
-
-.auto-calls-try-form {
-  margin-top: 30px;
-}
-
-.auto-calls-col-second {
-  color: #8c8c8d;
-}
-
-.auto-calls-try-form-free {
-  margin-top: 20px;
-}
-
 @media screen and (min-width: 375px) {
   .auto-calls-table-cell-logo {
     min-width: 105px;
@@ -449,16 +250,8 @@ audio.active ~ button.auto-calls-player::after {
     left: -17% !important;
   }
 
-  .auto-calls-clients-desc {
-    margin-bottom: 33px !important;
-  }
-
   .wave {
     min-width: 190px;
-  }
-
-  .auto-calls-faq-paragraph {
-    max-width: unset;
   }
 }
 
@@ -474,10 +267,6 @@ audio.active ~ button.auto-calls-player::after {
   .auto-calls-popover {
     left: -15% !important;
   }
-
-  .auto-calls-cases-header {
-    max-width: unset;
-  }
 }
 
 @media screen and (min-width: 410px) {
@@ -491,10 +280,7 @@ audio.active ~ button.auto-calls-player::after {
 }
 
 @media screen and (min-width: 420px) {
-  .auto-calls-table-cell-logo {
-    min-width: 124px;
-  }
-
+  .auto-calls-table-cell-logo,
   .auto-calls-table-cell-header {
     min-width: 124px;
   }
@@ -502,10 +288,6 @@ audio.active ~ button.auto-calls-player::after {
   .auto-calls-popover {
     max-width: 208px;
     left: -13% !important;
-  }
-
-  .auto-calls-clients-desc {
-    margin-bottom: 15px !important;
   }
 
   .auto-calls-reanimate-desc {
@@ -541,12 +323,6 @@ audio.active ~ button.auto-calls-player::after {
   }
 }
 
-@media screen and (min-width: 475px) {
-  .auto-calls-clients-desc {
-    margin-bottom: 35px !important;
-  }
-}
-
 @media screen and (min-width: 520px) {
   .auto-calls-hero-imageblock {
     margin-right: 0px;
@@ -568,30 +344,12 @@ audio.active ~ button.auto-calls-player::after {
   .auto-calls-voice-card-desc {
     font-size: 17px;
   }
-
-  .auto-calls-clients-desc {
-    margin-bottom: 15px !important;
-  }
-}
-
-@media screen and (min-width: 540px) {
-  .auto-calls-clients-desc {
-    margin-bottom: 38px !important;
-  }
 }
 
 @media screen and (min-width: 575px) {
-  .md-inline {
-    display: inline !important;
-  }
-
   .auto-calls-flex-column-sm {
     display: flex;
     flex-direction: column;
-  }
-
-  .auto-calls-h2 {
-    font-size: calc(1.325rem + 0.9vw);
   }
 
   .auto-calls-popover {
@@ -620,10 +378,6 @@ audio.active ~ button.auto-calls-player::after {
     margin-bottom: 30px;
   }
 
-  .auto-calls-focus-paragraph {
-    font-size: 17px;
-  }
-
   .auto-calls-focus-card {
     padding: 30px 20px;
   }
@@ -633,60 +387,10 @@ audio.active ~ button.auto-calls-player::after {
     margin-bottom: -5px;
   }
 
-  .auto-calls-client-header {
-    font-size: 24px;
-  }
-
-  .auto-calls-circle:before {
-    display: block;
-    width: 150px;
-  }
-
-  .auto-calls-any:after {
-    display: block;
-    height: 15px;
-    bottom: -15px;
-    width: 115%;
-  }
-
-  .auto-calls-any-free:after {
-    height: 11px;
-    bottom: -11px;
-    width: 100%;
-  }
-
   .auto-calls-robot-right {
     max-width: 252px;
     margin-bottom: -78px;
     margin-top: 25px;
-  }
-
-  .auto-calls-cases-button-wrapper {
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 45px;
-  }
-
-  .auto-calls-form-desc {
-    margin-top: 15px;
-  }
-
-  .auto-calls-list li {
-    font-size: 16px;
-  }
-
-  .auto-calls-answer-right {
-    margin-top: 30px;
-  }
-
-  .auto-calls-results p,  .auto-calls-results li {
-    font-size: 15px;
-  }
-
-  .auto-calls-price {
-    font-size: 30px;
   }
 }
 
@@ -717,14 +421,10 @@ audio.active ~ button.auto-calls-player::after {
 }
 
 @media screen and (min-width: 720px) {
-  .auto-calls-hero {
-    overflow: visible;
-  }
-
   .auto-calls-hero-imageblock {
     min-width: 90%;
     margin: 0;
-    margin-top: -30px;
+    margin-top: 0px;
     margin-bottom: -10px;
   }
 
@@ -735,10 +435,6 @@ audio.active ~ button.auto-calls-player::after {
   .auto-calls-voice-card-desc {
     font-size: 14px;
   }
-
-  .auto-calls-clients-desc {
-    margin-bottom: 15px !important;
-  }
 }
 
 @media screen and (min-width: 767px) {
@@ -747,20 +443,12 @@ audio.active ~ button.auto-calls-player::after {
     left: -4% !important;
   }
 
-  .mobile-768 {
-    display: none;
-  }
-
-  .auto-calls-hero-wrapper {
-    margin-bottom: 60px;
-  }
-
   .auto-calls-hero-image {
     min-width: 85%;
   }
 
   .auto-calls-voice-cards {
-    display: grid;
+    display: grid !important;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     margin: 0px;
@@ -781,10 +469,6 @@ audio.active ~ button.auto-calls-player::after {
 
   .auto-calls-voice-card-desc {
     font-size: 17px;
-  }
-
-  .auto-calls-clients-desc {
-    margin-bottom: 43px !important;
   }
 
   .auto-calls-table-cell {
@@ -808,10 +492,6 @@ audio.active ~ button.auto-calls-player::after {
     min-height: 30px;
   }
 
-  .auto-calls-focus-paragraph {
-    font-size: 18px;
-  }
-
   .auto-calls-focus-top {
     margin-bottom: 35px;
   }
@@ -829,42 +509,9 @@ audio.active ~ button.auto-calls-player::after {
     margin-bottom: -40px;
     margin-top: 35px;
   }
-
-  .auto-calls-client-header {
-    margin-bottom: 25px;
-  }
-
-  .auto-calls-answer-right {
-    margin-top: 40px;
-  }
-
-  .auto-calls-list li {
-    font-size: 18px;
-  }
-
-  .auto-calls-circle:before {
-    width: 180px;
-    bottom: -23px;
-  }
-
-  .auto-calls-accordion-header {
-    font-size: 25px !important;
-  }
-
-  .auto-calls-try-card-desc-free {
-    text-align: center;
-  }
 }
 
 @media screen and (min-width: 992px) {
-  .auto-calls-h2 {
-    font-size: 30px;
-  }
-
-  .auto-calls-breadcrumbs {
-    margin-bottom: 0px;
-  }
-
   .auto-calls-hero {
     padding-top: 65px;
   }
@@ -885,10 +532,7 @@ audio.active ~ button.auto-calls-player::after {
   }
 
   .auto-calls-voice-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-    margin: 0px;
   }
 
   .auto-calls-voice-card {
@@ -901,10 +545,6 @@ audio.active ~ button.auto-calls-player::after {
     font-size: 18px;
   }
 
-  .auto-calls-clients-desc {
-    margin-bottom: 25px !important;
-  }
-
   .auto-calls-player-progressbar {
     max-width: 240px;
   }
@@ -915,42 +555,7 @@ audio.active ~ button.auto-calls-player::after {
     font-size: 18px;
   }
 
-  .auto-calls-check img {
-    max-width: 35px;
-    max-height: 35px;
-  }
-
-  .auto-calls-card-icon {
-    max-width: 35px;
-    max-height: 35px;
-  }
-
-  .auto-calls-arrow::before {
-    content: "";
-    left: 42%;
-  }
-
   .auto-calls-flex {
-    display: flex;
-  }
-
-  .no-mb-lg {
-    margin-bottom: 0px !important;
-  }
-
-  .lh-13-14 {
-    line-height: 140%;
-  }
-
-  .mobile {
-    display: none;
-  }
-
-  .desktop-only {
-    display: block;
-  }
-
-  .desktop-flex {
     display: flex;
   }
 
@@ -973,13 +578,8 @@ audio.active ~ button.auto-calls-player::after {
     min-height: 383px;
   }
 
-  .auto-calls-hero-card,
   .auto-calls-focus-card-small {
     width: 33%;
-  }
-
-  .auto-calls-hero-card:not(:first-child) {
-    margin-left: 20px;
   }
 
   .auto-calls-focus-card-small:not(:first-child) {
@@ -1011,17 +611,12 @@ audio.active ~ button.auto-calls-player::after {
     max-width: 21.35%;
   }
 
-  .auto-calls-hero-desc,
   .auto-calls-focus-card-small-desc {
     font-size: 16px;
   }
 
   .auto-calls-focus-top {
     margin-bottom: 55px;
-  }
-
-  .auto-calls-focus-paragraph {
-    font-size: 20px;
   }
 
   .auto-calls-focus-card {
@@ -1054,51 +649,6 @@ audio.active ~ button.auto-calls-player::after {
     min-height: 442px;
   }
 
-  .auto-calls-client-case {
-    padding: 60px 95px;
-  }
-
-  .auto-calls-any:after {
-    width: 100%;
-  }
-
-  .auto-calls-case-item {
-    max-width: 230px;
-  }
-
-  .auto-calls-client-header {
-    max-width: 469px;
-  }
-
-  .auto-calls-case-wrapper {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
-
-  .auto-calls-client-heading {
-    margin-bottom: 15px;
-  }
-
-  .auto-calls-heading-small {
-    max-width: 185px;
-  }
-
-  .auto-calls-faq-paragraph {
-    max-width: 915px;
-  }
-
-  .lg-mw-540 {
-    max-width: 540px;
-  }
-
-  .auto-calls-cases-header {
-    max-width: 601px;
-  }
-
-  .auto-calls-answer {
-    padding-top: 55px;
-  }
-
   .auto-calls-card-left {
     max-width: 505px;
   }
@@ -1107,140 +657,15 @@ audio.active ~ button.auto-calls-player::after {
     margin-bottom: 0px;
   }
 
-  .auto-calls-try-card-desc-free {
-    margin-top: 0px !important;
-    max-width: 678px;
-  }
-
-  .auto-calls-register-form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    width: unset;
-    padding: 0;
-    margin: 0;
-    grid-row-gap: 10px;
-    grid-column-gap: 15px;
-  }
-
-  .auto-calls-form-desc {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    max-width: 100%;
-    margin: 0px;
-    justify-self: center;
-    max-height: 17px;
-  }
-
-  .auto-calls-try-card-desc {
-    margin-top: 15px;
-  }
-
-  .auto-calls-try-form {
-    margin-left: 0px !important;
-    margin-top: 20px;
-    max-width: 461px;
-    max-height: 68px;
-  }
-
-  .auto-calls-feedback {
-    padding: 55px 55px 37px;
-  }
-
-  .auto-calls-feedback-big {
-    padding: 55px;
-  }
-
-  .auto-calls-register-input {
-    margin: 0px;
-    padding: 10px;
-  }
-
-  .auto-calls-answer-right {
-    margin-top: 8px;
-  }
-
-  .auto-calls-time-list {
-    margin-top: 0px;
-  }
-
-  .auto-calls-time-list li {
-    font-size: 16px;
-  }
-
-  .auto-calls-circle:before {
-    background-image: url("../img/decor/circle20.svg");
-    width: 194px;
-    bottom: -11px;
-  }
-
   .auto-calls-focus-bottom {
     padding: 55px 0px 55px 55px;
     position: relative;
   }
-
-  .auto-calls-any-free:after {
-    background-image: url("../img/decor/any-q-free-big.svg");
-    width: 176px;
-    height: 15px;
-    bottom: -15px;
-  }
-
-  .auto-calls-try-card-header-free {
-    margin-bottom: 15px;
-  }
-
-  .auto-calls-try-form-free {
-    margin-top: 25px;
-  }
-
-  .auto-calls-price-left {
-    max-width: 515px;
-    margin-right: 65px;
-  }
-
-  .auto-calls-priceblock {
-    padding-right: 55px !important;
-  }
-
-  .auto-calls-price-header {
-    margin-bottom: 15px !important;
-  }
-
-  .auto-calls-price {
-    font-size: 32px;
-  }
-
-  .auto-calls-price-minute-wrapper {
-    margin-top: 15px;
-  }
-
-  .auto-calls-price-button {
-    max-width: 247px;
-  }
-
-  .auto-calls-price-list {
-    margin-top: 10px !important;
-  }
-
-
-  .auto-calls-results-list {
-    margin:15px 0;
-  }
-  
 }
 
 @media screen and (min-width: 1200px) {
   .auto-calls-popover {
     left: -1.5% !important;
-  }
-
-  .xl-mw-540 {
-    max-width: 540px;
-  }
-
-  .xl-col-gap-30 {
-    column-gap:30px;
   }
 
   .auto-calls-hero-imageblock {
@@ -1260,10 +685,6 @@ audio.active ~ button.auto-calls-player::after {
     max-height: 403px;
     min-width: 645px;
     min-height: 403px;
-  }
-
-  .auto-calls-hero-card:not(:first-child) {
-    margin-left: 30px;
   }
 
   .auto-calls-focus-card-small:not(:first-child) {
@@ -1292,13 +713,8 @@ audio.active ~ button.auto-calls-player::after {
     min-height: 35px;
   }
 
-  .auto-calls-hero-desc,
   .auto-calls-focus-card-small-desc {
     font-size: 18px;
-  }
-
-  .auto-calls-focus-wrapper {
-    padding-right: 95px;
   }
 
   .auto-calls-focus-card {
@@ -1311,10 +727,6 @@ audio.active ~ button.auto-calls-player::after {
     position: relative;
   }
 
-  .auto-calls-time-list {
-    margin-left: 60px;
-  }
-
   .auto-calls-robot-right {
     max-width: 358px;
     max-height: 442px;
@@ -1323,54 +735,5 @@ audio.active ~ button.auto-calls-player::after {
     margin-left: 16px;
     right: 80px;
     top: -25px;
-  }
-
-  .auto-calls-list li {
-    font-size: 18px;
-  }
-
-  .cases-clients-logo {
-    max-width: 469px;
-  }
-
-  .xl-mw-540 {
-    min-width: 540px;
-  }
-
-  .auto-calls-register-input {
-    max-width: 285px;
-    min-width: 285px;
-  }
-
-  .auto-calls-register-button {
-    padding: 10px 32px;
-    max-width: 161px;
-  }
-
-  .auto-calls-case-item:not(:last-child) {
-    margin-bottom: 25px;
-  }
-
-  .auto-calls-client-header {
-    max-width: 469px;
-    margin-bottom: 45px;
-  }
-
-  .auto-calls-cases-right {
-    padding: 0px;
-    max-width: 570px;
-  }
-
-  .auto-calls-better-card {
-    padding-right: 35px;
-    min-height: 313px;
-  }
-
-  .auto-calls-answer-right {
-    margin-top: 8px;
-  }
-
-  .auto-calls-price {
-    font-size: 35px;
   }
 }
