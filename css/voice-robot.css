@@ -1,0 +1,111 @@
+.voice-robot-hero-imageblock {
+  margin-top: 0px;
+}
+
+.voice-robot-hero-image {
+  min-height: 274px;
+}
+
+.voice-robot-focus-cards {
+  margin-top: 25px;
+}
+
+.voice-robot-robot-right {
+  min-height: 278px;
+}
+
+.voice-robot-focus-card {
+  margin-bottom: 15px;
+  height: auto;
+}
+
+.voice-robot-review-card {
+  min-height: 330px;
+}
+
+@media screen and (min-width: 450px) {
+  .voice-robot-review-card {
+    min-height: 270px;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .voice-robot-robot-right {
+    min-height: 288px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .voice-robot-focus-card {
+    margin: 0px;
+  }
+
+  .voice-robot-review-card {
+    min-height: 323px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .voice-robot-hero-imageblock {
+    margin-left: -49px;
+    margin-top: -31px;
+  }
+
+  .voice-robot-hero-image {
+    max-width: 529px;
+    min-height: 344px;
+  }
+
+  .voice-robot-robot-left {
+    max-width: 580px;
+  }
+
+  .voice-robot-robot-right {
+    top: 43px;
+  }
+
+  .voice-robot-focus-cards {
+    margin-top: 55px;
+  }
+
+  .voice-robot-focus-card {
+    padding: 25px;
+    max-height: 136px;
+    margin-top: 0px;
+  }
+
+  .voice-robot-scenario-header {
+    max-width: 634px;
+  }
+
+  .voice-robot-review-card {
+    min-height: 305px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .voice-robot-hero-imageblock {
+    min-width: 651px;
+    max-width: 651px;
+    min-height: 367px;
+    max-height: 367px;
+    margin-top: -28px;
+  }
+
+  .voice-robot-hero-image {
+    min-width: 651px;
+    max-width: 651px;
+    min-height: 367px;
+    max-height: 367px;
+  }
+
+  .voice-robot-robot-right {
+    right: 62px;
+    max-width: 377px;
+    top: 8px;
+  }
+
+  .voice-robot-review-card {
+    min-height: 328px;
+  }
+}

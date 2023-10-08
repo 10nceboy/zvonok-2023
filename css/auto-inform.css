@@ -1,0 +1,46 @@
+
+.auto-inform-hero-image {
+    min-height: 241px;
+  }
+
+
+@media screen and (min-width: 992px) {
+  .auto-inform-hero-imageblock {
+    max-height: 335px;
+    min-height: 335px;
+    margin-top: -44px;
+  }
+
+  .auto-inform-hero-image {
+    max-height: 325px;
+    min-height: 325px;
+  }
+
+  .auto-inform-robot-right {
+    right:11px;
+}
+
+  .auto-inform-robot-image {
+    min-height: 377px;
+ }
+}
+
+@media screen and (min-width: 1200px) {
+    .auto-inform-hero-imageblock {
+      max-height: 355px;
+      min-height: 355px;
+      margin-top: -54px;
+    }
+  
+    .auto-inform-hero-image {
+      max-height: 355px;
+      min-height: 355px;
+    }
+
+    .auto-inform-robot-right {
+        right:59px;
+    }
+
+
+  }
+  

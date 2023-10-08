@@ -1,0 +1,116 @@
+.confirm-card-input-gray {
+  background-color: #f5f5f5;
+}
+
+.confirm-instruction-wrapper {
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.confirm-card-instruction {
+  color: var(--color-text-light, #5a5a5b);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.confirm-instruction-icon {
+  margin-right: 8px;
+}
+
+.confirm-card-right {
+  padding: 0 25px !important;
+  color: #5a5a5b !important;
+}
+
+.confirm-card-detail {
+  font-weight: 600 !important;
+  transition: color 0.3s ease !important;
+}
+.confirm-card-detail:hover,
+.confirm-card-detail:focus {
+  color: #f25f2d !important;
+}
+.confirm-card-detail:active {
+  color: #e45726 !important;
+}
+
+.confirm-card-example {
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .confirm-card-example {
+    padding: 10px !important;
+    margin-bottom: 30px !important;
+    font-size: 12px !important;
+    min-width: 270px !important;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .confirm-card-right {
+    padding: 15px 15px 35px !important;
+  }
+
+  .confirm-card-tooltip {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 991.98px) {
+  .confirm-card-wrapper {
+    align-self: start;
+    padding-top: 24px;
+    padding-bottom: 50px;
+    justify-self: center;
+  }
+
+  .confirm-instruction-wrapper {
+    padding-bottom: 40px;
+  }
+
+  .confirm-instruction-wrapper-step4 {
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .confirm-card-cost {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .confirm-card-wrapper-step4 {
+    padding-bottom: 58px;
+  }
+
+  .confirm-instruction-wrapper {
+    padding-bottom: 50px;
+  }
+
+  .confirm-instruction-wrapper-step3 {
+    padding-bottom: 21px;
+  }
+
+  .confirm-instruction-wrapper-step4 {
+    padding-bottom: 13px;
+  }
+
+  .confirm-card-cost {
+    font-size: 20px;
+  }
+
+  .confirm-card-right {
+    padding: 0 15px 0px 35px !important;
+  }
+
+  .confirm-card-example {
+    min-width: 500px !important;
+  }
+}

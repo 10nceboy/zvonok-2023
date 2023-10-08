@@ -1,0 +1,66 @@
+.call-programm-hero-image {
+  min-height: 267px;
+}
+
+.call-programm-robot-card {
+  border-radius:5px;
+}
+
+@media screen and (min-width: 992px) {
+  .call-programm-hero-desc {
+    max-width: 522px;
+  }
+
+  .call-programm-hero-imageblock {
+    min-width: 521px;
+    min-height: 327px;
+    margin-top: -19px;
+  }
+
+  .call-programm-hero-image {
+    min-width: 521px;
+    min-height: 327px;
+  }
+
+  .call-programm-robot-card {
+    padding-top: 45px;
+  }
+
+  .call-programm-robot-right {
+    top:-2px;
+    max-width: 367px;
+  }
+
+  .call-programm-answer-right {
+    margin-left: 0px !important;
+  }
+
+  .call-programm-card-left {
+    min-width: 533px;
+  }
+
+
+
+@media screen and (min-width: 1200px) {
+  .call-programm-hero-imageblock {
+    min-width: 651px;
+    min-height: 367px;
+  }
+
+  .call-programm-hero-image {
+    min-width: 651px;
+    min-height: 367px;
+  }
+
+
+  .call-programm-card-left {
+    min-width: 580px;
+    max-width: 580px;
+  }
+
+  .call-programm-register-input {
+    max-width:239px;
+    min-width: 239px;
+  }
+}
+}

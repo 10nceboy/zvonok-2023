@@ -1,0 +1,289 @@
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #f4774c;
+  cursor: pointer;
+  margin-top: -8px;
+}
+
+input[type="range"]::-ms-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #f4774c;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #f4774c;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 8px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 4px;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 8px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 4px;
+}
+
+input[type="range"]::-ms-track {
+  height: 8px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.mailings-calc {
+  padding: 40px 15px 45px;
+  border-radius: 5px;
+}
+
+.mailings-calc-range-container {
+  width: 100%;
+  margin: 25px 0 0;
+}
+
+.mailings-calc-milestone {
+  font-size: 13px;
+  position: absolute;
+  bottom: -23px;
+  cursor: pointer;
+}
+
+.mailings-calc-bottom {
+  margin-top: 52px;
+}
+
+.mailings-calc-price-wrapper {
+  margin-bottom: 25px !important;
+}
+
+
+
+.mailings-calc-caption-small {
+  font-size: 13px;
+}
+
+.mailings-calc-duration-caption {
+  margin-top: 57px;
+}
+
+.mailings-calc-value {
+  color: #f4774c;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 3px;
+  font-size: 13px;
+}
+
+.mailings-calc-choose-caption {
+  margin: 15px 0 25px;
+}
+
+.mailings-hero-image {
+  min-height: 301px;
+}
+
+@media screen and (min-width: 520px) {
+  .mailings-calc-header {
+    font-size: 18px;
+  }
+
+  .mailings-choose-caption {
+    font-size: 16px;
+  }
+
+  .mailings-calc-caption-small,
+  .mailings-calc-milestone {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .mailings-calc-header {
+    font-size: 20px;
+  }
+
+  .mailings-calc-range-container {
+    margin-top: 35px;
+  }
+
+  .mailings-calc-choose-caption {
+    margin: 15px 0 40px;
+    font-size: 16px;
+  }
+
+  .mailings-calc-value {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mailings-hero-imageblock {
+    min-height: 377px;
+    margin-top: -44px;
+  }
+
+  .mailings-focus-card {
+    justify-content: start;
+    padding: 30px 35px 30px 30px;
+  }
+
+  .mailings-focus-card-header {
+    font-size: 19px;
+  }
+
+  .mailings-calc {
+    padding: 55px;
+  }
+
+  .mailings-calc-header {
+    font-size: 22px;
+    margin-bottom: 33px !important;
+  }
+
+  .mailings-calc-left,
+  .mailings-calc-right {
+    max-width: 400px;
+    min-width: 400px;
+  }
+
+  .mailings-calc-left {
+    margin-right: 42px;
+  }
+
+  .mailings-calc-bottom {
+    margin-top: 75px;
+  }
+
+  .mailings-calc-choose-caption {
+    font-size: 18px;
+  }
+
+  .mailings-calc-range-container {
+    margin-top: 45px;
+  }
+
+  .mailings-calc-value {
+    margin-bottom: 10px;
+  }
+
+  .mailings-calc-tick-milestone {
+    bottom: -32px;
+  }
+
+  .mailings-calc-caption {
+    margin-bottom: 20px;
+  }
+
+  .mailings-calc-caption-small {
+    font-size: 16px;
+  }
+
+  .mailings-calc-choose-caption {
+    margin-bottom: 39px;
+    margin-top: 5px;
+    font-size: 18px;
+  }
+
+  .mailings-calc-duration-caption {
+    margin-top: 0px;
+  }
+
+  .mailings-calc-price-wrapper {
+    max-width: 286px;
+    min-width: 286px;
+    margin: 0px !important;
+  }
+
+  .mailings-calc-total {
+    max-width: unset;
+    min-width: unset;
+  }
+
+  .mailings-calc-button {
+    margin-left: 31px;
+    max-width: 321px;
+    max-height: 41px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mailings-hero-image {
+    min-height: 377px;
+  }
+
+  .mailings-focus-card {
+    padding: 40px 35px 40px 30px;
+  }
+
+  .mailings-focus-card-header {
+    font-size: 20px;
+  }
+
+  .mailings-calc-left,
+  .mailings-calc-right {
+    max-width: unset;
+    min-width: 454px;
+  }
+
+  .mailings-calc-left {
+    margin-right: 92px;
+  }
+
+  .mailings-calc-header {
+    font-size: 25px;
+    margin-bottom: 35px !important;
+  }
+
+  .mailings-calc-caption {
+    font-size: 18px;
+  }
+
+  .mailings-calc-price-wrapper {
+    max-width: 290px;
+    min-width: 286px;
+    margin: 0 !important;
+  }
+
+  .mailings-calc-choose-caption {
+    margin-bottom: 44px;
+    font-size: 20px;
+  }
+}
