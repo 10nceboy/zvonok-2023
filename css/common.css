@@ -185,6 +185,15 @@
   margin-top: 20px;
 }
 
+
+.new-modal-header {
+  padding-top: 40px !important;
+}
+
+.new-modal-desc {
+  margin-bottom: 20px !important;
+}
+
 @media screen and (min-width: 375px) {
   .new-client-headers-desc {
     margin-bottom: 33px !important;

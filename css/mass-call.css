@@ -15,13 +15,7 @@
   margin-bottom: 0px;
 }
 
-.mass-call-modal-header {
-  padding-top: 40px !important;
-}
 
-.mass-call-modal-desc {
-  margin-bottom: 20px !important;
-}
 
 @media screen and (min-width: 767px) {
   .mass-call-detail-instruction {
