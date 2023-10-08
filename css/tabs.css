@@ -1,0 +1,296 @@
+.tabs-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-width: 380px;
+}
+.tabs-list li {
+  padding: 30px 0;
+  display: flex;
+  font-size: 15px;
+  color: #3c3a3e;
+}
+
+.tabs-list li:not(:last-child) {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.tabs-list li,
+.tabs-list li span {
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.tabs-list li span {
+  display: inline-block;
+}
+
+.tabs-list li svg path {
+  fill: #5a5a5b;
+  transition: fill 0.3s ease;
+}
+
+.tabs-list li:hover,
+.tabs-list li:hover span {
+  color: #f4774c99;
+}
+
+.tabs-list li:hover svg path {
+  fill: #f4774c99 !important;
+}
+
+.tabs-list li:last-child {
+  padding-bottom: 0;
+}
+
+.tabs-list li.active {
+  color: #f4774c;
+}
+
+.tabs-list li.active svg path {
+  fill: #f4774c !important;
+}
+
+.tabs-list li.active svg path {
+  fill: #f4774c !important;
+}
+
+.tabs-list li.active span {
+  color: #f4774c !important;
+  transition: all 0.3s ease;
+}
+
+.tab-box {
+  padding: 0px 0 25px 0;
+  display: none;
+  animation: flash 0.3s linear;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.tabs-h2 {
+  margin-bottom: 10px;
+}
+
+.tabs-h4 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.tab-icon {
+  min-width: 20px !important;
+  margin-right: 10px !important;
+  margin-top: 0px !important;
+}
+
+.tab-form-link {
+  color: inherit !important;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.tab-3-box {
+  padding: 10px 0 25px 0;
+}
+
+.tab-imageblock {
+  margin-left: -12px;
+  min-width: 320px;
+  margin-bottom: 20px;
+}
+
+.tab-image {
+  max-height: 100%;
+}
+
+.tabs-know-button {
+  color: #f4774c;
+  padding-bottom: 0px;
+  padding-top: 4px;
+}
+
+@media screen and (min-width: 375px) {
+  .tab-imageblock {
+    min-width: 125%;
+  }
+
+  .tab-image {
+    min-width: 81%;
+    max-width: 85%;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .tabs-list {
+    max-width: 90% !important;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .tabs-list {
+    max-width: unset !important;
+  }
+
+  .tab-imageblock {
+    min-width: 100%;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .tab-icon {
+    min-width: 30px !important;
+    margin-right: 15px !important;
+  }
+
+  .tab-image {
+    min-width: 615px;
+  }
+
+  .tab-2-image {
+    min-width: 629px;
+  }
+
+  .tab-desc,
+  .tab-register-form {
+    max-width: 595px;
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tabs {
+    flex-wrap: nowrap;
+  }
+
+  .tabs-list {
+    max-width: 350px !important;
+    margin-right: 20px;
+  }
+
+  .tabs-list span {
+    min-width: 350px !important;
+    max-width: 350px !important;
+  }
+
+  .tabs-list li {
+    min-width: 380px;
+    font-size: 18px;
+  }
+
+  .tabs-h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .tabs-header {
+    margin-bottom: 60px;
+  }
+
+  .tabs-left {
+    max-width: 400px;
+  }
+
+  .tabs-right {
+    max-width: 800px;
+    min-width: 800px;
+    padding: 0px;
+    width: unset;
+    margin-left: 30px;
+    max-height: 660px;
+    margin-top: 26px;
+    border-radius: 5px 0px 0px 5px;
+  }
+
+  .tab-image {
+    max-width: 70%;
+    min-width: 495px;
+  }
+
+  .tab-desc,
+  .tab-register-form {
+    max-width: 495px;
+    padding: 0 15px;
+  }
+
+  .tab-desc {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .tab-3-desc {
+    margin-bottom: 15px;
+    max-width: 495px;
+  }
+
+  .tab-imageblock {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tabs-list li {
+    min-width: 445px;
+  }
+
+  .tabs-left {
+    max-width: 400px;
+    min-width: 400px;
+    padding: 0px;
+    flex-shrink: 1;
+  }
+
+  .tabs-right {
+    max-height: 640px;
+    margin-left: 78px;
+  }
+
+  .tab-box {
+    padding: 29px 0px 55px 40px;
+  }
+
+  .tab-3-box {
+    padding: 19px 0px 40px 49px;
+  }
+
+  .tab-3-desc {
+    max-width: 580px;
+  }
+
+
+  .tab-image,
+  .tab-imageblock {
+    min-width: 595px;
+    max-width: 595px;
+    max-height: 380px;
+    min-height: 380px;
+  }
+
+  .tab-2-image {
+    min-width: 629px;
+    max-width: 629px;
+  }
+
+  .tab-desc,
+  .tab-register-form {
+    max-width: 595px;
+  }
+
+
+  .tabs-register-button {
+    max-width: 209px;
+  }
+
+  .tabs-register-input {
+    min-width: 356px;
+  }
+
+}
