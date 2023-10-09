@@ -347,7 +347,7 @@ audio.active ~ button.auto-calls-player::after {
 }
 
 @media screen and (min-width: 575px) {
-  .auto-calls-flex-column-sm {
+  .d-lg-flex-column-sm {
     display: flex;
     flex-direction: column;
   }
@@ -555,10 +555,7 @@ audio.active ~ button.auto-calls-player::after {
     font-size: 18px;
   }
 
-  .auto-calls-flex {
-    display: flex;
-  }
-
+  
   .auto-calls-hero-imageblock {
     margin: 0;
     max-width: 40%;
