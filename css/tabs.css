@@ -101,6 +101,10 @@
   padding: 10px 0 25px 0;
 }
 
+.tab-desc span {
+  color: #f4774c;
+}
+
 .tab-imageblock {
   margin-left: -12px;
   min-width: 320px;
@@ -162,7 +166,7 @@
   .tab-desc,
   .tab-register-form {
     max-width: 595px;
-    padding: 0px 20px;
+    padding: 0px 20px 0px 0px;
   }
 }
 
@@ -218,7 +222,7 @@
   .tab-desc,
   .tab-register-form {
     max-width: 495px;
-    padding: 0 15px;
+    padding: 0 15px 0px 0px;
   }
 
   .tab-desc {
@@ -233,6 +237,10 @@
 
   .tab-imageblock {
     margin-bottom: 32px;
+  }
+
+  .tab-box {
+    padding: 29px 0px 55px 40px;
   }
 }
 
@@ -265,7 +273,6 @@
     max-width: 580px;
   }
 
-
   .tab-image,
   .tab-imageblock {
     min-width: 595px;
@@ -284,7 +291,6 @@
     max-width: 595px;
   }
 
-
   .tabs-register-button {
     max-width: 209px;
   }
@@ -292,5 +298,4 @@
   .tabs-register-input {
     min-width: 356px;
   }
-
 }
