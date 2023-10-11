@@ -1,4 +1,85 @@
 document.addEventListener("DOMContentLoaded", () => {
+  let audio;
+  let played = false;
+
+  function startAnimation(target) {
+    let dialog = target.dataset.player;
+    let path = `[data-dialog=${dialog}] > div > .conversation-bubble`;
+
+    document.querySelectorAll(path).forEach((el) => {
+      el.style.animationDelay = el.dataset.delay;
+      el.style.webkitAnimationPlayState = "running";
+      el.classList.add("animation-running");
+    });
+  }
+
+  function stopAnimation() {
+    if (document.querySelector(`[data-audio].active`)) {
+      played = false;
+      document
+        .querySelectorAll(`[data-dialog] > div > .conversation-bubble`)
+        .forEach(function (el) {
+          el.style.webkitAnimationPlayState = "paused";
+          el.classList.remove("animation-running");
+        });
+    }
+  }
+
+  let startBtn = document.querySelectorAll(".conversation-player");
+  startBtn.forEach((elm) => {
+    elm.addEventListener("click", (evt) => {
+      let audio = evt.currentTarget.previousElementSibling;
+
+      if (audio.paused) {
+        audio.play();
+      } else {
+        played = false;
+        audio.pause();
+      }
+    });
+  });
+
+  // Events
+  document.querySelectorAll("audio[data-audio]").forEach((elm) => {
+    elm.addEventListener("ended", (evt) => {
+      stopAnimation();
+      evt.currentTarget.classList.remove("active");
+      played = false;
+    });
+
+    elm.addEventListener("pause", (evt) => {
+      stopAnimation();
+      evt.currentTarget.classList.remove("active");
+      played = false;
+    });
+
+    elm.addEventListener("playing", (evt) => {
+      startAnimation(evt.currentTarget.closest("div").querySelector("button"));
+      evt.currentTarget.classList.add("active");
+      played = true;
+    });
+  });
+
+  // Reset all audio elements
+  const audios = Array.from(document.querySelectorAll("audio"));
+  let playing = false;
+
+  audios.forEach((audio) => {
+    audio.addEventListener("play", function (evt) {
+      if (playing) {
+        audios.forEach((el) => {
+          el.pause();
+        });
+      }
+      if (this.paused) {
+        playing = false;
+        this.play();
+      } else {
+        playing = true;
+      }
+    });
+  });
+
   document.querySelectorAll(".audio").forEach((audioz) => {
     audioz.addEventListener("timeupdate", (event) => {
       let orangeBar = event.currentTarget
