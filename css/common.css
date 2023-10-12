@@ -2,6 +2,10 @@
   margin-bottom: 10px;
 }
 
+.max-h-40 {
+  max-height: 40px;
+}
+
 .lh-13-14 {
   line-height: 130%;
 }
@@ -412,7 +416,7 @@
     line-height: 140%;
   }
 
-  .mobile {
+  .h {
     display: none;
   }
 

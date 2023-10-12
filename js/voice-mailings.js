@@ -39,9 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
     function calculateTotalPrice(quantity, duration) {
       const totalPriceSpan = document.querySelector(".mailings-calc-total");
       totalPriceSpan.innerHTML = `${parseFloat(
-        quantity * 0.1 + duration * 0.32,
+        quantity * 0.01 + duration * 0.032,
         10
-      ).toFixed(1)}&nbsp;₽`.replace(/\.0([^\d])/g, "$1");
+      ).toFixed(2)}&nbsp;₽`.replace(/\.00([^\d])/g, "$1");
     }
 
     function updateValueLabel() {
