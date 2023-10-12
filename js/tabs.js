@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  if (document.querySelector("[data-box-item]")) {
-    let lists = document.querySelectorAll(".mass-call-steps-list");
+  if (document.querySelector(".tabs")) {
+    let lists = document.querySelectorAll(".tabs-list");
     lists.forEach((el) => {
-      let list = el.closest(".mass-call-steps-list");
+      let list = el.closest(".tabs-list");
       let links = list.querySelectorAll("li[data-box]");
       links.forEach((el) => {
         el.addEventListener("click", function (evt) {
@@ -20,6 +20,4 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
-
-  const cabinetRegisterUrl = "https://zvonok.com/manager/users/add/?country=ru";
 });

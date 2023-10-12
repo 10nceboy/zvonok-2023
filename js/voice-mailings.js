@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  cabinetRegisterUrl = "https://zvonok.com/manager/users/add/?country=ru";
-
   function createRangeSlider(containerSelector, tickValues) {
     const container = document.querySelector(containerSelector);
     const rangeInput = container.querySelector('input[type="range"]');

@@ -58,7 +58,9 @@
     <link rel="stylesheet" href="css/swiper.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/auto-calls.css" />
+    <link rel="stylesheet" href="css/tabs.css" />
     <link rel="stylesheet" href="css/mass-call.css" />
     <link rel="icon" href="img/favicon.svg" />
     <script src="js/swiper.js"></script>
@@ -393,7 +395,7 @@
       </div>
     </header>
     <main>
-      <div class="container mb-brc auto-calls-breadcrumbs">
+      <div class="container mb-brc mb-lg-0">
         <nav class="breadcrumbs-wrapper" aria-label="Главная">
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
@@ -405,9 +407,9 @@
           </ol>
         </nav>
       </div>
-      <section class="overflow-hidden pb115 auto-calls-hero">
+      <section class="overflow-hidden pb115 lg-pt-65">
         <div class="container">
-          <div class="auto-calls-flex mb85-60 auto-calls-hero-wrapper">
+          <div class="d-lg-flex mb85-60 hero-wrapper">
             <div class="col-lg-6 col-12 auto-calls-hero-left">
               <div class="auto-calls-hero-header">
                 <h1 class="h1-styled lh14 h1-noindex lh-13-14">
@@ -416,21 +418,26 @@
                 </h1>
               </div>
               <div
-                class="auto-calls-hero-imageblock mass-call-hero-imageblock mobile"
+                class="auto-calls-hero-imageblock mass-call-hero-imageblock d-lg-none"
               >
                 <img
-                  class="auto-calls-hero-image mass-call-hero-image mobile"
-                  src="img/decor/mass-call-hero-m .png"
+                  class="auto-calls-hero-image mass-call-hero-image d-720-none"
+                  src="img/decor/mass-call-hero-m.png"
+                  alt="Массовый обзвон"
+                />
+                <img
+                  class="auto-calls-hero-image mass-call-hero-image d-none d-720-block"
+                  src="img/decor/mass-call-hero.png"
                   alt="Массовый обзвон"
                 />
               </div>
               <div class="h1-desc color-light lh14">
                 Забудьте о&nbsp;рутинном наборе номера и&nbsp;долгих гудках.
                 Сервис поддерживает сотни одновременных звонков в&nbsp;секунду,
-                такой объём не обработает ни один колл-центр.
+                такой объём не&nbsp;обработает ни&nbsp;один колл-центр.
               </div>
               <button
-                class="btn btn-primary btn-p10-31 auto-calls-hero-button lh14"
+                class="btn btn-primary btn-p10-31 hero-button lh14"
                 data-bs-toggle="modal"
                 data-bs-target="#presentationModal"
               >
@@ -439,7 +446,7 @@
             </div>
             <div class="auto-calls-hero-imageblock mass-call-hero-imageblock">
               <img
-                class="auto-calls-hero-image desktop-only mass-call-hero-image"
+                class="auto-calls-hero-image d-none d-lg-block mass-call-hero-image"
                 src="img/decor/mass-call-hero.png"
                 alt="Массовый обзвон"
                 loading="lazy"
@@ -506,7 +513,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="advantages-slide">
-                  <div class="advantages-slide-head auto-calls-check">
+                  <div class="advantages-slide-head check-new">
                     <svg
                       width="35"
                       height="35"
@@ -537,7 +544,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="advantages-slide">
-                  <div class="advantages-slide-head auto-calls-check">
+                  <div class="advantages-slide-head check-new">
                     <svg
                       width="35"
                       height="35"
@@ -563,7 +570,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="advantages-slide">
-                  <div class="advantages-slide-head auto-calls-check">
+                  <div class="advantages-slide-head check-new">
                     <svg
                       width="35"
                       height="35"
@@ -587,7 +594,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="advantages-slide">
-                  <div class="advantages-slide-head auto-calls-check">
+                  <div class="advantages-slide-head check-new">
                     <svg
                       width="35"
                       height="35"
@@ -611,7 +618,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="advantages-slide">
-                  <div class="advantages-slide-head auto-calls-check">
+                  <div class="advantages-slide-head check-new">
                     <svg
                       width="35"
                       height="35"
@@ -635,7 +642,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="advantages-slide">
-                  <div class="advantages-slide-head auto-calls-check">
+                  <div class="advantages-slide-head check-new">
                     <svg
                       width="35"
                       height="35"
@@ -667,23 +674,19 @@
       </section>
       <section class="pt115 pb115 bg-grey-main">
         <div class="container">
-          <div class="auto-calls-flex auto-calls-focus-top al">
+          <div class="d-lg-flex auto-calls-focus-top al">
             <div class="col-lg-6 col-12 lg-mw-540">
-              <h2 class="h2-styled lh-13-14 auto-calls-h2">
+              <h2 class="h2-styled lh-13-14 h2">
                 Массовый обзвон клиентов в&nbsp;пару&nbsp;кликов
               </h2>
-              <div class="h2-desc no-mb-lg lh14">
-                <p
-                  class="auto-calls-focus-paragraph auto-calls-focus-paragraph-big color-light"
-                >
+              <div class="h2-desc mb-lg-0 lh14">
+                <p class="focus-paragrpah focus-paragrpah-big color-light">
                   Массовый обзвон помогает бизнесу быстро информировать клиентов
                   о&nbsp;новых продуктах и&nbsp;услугах, проводить телефонные
                   опросы, приглашать на&nbsp;мероприятия и&nbsp;проводить
                   маркетинговые исследования.
                 </p>
-                <p
-                  class="auto-calls-focus-paragraph auto-calls-focus-paragraph-big color-light"
-                >
+                <p class="focus-paragrpah focus-paragrpah-big color-light">
                   Когда робот закончит обзвон, вы&nbsp;получите подробный отчёт
                   о&nbsp;звонках&nbsp;и&nbsp;ответах клиентов.
                 </p>
@@ -699,7 +702,7 @@
                   Добавляйте аудиоролики для&nbsp;массового обзвона
                   любым&nbsp;способом:
                 </h3>
-                <ul class="time-block-list auto-calls-list lh14">
+                <ul class="time-block-list new-list lh14">
                   <li>Запишите свой голос онлайн</li>
                   <li>Загрузите готовый аудиоролик</li>
                   <li>Синтезируйте речь с&nbsp;помощью робота</li>
@@ -712,7 +715,7 @@
             <div class="advantages-slide auto-calls-focus-card-small">
               <div class="advantages-slide-head">
                 <svg
-                  class="auto-calls-card-icon"
+                  class="card-icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="35"
                   height="35"
@@ -755,7 +758,7 @@
             </div>
             <div class="advantages-slide auto-calls-focus-card-small">
               <div class="advantages-slide-head">
-                <div class="advantages-slide-head auto-calls-check">
+                <div class="advantages-slide-head check-new">
                   <img src="img/icons/check.png" alt="Готово!" />
                 </div>
               </div>
@@ -766,20 +769,20 @@
               </div>
             </div>
           </div>
-          <div class="auto-calls-flex auto-calls-focus-bottom confirm-card">
+          <div class="d-lg-flex auto-calls-focus-bottom confirm-card">
             <div
               class="col-lg-6 col-12 auto-calls-robot-left mass-call-robot-left"
             >
-              <h2 class="h2-styled lh-13-14 auto-calls-h2">
+              <h2 class="h2-styled lh-13-14 h2">
                 Массовый обзвон с&nbsp;нелинейными сценариями звонков
               </h2>
-              <p class="auto-calls-focus-paragraph color-light lh14">
+              <p class="focus-paragrpah color-light lh14">
                 Звонок умеет реагировать на&nbsp;ответы клиентов во&nbsp;время
                 разговора. Например, когда&nbsp;клиент задаёт вопрос
                 или&nbsp;нажимает цифру на&nbsp;телефоне, робот автоматически
                 меняет статус в&nbsp;вашей CRM-системе.
               </p>
-              <p class="auto-calls-focus-paragraph color-light lh14">
+              <p class="focus-paragrpah color-light lh14">
                 Когда массовый обзвон завершён — система создаёт подробный
                 отчёт. Вы сможете проанализировать все&nbsp;звонки, которые были
                 совершены, узнаете сколько длился разговор, что&nbsp;ответил
@@ -798,7 +801,7 @@
       </section>
       <section class="pt115 pb115">
         <div class="container">
-          <h2 class="h2-styled lh-13-14 auto-calls-h2 mass-call-promo-header">
+          <h2 class="h2-styled lh-13-14 h2 mass-call-promo-header">
             Массовый обзвон подходит для&nbsp;любых целей обзвона
           </h2>
           <p class="h2-desc mass-call-promo-desc mb55-45">
@@ -813,16 +816,16 @@
                 Холодный обзвон
               </h3>
               <div class="mass-calls-promo-card-top">
-                <div class="auto-calls-flex mass-call-promo-card-top">
+                <div class="d-lg-flex mass-call-promo-card-top">
                   <div class="mass-calls-promo-card-left lh14">
                     <p
-                      class="auto-calls-focus-paragraph mass-call-promo-card-desc color-light"
+                      class="focus-paragrpah mass-call-promo-card-desc color-light"
                     >
                       Автоматизированная связь с&nbsp;холодными клиентами
                       оказалась идеальным инструментом для&nbsp;лидогенерации.
                     </p>
                     <p
-                      class="auto-calls-focus-paragraph hmass-call-promo-card-desc mb-0 color-light"
+                      class="focus-paragrpah hmass-call-promo-card-desc mb-0 color-light"
                     >
                       С&nbsp;её помощью можно быстро создать поток людей,
                       которых заинтересовали товары или услуги, представляемые
@@ -830,7 +833,7 @@
                     </p>
                   </div>
                   <ul
-                    class="time-block-list auto-calls-list mass-calls-promo-list lh14"
+                    class="time-block-list new-list mass-calls-promo-list lh14"
                   >
                     <li>Презентуйте свой продукт новым клиентам</li>
                     <li>Рассказывайте об&nbsp;акциях и&nbsp;скидках</li>
@@ -854,12 +857,12 @@
                 Горячий обзвон
               </h3>
               <div class="mass-calls-promo-card-top">
-                <div class="auto-calls-flex mass-call-promo-card-top">
+                <div class="d-lg-flex mass-call-promo-card-top">
                   <div
                     class="mass-calls-promo-card-left mass-calls-promo-card-left-hot lh14"
                   >
                     <p
-                      class="auto-calls-focus-paragraph mass-call-promo-card-desc mb-0 color-light"
+                      class="focus-paragrpah mass-call-promo-card-desc mb-0 color-light"
                     >
                       Звонки горячим клиентам кардинально отличаются
                       от&nbsp;холодных. Этот вид обзвона использует так
@@ -868,7 +871,7 @@
                     </p>
                   </div>
                   <ul
-                    class="time-block-list auto-calls-list mass-calls-promo-list lh14"
+                    class="time-block-list new-list mass-calls-promo-list lh14"
                   >
                     <li>Подтверждайте заказы клиентов</li>
                     <li>Уточняйте наличие товара и&nbsp;сроки доставки</li>
@@ -890,7 +893,7 @@
       </section>
       <section class="auto-calls-table-section">
         <div class="container">
-          <h2 class="h2-styled lh-13-14 mb55-45 mobile auto-calls-h2">
+          <h2 class="h2-styled lh-13-14 mb55-45 d-lg-none h2">
             Оцените преимущества массового обзвона перед&nbsp;колл&#8209;центром
           </h2>
           <table class="auto-calls-table-wrapper w-100" id="advantage-table">
@@ -903,7 +906,7 @@
                 <th
                   class="auto-calls-table-cell color-light auto-calls-table-left auto-calls-table-cell-mobile-empty"
                 >
-                  <h2 class="h2-styled desktop-only auto-calls-h2">
+                  <h2 class="h2-styled d-none d-lg-blockh2">
                     Оцените преимущества массового обзвона
                     перед&nbsp;колл&#8209;центром
                   </h2>
@@ -1115,7 +1118,7 @@
               </tr>
               <tr class="auto-calls-table-row">
                 <td
-                  class="auto-calls-table-cell color-light auto-calls-table-left auto-calls-border-radius-left"
+                  class="auto-calls-table-cell color-light auto-calls-table-left border-radius-left"
                 >
                   Записывает каждый звонок
                 </td>
@@ -1125,7 +1128,7 @@
                   Нет
                 </td>
                 <td
-                  class="auto-calls-table-cell color-light auto-calls-table-cell-zvonok auto-calls-border-radius-right"
+                  class="auto-calls-table-cell color-light auto-calls-table-cell-zvonok border-radius-left"
                 >
                   Да
                 </td>
@@ -1134,39 +1137,39 @@
           </table>
         </div>
       </section>
-      <section class="auto-calls-answer pb115">
+      <section class="answer pb115">
         <div class="container">
           <div class="row gx-sm-5 gx-2 gy-0 mt-0">
             <div class="col-12">
-              <div class="feedback-block auto-calls-feedback">
-                <div class="auto-calls-flex">
+              <div class="feedback-block new-feedback">
+                <div class="d-lg-flex">
                   <div class="auto-calls-card-right">
                     <h2 class="h2-styled lh-13-14">
                       Настроим массовый обзвон и&nbsp;ответим на&nbsp;<span
-                        class="any-q auto-calls-any"
+                        class="any-q new-any"
                         >любые&nbsp;вопросы</span
                       >
                     </h2>
                   </div>
                   <form
                     action="#"
-                    class="auto-calls-register-form auto-calls-answer-right"
+                    class="new-register-form answer-right"
                     onsubmit="event.preventDefault(); 
                      cabinetRegisterRedirect(this)"
                   >
                     <input
-                      class="form-input form-number auto-calls-register-input w-100"
+                      class="form-input form-number new-register-input w-100"
                       type="tel"
                       name="phone"
                       placeholder="Номер телефона"
                     />
                     <button
-                      class="btn btn-primary auto-calls-register-button w-100"
+                      class="btn btn-primary register-button w-100"
                       type="submit"
                     >
                       Регистрация
                     </button>
-                    <div class="form-desc auto-calls-form-desc lh14">
+                    <div class="form-desc new-form-desc lh14">
                       Отправляя форму, вы даете согласие на обработку
                       <a
                         class="form-link"
@@ -1182,35 +1185,27 @@
           </div>
         </div>
       </section>
-      <div class="overflow-hidden">
+      <section class="overflow-hidden">
         <div class="container">
-          <div
-            class="auto-calls-flex align-items-center mass-call-steps-header"
-          >
+          <div class="d-lg-flex align-items-center tabs-header">
             <div class="col-12 lg-mw-540">
-              <h2
-                class="h2-styled auto-calls-h2 lh-13-14 mass-call-steps-h2 no-mb-lg"
-              >
+              <h2 class="h2-styled h2 lh-13-14 tabs-h2 mb-lg-0">
                 Запустите массовый обзвон клиентов за&nbsp;пару минут
               </h2>
             </div>
-            <div
-              class="mass-call-detail-instruction lh-14 color-light no-mb-lg"
-            >
+            <div class="mass-call-detail-instruction lh-14 color-light mb-lg-0">
               <p class="mass-call-detail-instruction-desc">
                 Поможем разобраться в&nbsp;настройках массового обзвона, ответим
                 на&nbsp;вопросы и&nbsp;запустим кампанию любой сложности.
               </p>
             </div>
           </div>
-          <div
-            class="row steps steps-js autocall-steps mass-call-steps mb-lg-0"
-          >
-            <div class="mass-call-steps-left">
-              <ul class="order-lg-first order-last mass-call-steps-list">
+          <div class="row steps steps-js tabs mb-lg-0">
+            <div class="tabs-left">
+              <ul class="order-lg-first order-last tabs-list">
                 <li class="active" data-box="1">
                   <svg
-                    class="mass-call-step-icon"
+                    class="tab-icon"
                     width="30"
                     height="30"
                     viewBox="0 0 30 30"
@@ -1223,9 +1218,7 @@
                     ></path>
                   </svg>
                   <div>
-                    <h4 class="mass-call-step-h4">
-                      Зарегистрируйтесь или войдите
-                    </h4>
+                    <h4 class="tabs-h4">Зарегистрируйтесь или войдите</h4>
                     <span class="color-light"
                       >Примите звонок и&nbsp;подтвердите регистрацию или
                       вход</span
@@ -1234,7 +1227,7 @@
                 </li>
                 <li data-box="2">
                   <svg
-                    class="mass-call-step-icon"
+                    class="tab-icon"
                     width="30"
                     height="30"
                     viewBox="0 0 30 30"
@@ -1247,7 +1240,7 @@
                     ></path>
                   </svg>
                   <div>
-                    <h4 class="mass-call-step-h4">
+                    <h4 class="tabs-h4">
                       Выберите кампанию и&nbsp;создайте её
                     </h4>
                     <span class="color-light"
@@ -1258,7 +1251,7 @@
                 </li>
                 <li data-box="3">
                   <svg
-                    class="mass-call-step-icon"
+                    class="tab-icon"
                     width="30"
                     height="30"
                     viewBox="0 0 30 30"
@@ -1271,9 +1264,7 @@
                     ></path>
                   </svg>
                   <div>
-                    <h4 class="mass-call-step-h4">
-                      Настройте кампанию и&nbsp;сохраните
-                    </h4>
+                    <h4 class="tabs-h4">Настройте кампанию и&nbsp;сохраните</h4>
                     <span class="color-light"
                       >Укажите название и&nbsp;подготовьте кампанию
                       для&nbsp;тестового звонка.</span
@@ -1282,7 +1273,7 @@
                 </li>
                 <li data-box="4">
                   <svg
-                    class="mass-call-step-icon"
+                    class="tab-icon"
                     width="35"
                     height="35"
                     viewBox="0 0 35 35"
@@ -1302,7 +1293,7 @@
                     </defs>
                   </svg>
                   <div>
-                    <h4 class="mass-call-step-h4">Совершите тестовый звонок</h4>
+                    <h4 class="tabs-h4">Совершите тестовый звонок</h4>
                     <span class="color-light"
                       >Укажите номер для&nbsp;звонка и&nbsp;запустите
                       робота.</span
@@ -1311,7 +1302,7 @@
                 </li>
                 <li data-box="5">
                   <svg
-                    class="mass-call-step-icon"
+                    class="tab-icon"
                     width="30"
                     height="30"
                     viewBox="0 0 30 30"
@@ -1330,22 +1321,22 @@
               </ul>
             </div>
             <div
-              class="col-lg-7 col-12 order-lg-last order-first position-relative-md bg-grey-main mass-call-steps-right"
+              class="col-lg-7 col-12 order-lg-last order-first position-relative-md bg-grey-main tabs-right"
             >
               <div class="position-relative">
                 <div
-                  class="mass-call-step-box hidden visible d-block bg-grey-main"
+                  class="tab-box hidden visible d-block bg-grey-main"
                   data-box-item="1"
                 >
-                  <div class="mass-call-step-imageblock bg-grey-main">
+                  <div class="tab-imageblock bg-grey-main">
                     <img
-                      class="d-block d-sm-none mass-call-step-image"
+                      class="d-block d-sm-none tab-image"
                       src="img/mass-call-steps/mass-call-step1-m.png"
                       alt="Шаг 1: Регистрация"
                       loading="lazy"
                     />
                     <img
-                      class="d-none d-sm-block mass-call-step-image"
+                      class="d-none d-sm-block tab-image"
                       width="595"
                       height="380"
                       src="img/mass-call-steps/mass-call-step1.png"
@@ -1353,33 +1344,31 @@
                       loading="lazy"
                     />
                   </div>
-                  <p
-                    class="d-none d-md-block color-light lh14 mass-call-step-desc"
-                  >
+                  <p class="d-none d-md-block color-light lh14 tab-desc">
                     Укажите свой номер телефона для регистрации в&nbsp;Звонке.
                     Вам&nbsp;поступит звонок для подтверждения ваших данных.
                   </p>
                   <form
                     action="#"
                     onsubmit="event.preventDefault(); cabinetRegisterRedirect(this)"
-                    class="auto-calls-register-form auto-calls-try-form mass-call-register-form d-none d-md-grid"
+                    class="new-register-form try-form tab-register-form d-none d-md-grid"
                   >
                     <input
-                      class="form-input form-number d-none d-md-block auto-calls-register-input w-100 mass-call-register-input bg-grey-main"
+                      class="form-input form-number d-none d-md-block new-register-input w-100 tabs-register-input bg-grey-main"
                       type="tel"
                       name="phone"
                       placeholder="Номер телефона"
                     />
                     <button
-                      class="btn btn-primary auto-calls-register-button w-100 mass-call-register-button"
+                      class="btn btn-primary register-button w-100 tabs-register-button"
                       type="submit"
                     >
                       Регистрация
                     </button>
-                    <div class="form-desc auto-calls-form-desc">
+                    <div class="form-desc new-form-desc">
                       Отправляя форму, вы даете согласие на обработку
                       <a
-                        class="form-link mass-call-form-link"
+                        class="form-link tab-form-link"
                         aria-label="Отправляя форму, вы даете согласие на обработку персональных данных"
                         href="https://zvonok.com/ru-ru/documents/policy/"
                         >персональных данных</a
@@ -1387,26 +1376,23 @@
                     </div>
                   </form>
                   <button
-                    class="btn btn-primary btn-p10-31 lh14 mobile d-md-none w-100"
+                    class="btn btn-primary btn-p10-31 lh14 d-lg-none d-md-none w-100"
                     data-bs-toggle="modal"
                     data-bs-target="#registrationModal"
                   >
                     Регистрация
                   </button>
                 </div>
-                <div
-                  class="mass-call-step-box hidden bg-grey-main"
-                  data-box-item="2"
-                >
-                  <div class="mass-call-step-imageblock bg-grey-main">
+                <div class="tab-box hidden bg-grey-main" data-box-item="2">
+                  <div class="tab-imageblock bg-grey-main">
                     <img
-                      class="d-block d-sm-none mass-call-step-image"
+                      class="d-block d-sm-none tab-image"
                       src="img/mass-call-steps/mass-call-step2-m.png"
                       alt="Шаг 2: Выбор компании"
                       loading="lazy"
                     />
                     <img
-                      class="d-none d-sm-block mass-call-step-image mass-call-step-2-image"
+                      class="d-none d-sm-block tab-image tab-2-image"
                       width="629"
                       height="380"
                       src="img/mass-call-steps/mass-call-step2.png"
@@ -1415,14 +1401,14 @@
                     />
                   </div>
                   <p
-                    class="d-none d-md-block color-light lh14 mass-call-step-desc no-mb-lg"
+                    class="d-none d-md-block color-light lh14 tab-desc mb-lg-0"
                   >
                     В&nbsp;левом меню выберите продукт «Автоматический обзвон»,
                     нажмите «Создать кампанию» и&nbsp;выберите кампанию «Обзвон
                     по&nbsp;списку через кабинет».
                   </p>
                   <button
-                    class="btn lh14 mobile d-md-none w-100 bg-grey-main border-none mass-call-know-button"
+                    class="btn lh14 d-lg-none d-md-none w-100 bg-grey-main border-none tabs-know-button"
                     data-bs-toggle="modal"
                     data-bs-target="#companyModal"
                   >
@@ -1430,18 +1416,18 @@
                   </button>
                 </div>
                 <div
-                  class="mass-call-step-box mass-call-step-3-box hidden bg-grey-main"
+                  class="tab-box tab-3-box hidden bg-grey-main"
                   data-box-item="3"
                 >
-                  <div class="mass-call-step-imageblock bg-grey-main">
+                  <div class="tab-imageblock bg-grey-main">
                     <img
-                      class="d-block d-sm-none mass-call-step-image"
+                      class="d-block d-sm-none tab-image"
                       src="img/mass-call-steps/mass-call-step3-m.png"
                       alt="Шаг 3: Настройки компании"
                       loading="lazy"
                     />
                     <img
-                      class="d-none d-sm-block mass-call-step-image mass-call-step-2-image"
+                      class="d-none d-sm-block tab-image tab-2-image"
                       width="629"
                       height="380"
                       src="img/mass-call-steps/mass-call-step3.png"
@@ -1450,7 +1436,7 @@
                     />
                   </div>
                   <p
-                    class="d-none d-md-block color-light lh14 mass-call-step-desc mass-call-step-3-desc"
+                    class="d-none d-md-block color-light lh14 tab-desc tab-3-desc"
                   >
                     В&nbsp;разделе «Аудиоролик» нажмите «Выбрать ролик
                     из&nbsp;Мои аудиоролики». Это аудиосообщение будет слышать
@@ -1458,13 +1444,13 @@
                     аудиоролик или выбрать один из&nbsp;вариантов озвучки.
                   </p>
                   <p
-                    class="d-none d-md-block color-light lh14 mass-call-step-desc mass-call-step-3-desc no-mb-lg"
+                    class="d-none d-md-block color-light lh14 tab-desc tab-3-desc mb-lg-0"
                   >
                     Нажмите «Создать и&nbsp;запустить» внизу страницы, остальные
                     настройки можно оставить по&nbsp;умолчанию.
                   </p>
                   <button
-                    class="btn lh14 mobile d-md-none w-100 bg-grey-main border-none mass-call-know-button"
+                    class="btn lh14 d-lg-none d-md-none w-100 bg-grey-main border-none tabs-know-button"
                     data-bs-toggle="modal"
                     data-bs-target="#companySettingModal"
                   >
@@ -1472,18 +1458,18 @@
                   </button>
                 </div>
                 <div
-                  class="mass-call-step-box mass-call-step-3-box hidden bg-grey-main"
+                  class="tab-box tab-3-box hidden bg-grey-main"
                   data-box-item="4"
                 >
-                  <div class="mass-call-step-imageblock bg-grey-main">
+                  <div class="tab-imageblock bg-grey-main">
                     <img
-                      class="d-block d-sm-none mass-call-step-image"
+                      class="d-block d-sm-none tab-image"
                       src="img/mass-call-steps/mass-call-step4-m.png"
                       alt="Шаг 4: Тестовый звонок"
                       loading="lazy"
                     />
                     <img
-                      class="d-none d-sm-block mass-call-step-image mass-call-step-2-image"
+                      class="d-none d-sm-block tab-image tab-2-image"
                       width="629"
                       height="380"
                       src="img/mass-call-steps/mass-call-step4.png"
@@ -1492,20 +1478,20 @@
                     />
                   </div>
                   <p
-                    class="d-none d-md-block color-light lh14 mass-call-step-desc mass-call-step-3-desc"
+                    class="d-none d-md-block color-light lh14 tab-desc tab-3-desc"
                   >
                     Для&nbsp;совершения звонка внизу страницы созданной кампании
                     нажмите «Тестовый звонок», в&nbsp;открывшемся окне укажите
                     номер и&nbsp;нажмите «Вызвать».
                   </p>
                   <p
-                    class="d-none d-md-block color-light lh14 mass-call-step-desc mass-call-step-3-desc no-mb-lg"
+                    class="d-none d-md-block color-light lh14 tab-desc tab-3-desc mb-lg-0"
                   >
                     Ознакомиться с&nbsp;результатом звонка и&nbsp;прослушать
                     запись можно по&nbsp;кнопке «Посмотреть статистику».
                   </p>
                   <button
-                    class="btn lh14 mobile d-md-none w-100 bg-grey-main border-none mass-call-know-button"
+                    class="btn lh14 d-lg-none d-md-none w-100 bg-grey-main border-none tabs-know-button"
                     data-bs-toggle="modal"
                     data-bs-target="#testModal"
                   >
@@ -1513,18 +1499,18 @@
                   </button>
                 </div>
                 <div
-                  class="mass-call-step-box mass-call-step-3-box hidden bg-grey-main"
+                  class="tab-box tab-3-box hidden bg-grey-main"
                   data-box-item="5"
                 >
-                  <div class="mass-call-step-imageblock bg-grey-main">
+                  <div class="tab-imageblock bg-grey-main">
                     <img
-                      class="d-block d-sm-none mass-call-step-image"
+                      class="d-block d-sm-none tab-image"
                       src="img/mass-call-steps/mass-call-step5-m.png"
                       alt="Шаг 5: Готово! Робот уже звонит"
                       loading="lazy"
                     />
                     <img
-                      class="d-none d-sm-block mass-call-step-image mass-call-step-2-image"
+                      class="d-none d-sm-block tab-image tab-2-image"
                       width="629"
                       height="380"
                       src="img/mass-call-steps/mass-call-step5.png"
@@ -1533,17 +1519,17 @@
                     />
                   </div>
                   <p
-                    class="d-none d-md-block color-light lh14 mass-call-step-desc mass-call-step-3-desc"
+                    class="d-none d-md-block color-light lh14 tab-desc tab-3-desc"
                   >
                     Фиксируйте действия абонента, например нажатие клавиш
-                    на&nbsp;телефоне или команды голосом. Для этого
+                    на&nbsp;телефоне или команды голосом. Для&nbsp;этого
                     в&nbsp;разделе «Установите реакцию на&nbsp;действие клиентов
                     в IVR» снимите галочку «Кампания не&nbsp;предусматривает
                     действий клиента» и&nbsp;затем нажмите «Создать новый
                     IVR-сценарий».
                   </p>
                   <p
-                    class="d-none d-md-block color-light lh14 mass-call-step-desc mass-call-step-3-desc no-mb-lg"
+                    class="d-none d-md-block color-light lh14 tab-desc tab-3-desc mb-lg-0"
                   >
                     Подробную инструкцию можно посмотреть
                     <a
@@ -1556,7 +1542,7 @@
                     >
                   </p>
                   <button
-                    class="btn lh14 mobile d-md-none w-100 bg-grey-main border-none mass-call-know-button"
+                    class="btn lh14 d-lg-none d-md-none w-100 bg-grey-main border-none tabs-know-button"
                     data-bs-toggle="modal"
                     data-bs-target="#readyModal"
                   >
@@ -1567,12 +1553,12 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <section class="pb115 pt115">
         <div class="container">
           <div class="row mb55-45">
             <div class="col-12">
-              <h2 class="h2-styled lh-13-14 mb-0 auto-calls-h2 lh-13-14">
+              <h2 class="h2-styled lh-13-14 mb-0 h2 lh-13-14">
                 Ответы на&nbsp;часто задаваемые вопросы
               </h2>
             </div>
@@ -1591,7 +1577,7 @@
               >
                 <h3 class="accordion-header" id="panelsStayOpen-heading1">
                   <button
-                    class="accordion-button auto-calls-accordion-header"
+                    class="accordion-button accordion-header-new"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapse1"
@@ -1613,7 +1599,7 @@
                     itemprop="acceptedAnswer"
                     itemtype="https://schema.org/Answer"
                   >
-                    <p itemprop="text" class="auto-calls-faq-paragraph">
+                    <p itemprop="text" class="faq-paragrpah">
                       После завершения обзвона, в&nbsp;личном кабинете Звонка
                       появится детальный отчёт. Вы увидите количество звонков,
                       сколько длился разговор, кто не&nbsp;принял звонок
@@ -1632,7 +1618,7 @@
               >
                 <h3 class="accordion-header" id="panelsStayOpen-heading2">
                   <button
-                    class="accordion-button collapsed auto-calls-accordion-header"
+                    class="accordion-button collapsed accordion-header-new"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapse2"
@@ -1654,7 +1640,7 @@
                     itemprop="acceptedAnswer"
                     itemtype="https://schema.org/Answer"
                   >
-                    <p itemprop="text" class="auto-calls-faq-paragraph">
+                    <p itemprop="text" class="faq-paragrpah">
                       Да, конечно. Робот может преобразовать ваш текст
                       в&nbsp;готовый аудиоролик. Вы также можете воспользоваться
                       услугой озвучки профессиональных дикторов или загрузить
@@ -1673,7 +1659,7 @@
               >
                 <h3 class="accordion-header" id="panelsStayOpen-heading3">
                   <button
-                    class="accordion-button collapsed auto-calls-accordion-header"
+                    class="accordion-button collapsed accordion-header-new"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapse3"
@@ -1695,7 +1681,7 @@
                     itemprop="acceptedAnswer"
                     itemtype="https://schema.org/Answer"
                   >
-                    <p itemprop="text" class="auto-calls-faq-paragraph">
+                    <p itemprop="text" class="faq-paragrpah">
                       Да, вы можете настроить любые&nbsp;сценарии разговора.
                       Робот умеет реагировать на&nbsp;ответы клиента
                       и&nbsp;может отправить ему смс с&nbsp;дополнительной
@@ -1714,11 +1700,11 @@
                 itemtype="https://schema.org/Question"
               >
                 <h3
-                  class="accordion-header auto-calls-accordion-header"
+                  class="accordion-header accordion-header-new"
                   id="panelsStayOpen-heading4"
                 >
                   <button
-                    class="accordion-button collapsed auto-calls-accordion-header"
+                    class="accordion-button collapsed accordion-header-new"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapse4"
@@ -1741,7 +1727,7 @@
                     itemprop="acceptedAnswer"
                     itemtype="https://schema.org/Answer"
                   >
-                    <p itemprop="text" class="auto-calls-faq-paragraph">
+                    <p itemprop="text" class="faq-paragrpah">
                       Да, информируйте своих клиентов о&nbsp;сезонных акциях
                       и&nbsp;скидках или приглашайте на&nbsp;бесплатную
                       диагностику автомобиля.
@@ -1759,7 +1745,7 @@
               >
                 <h3 class="accordion-header" id="panelsStayOpen-heading5">
                   <button
-                    class="accordion-button collapsed auto-calls-accordion-header"
+                    class="accordion-button collapsed accordion-header-new"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapse5"
@@ -1781,10 +1767,10 @@
                     itemprop="acceptedAnswer"
                     itemtype="https://schema.org/Answer"
                   >
-                    <p itemprop="text" class="auto-calls-faq-paragraph">
+                    <p itemprop="text" class="faq-paragrpah">
                       Скачать детализацию можно в&nbsp;личном кабинете Звонка
                       и&nbsp;сохранить себе на&nbsp;устройство&nbsp;в формате
-                      <br class="desktop-only" />
+                      <br class="d-none d-lg-block" />
                       .XLXS. В&nbsp;ней отображаются параметры всех совершённых
                       звонков.
                     </p>
@@ -1801,7 +1787,7 @@
               >
                 <h3 class="accordion-header" id="panelsStayOpen-heading6">
                   <button
-                    class="accordion-button collapsed auto-calls-accordion-header"
+                    class="accordion-button collapsed accordion-header-new"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapse6"
@@ -1823,7 +1809,7 @@
                     itemprop="acceptedAnswer"
                     itemtype="https://schema.org/Answer"
                   >
-                    <p itemprop="text" class="auto-calls-faq-paragraph">
+                    <p itemprop="text" class="faq-paragrpah">
                       API Public Key — это секретный код, который идентифицирует
                       вашу учетную запись в&nbsp;сервисе Звонок.
                     </p>
@@ -1838,37 +1824,35 @@
         <div class="container">
           <div class="row gx-sm-5 gx-2 gy-lg-0 gy-3">
             <div class="col-12">
-              <div class="feedback-block auto-calls-feedback-big">
-                <div class="auto-calls-flex align-items-center">
+              <div class="feedback-block new-feedback-big">
+                <div class="d-lg-flex align-items-center">
                   <div class="col-lg-8 col-12 auto-calls-card-left">
                     <h2 class="h2-styled lh-13-14">
                       Запустите массовый обзор
-                      <span class="any-q auto-calls-any auto-calls-any-free"
-                        >бесплатно</span
-                      >
+                      <span class="any-q new-any new-any-free">бесплатно</span>
                     </h2>
-                    <div class="h2-desc mb-0 auto-calls-try-card-desc lh14">
+                    <div class="h2-desc mb-0 try-card-desc lh14">
                       Поможем настроить массовый обзор и&nbsp;ответим
                       на&nbsp;любые вопросы о&nbsp;работе сервиса.
                     </div>
                     <form
                       action="#"
                       onsubmit="event.preventDefault(); cabinetRegisterRedirect(this)"
-                      class="auto-calls-register-form auto-calls-try-form"
+                      class="new-register-form try-form"
                     >
                       <input
-                        class="form-input form-number auto-calls-register-input w-100"
+                        class="form-input form-number new-register-input w-100"
                         type="tel"
                         name="phone"
                         placeholder="Номер телефона"
                       />
                       <button
-                        class="btn btn-primary auto-calls-register-button w-100"
+                        class="btn btn-primary register-button w-100"
                         type="submit"
                       >
                         Регистрация
                       </button>
-                      <div class="form-desc auto-calls-form-desc">
+                      <div class="form-desc new-form-desc">
                         Отправляя форму, вы даете согласие на обработку
                         <a
                           class="form-link"
@@ -1879,9 +1863,7 @@
                       </div>
                     </form>
                   </div>
-                  <ul
-                    class="time-block-list auto-calls-list auto-calls-time-list lh14"
-                  >
+                  <ul class="time-block-list new-list time-list lh14">
                     <li>Посекундная тарификация</li>
                     <li>Более 10 000 звонков одновременно</li>
                     <li>Фильтр автоответчиков для&nbsp;экономии</li>
@@ -1896,7 +1878,7 @@
       </section>
       <section class="pb115 pt115 bg-grey-main">
         <div class="container">
-          <h2 class="h2-styled mb55-45 lh14 auto-calls-h2 lh-13-14">
+          <h2 class="h2-styled mb55-45 lh14 h2 lh-13-14">
             Звонок умеет гораздо больше!
           </h2>
           <div class="row gx-sm-5 gx-2 gy-lg-5 gy-3">
@@ -1935,12 +1917,12 @@
             </div>
             <div class="col-lg-4 col-12">
               <a
-                class="card-default card-default-white auto-calls-better-card"
+                class="card-default card-default-white better-card"
                 href="/api-call.html"
                 aria-label="Звонки по API"
               >
                 <div>
-                  <h3 class="h3-styled-card auto-calls-better-header lh-13-14">
+                  <h3 class="h3-styled-card better-header lh-13-14">
                     Звонки по&nbsp;API
                   </h3>
                   <div class="card-desc lh14">
@@ -1972,12 +1954,12 @@
           <div class="row gx-lg-5 gx-3 gy-lg-5 gy-3 mt-0">
             <div class="col-lg-4 col-md-6">
               <a
-                class="card-default card-default-white auto-calls-better-card"
+                class="card-default card-default-white better-card"
                 href="/confirmation.html"
                 aria-label="Подтверждение номера"
               >
                 <div>
-                  <h3 class="h3-styled-card auto-calls-better-header lh-13-14">
+                  <h3 class="h3-styled-card better-header lh-13-14">
                     Подтверждение номера
                   </h3>
                   <div class="card-desc lh14">
@@ -2005,12 +1987,12 @@
             </div>
             <div class="col-lg-4 col-md-6">
               <a
-                class="card-default card-default-white auto-calls-better-card"
+                class="card-default card-default-white better-card"
                 href="/predictive-calls.html"
                 aria-label="Автозвонки для колл&#8209;центра"
               >
                 <div>
-                  <h3 class="h3-styled-card auto-calls-better-header lh-13-14">
+                  <h3 class="h3-styled-card better-header lh-13-14">
                     Автозвонки для колл&#8209;центра
                   </h3>
                   <div class="card-desc lh14">
@@ -2040,18 +2022,16 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-4 col-12 auto-calls-delofon">
+            <div class="col-lg-4 col-12 delofon-new">
               <a
-                class="card-default card-default-white auto-calls-better-card"
+                class="card-default card-default-white better-card"
                 href="https://delofon.ru/"
                 target="_blank"
                 rel="noopener norefferer"
                 aria-label="Delofon.ru"
               >
                 <div>
-                  <h3 class="h3-styled-card auto-calls-better-header lh-13-14">
-                    Делофон
-                  </h3>
+                  <h3 class="h3-styled-card better-header lh-13-14">Делофон</h3>
                   <div class="card-desc lh14">
                     Виртуальная АТС для&nbsp;бизнеса.
                   </div>
@@ -2083,7 +2063,7 @@
           </div>
         </div>
       </section>
-      <section class="pt115 pb115 auto-calls-results">
+      <section class="pt115 pb115 results">
         <div class="container">
           <h3 class="h3-styled lh14 xl-mw-540">
             Как работает массовый обзвон и&nbsp;зачем он&nbsp;нужен?
@@ -2102,12 +2082,12 @@
               при этом без содержания физического call-центра с операторами.
               Записи хранятся 1 год.
             </p>
-            <p class="no-mb-lg color-light">
+            <p class="mb-lg-0">
               Принцип автоматизированной связи простой. Телефонный робот
               обзванивает номера из&nbsp;клиентской базы и когда собеседник
               снимает трубку, произносит заранее записанный ролик.
             </p>
-            <p class="color-light">
+            <p>
               Современные роботы выполняют голосовые рассылки, ведут сложные
               диалоги, интерпретируют получаемую информацию, задают вопросы
               и&nbsp;реагируют на ответы, перенаправляя разговор
@@ -2119,7 +2099,7 @@
               до&nbsp;начала тарификации, что&nbsp;является существенной
               экономией на&nbsp;коммуникации.
             </p>
-            <p class="no-mb-lg">
+            <p class="mb-lg-0">
               Максимаьная польза от&nbsp;внедрения такой программы
               в&nbsp;бизнес-процессы достигается за&nbsp;счёт объединения
               CRM-системы и&nbsp;IP-телефонии.
@@ -2132,13 +2112,13 @@
             <p class="mb-0">
               Плюсы роботизированной связи для&nbsp;бизнеса очевидные:
             </p>
-            <ul class="auto-calls-results-list">
+            <ul class="results-list">
               <li>максимальная разгрузка менеджеров;</li>
               <li>постоянная поддержка покупателей;</li>
               <li>возможность обзванивать огромное количество абонентов;</li>
               <li>низкая себестоимость связи.</li>
             </ul>
-            <p class="no-mb-lg">
+            <p class="mb-lg-0">
               И главное — услуги массового обзвона, предоставляемые нашим
               сервисом, позволяют повысить количество продаж и успешно решить
               многие другие стратегические задачи. Это&nbsp;позволяет компаниям
@@ -2155,7 +2135,7 @@
               и&nbsp;для&nbsp;выполнения других типичных для&nbsp;call-центра
               функций.
             </p>
-            <p class="no-mb-lg">
+            <p class="mb-lg-0">
               В&nbsp;целом, массовый обзвон — это мощный инструмент, который
               позволяет компаниям быстро и&nbsp;эффективно связаться
               с&nbsp;клиентами и&nbsp;решать различные задачи.
@@ -3282,7 +3262,7 @@
     >
       <div class="modal-dialog modal-dialog-centered consultation-modal">
         <div class="modal-content">
-          <div class="modal-header mass-call-modal-header">
+          <div class="modal-header new-modal-header">
             <button
               type="button"
               class="btn-close-modal"
@@ -3307,7 +3287,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <div class="modal-desc color-light mass-call-modal-desc text-start">
+            <div class="modal-desc color-light new-modal-desc text-start">
               Укажите свой номер телефона для&nbsp;регистрации в Звонке.
               Вам&nbsp;поступит звонок для&nbsp;подтверждения ваших данных.
             </div>
@@ -3320,14 +3300,14 @@
                 required
               />
               <button
-                class="btn btn-primary auto-calls-register-button w-100"
+                class="btn btn-primary register-button w-100"
                 type="submit"
               >
                 Регистрация
               </button>
               <div class="form-desc">
                 Отправляя форму, вы даете согласие на&nbsp;обработку
-                <a class="form-link mass-call-form-link" href="#"
+                <a class="form-link tab-form-link" href="#"
                   >персональных данных</a
                 >
               </div>
@@ -4308,6 +4288,7 @@
     <script src="js/magnific-popup.js"></script>
     <script src="js/sweet-scroll.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/mass-call.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/registerurl.js"></script>
   </body>
 </html>
