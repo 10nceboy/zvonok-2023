@@ -1,0 +1,21 @@
+@media screen and (min-width: 768px) {
+  .flash-call-get {
+    padding: 15px 13px 14px;
+    border-radius: 4px;
+    border: 1px solid #d4d4d4;
+  }
+
+  .flash-call-get-text {
+    max-width: 553px;
+    font-size: 15px;
+    color: #5a5a5a !important;
+  }
+
+  .flash-call-tab-3-desc {
+    margin-bottom: 20px !important;
+  }
+
+  
+}
+
+
