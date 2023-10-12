@@ -1,0 +1,542 @@
+.confirmations-hero-left {
+  box-shadow: 0px 0px 30px 0px rgba(244, 119, 76, 0.2);
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+
+.confirmations-hero-left-top {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.confirmations-hero-left-top,
+.confirmations-hero-left-bottom {
+  padding: 30px 15px;
+}
+
+.confirmations-hero-left-top {
+  min-height: 207px;
+}
+
+.confirmations-hero-left-bottom {
+  min-height: 182px;
+}
+
+.step-icon {
+  min-width: 15px;
+  min-height: 15px;
+  max-width: 15px;
+  max-height: 15px;
+  margin-right: 7px;
+  margin-bottom: 5px;
+}
+
+.confirmations-step-image {
+  position: absolute;
+  bottom: -10%;
+  right: 15px;
+}
+
+.confirmations-step-robot-image {
+  bottom: -16%;
+  right: 8px;
+}
+
+.confirmations-card {
+  padding: 25px 15px;
+}
+
+.confirmations-step-subtitle {
+  margin-bottom: 15px;
+}
+
+.confirmations-card-header {
+  margin-bottom: 10px;
+}
+
+.confirmations-card-desc {
+  margin-bottom: 15px;
+}
+
+.confirmations-marquee-list {
+  -webkit-animation-duration: 24s;
+  animation-duration: 24s;
+}
+
+.confirmations-marquee-list svg {
+  max-width: 5px;
+  max-height: 5px;
+}
+
+.confirmations-focus-list {
+  padding: 0px;
+}
+
+.confirmations-focus-list li {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.confirmations-focus-list svg {
+  margin: 5px 10px 0px 0px;
+  min-width: 25px;
+  min-height: 25px;
+}
+
+.confirmations-focus-note {
+  color: rgba(140, 140, 141, 0.73);
+  margin-top: 5px;
+}
+
+.confirmations-promo-card {
+  min-height: 169px;
+}
+
+.methods-card {
+  margin-bottom: 15px;
+}
+
+.methods-card-first-button {
+  margin-top: 5px;
+}
+
+.confirmations-price-modal-activator svg {
+  max-width: 15px;
+  max-height: 15px;
+  margin-bottom: 2px;
+}
+
+.confirmations-priceblock {
+  padding: 40px 10px;
+}
+
+.confirmations-detail-instruction {
+  margin-bottom: 45px;
+  max-width: 500px;
+}
+
+.scenario-cards {
+  margin-bottom: 55px;
+}
+
+.scenario-cards-row {
+  margin-bottom: 55px;
+}
+
+.scenario-card {
+  margin-top: 15px;
+  padding: 20px 15px;
+}
+
+.scenario-card-with-chip {
+  margin-top: 27px;
+}
+
+.scenario-chip {
+  position: absolute;
+  left: 50%;
+  top: -15%;
+  padding: 4px 13px;
+  border-radius: 20px;
+  transform: translateX(-50%);
+  min-width: max-content;
+  max-width: 180px;
+  max-height: 25px;
+}
+
+.scenario-chip svg {
+  max-width: 15px;
+  margin: 0px 4px 1px 0;
+}
+
+@media screen and (min-width: 425px) {
+  .confirmations-promo-card {
+    min-height: 149px;
+  }
+
+  .confirmations-price-modal-activator svg {
+    margin-bottom: 4px;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .confirmations-focus-list li {
+    font-size: 16px;
+    align-items: center;
+  }
+
+  .confirmations-focus-list svg {
+    margin-top: 0px;
+  }
+
+  .confirmations-marquee-list svg {
+    max-width: 10px;
+    max-height: 10px;
+  }
+
+  .confirmations-step {
+    font-size: 14px;
+  }
+
+  .confirmations-step svg {
+    margin-bottom: 0px;
+  }
+
+  .confirmations-step-image {
+    bottom: 0px;
+    right: 26px;
+  }
+
+  .confirmations-step-robot-image {
+    min-width: 110px;
+    bottom: -22px;
+  }
+
+  .confirmations-detail-instruction-desc {
+    margin-bottom: 5px !important;
+  }
+
+
+  .confirmations-price-modal-activator svg {
+    margin-bottom: 2px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .confirmations-priceblock {
+    padding: 40px 25px;
+  }
+
+  .confirmations-price-modal-activator svg {
+    max-width: 20px;
+    max-height: 20px;
+    margin-bottom: 4px;
+  }
+
+  .confirmations-focus-list li {
+    align-items: start;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media screen and (min-width: 720px) {
+  .confirmations-step-robot-image {
+    min-width: 115px;
+  }
+
+  .confirmations-focus-card,
+  .scenario-card {
+    padding: 30px 35px;
+  }
+
+  .scenario-card-desc {
+    font-size: 16px;
+  }
+
+  .confirmations-promo-card {
+    min-height: 169px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .confirmations-detail-instruction {
+    max-width: unset;
+  }
+
+  .confirmations-marquee-list svg {
+    max-width: 15px;
+    max-height: 15px;
+    min-height: 15px;
+  }
+
+  .confirmations-hero-left-top,
+  .confirmations-hero-left-bottom {
+    padding: 35px 20px;
+  }
+
+  .confirmations-hero-left-top {
+    min-height: 190px;
+  }
+
+  .confirmations-hero-left-bottom {
+    min-height: 152px;
+  }
+
+  .step-icon {
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    margin-bottom: 0px;
+  }
+
+  .confirmations-step {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .confirmations-step-subtitle {
+    margin-bottom: 20px;
+  }
+
+  .confirmations-step-robot-image {
+    min-width: 120px;
+  }
+
+  .confirmations-promo-card {
+    min-height: 149px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .confrimations-hero-wrapper {
+    padding-top: 25px;
+    align-items: center;
+  }
+
+  .confirmations-hero-left {
+    margin-left: 20px;
+  }
+
+  .confirmations-hero-left-top,
+  .confirmations-hero-left-bottom {
+    padding: 30px;
+    min-height: 224px;
+  }
+
+  .confirmations-step {
+    font-size: 15px;
+  }
+
+  .step-icon {
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    margin-top: 4px;
+  }
+
+  .confirmations-card {
+    padding: 35px 25px;
+    border-radius: 5px;
+  }
+
+  .confirmations-card-header {
+    font-size: 18px;
+  }
+
+  .confirmations-card-icon {
+    margin-bottom: 15px;
+  }
+
+  .confirmation-hero-card {
+    min-height: 228px;
+  }
+
+  .confirmation-hero-card-icon {
+    margin-bottom: 20px;
+  }
+
+  .confirmations-card:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  .confirmations-card-desc {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .scenario-cards {
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .confirmations-marquee-list li {
+    font-size: 25px;
+    margin-right: 20px !important;
+  }
+
+  .confirmations-marquee-list svg {
+    min-height: 10px;
+    min-width: 10px;
+    margin-bottom: 5px;
+  }
+
+  .confirmations-focus-card {
+    padding: 0px 35px;
+    margin-left: 25px;
+  }
+
+  .confirmations-focus-list li {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+
+  .confirmations-focus-list svg {
+    margin: 4px 10px 0px 0px;
+  }
+
+  .confirmations-promo-card-desc {
+    font-size: 15px;
+  }
+
+  .methods-card {
+    margin-bottom: 30px;
+  }
+
+  .methods-card-left {
+    max-width: 616px;
+  }
+
+  .methods-card-right {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+  }
+
+  .methods-robot-image {
+    max-width: 273px;
+    max-height: 201px;
+  }
+
+  .methods-card-first-button {
+    max-width: 202px;
+    margin-top: 0px;
+  }
+
+  .confirmations-priceblock {
+    padding: 55px;
+  }
+
+  .confirmations-price-desc {
+    font-size: 17px;
+  }
+
+  .confirmations-price-left {
+    margin-right: 40px;
+  }
+
+  .confirmations-price-list li {
+    font-size: 16px;
+  }
+
+  .confirmations-price-wrapper {
+    margin-bottom: 35px !important;
+  }
+
+  .confirmations-price-tooltip svg {
+    margin-bottom: 6px;
+  }
+
+  .confirmations-detail-instruction {
+    max-width: 465px;
+    margin-left: 35px;
+  }
+
+  .scenario-chip {
+    top: -12%;
+    max-height: 29px;
+  }
+
+  .confirmations-step-image {
+    bottom: 0px;
+    right: 26px;
+  }
+
+  .scenario-cards {
+    margin-bottom: 115px;
+  }
+
+  .scenario-card-order-3 {
+    grid-row-start: 2;
+    grid-column-end: 4;
+  }
+
+  .scenario-card-order-1 {
+    grid-row-start: 3;
+  }
+
+  .confirmations-step-robot-image {
+    min-width: 122px;
+    min-height: 159px;
+    bottom: -17%;
+    transform: rotateY(172deg) rotate(6deg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .confirmations-hero-left {
+    margin-left: 30px;
+    min-width: 540px;
+  }
+
+  .confirmations-hero-left-top,
+  .confirmations-hero-left-bottom {
+    padding: 45px;
+    min-height: 234px;
+    max-height: 234px;
+  }
+
+  .step-icon {
+    margin-right: 10px;
+  }
+
+  .confirmations-card-header {
+    font-size: 20px;
+  }
+
+  .confirmation-hero-card {
+    min-height: 241px;
+  }
+
+  .confirmations-card-desc,
+  .confirmations-promo-card-desc {
+    font-size: 18px;
+  }
+
+  .confirmations-focus-card {
+    padding: 0px 45px;
+  }
+
+  .methods-card {
+    max-height: 230px;
+  }
+
+  .methods-card-right {
+    right: 80px;
+  }
+
+  .methods-robot-image {
+    max-width: 341px;
+    max-height: 201px;
+  }
+
+  .confirmations-card {
+    max-width: 350px;
+  }
+
+  .confirmations-card:not(:first-child) {
+    margin-left: 30px;
+  }
+
+  .confirmations-price-desc {
+    font-size: 20px;
+  }
+
+  .confirmations-price-left {
+    margin-right: 75px;
+  }
+
+  .confirmations-price-list {
+    margin-top: 15px !important;
+  }
+
+  .confirmations-price-list li {
+    font-size: 18px;
+  }
+
+  .confirmations-detail-instruction {
+    margin-left: 105px;
+  }
+}
