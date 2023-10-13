@@ -68,7 +68,7 @@
 
 .confirmations-marquee-list {
   animation-duration: 20s;
-  animation: marquee 20s linear-infinite;
+  animation-name:marquee;
 }
 
 @keyframes marquee {
