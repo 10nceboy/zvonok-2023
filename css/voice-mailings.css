@@ -93,14 +93,16 @@ input[type="range"]::-ms-track {
   margin-bottom: 25px !important;
 }
 
-
-
 .mailings-calc-caption-small {
   font-size: 13px;
 }
 
 .mailings-calc-duration-caption {
   margin-top: 57px;
+}
+
+.mailings-calc-total {
+  font-size: 26px;
 }
 
 .mailings-calc-value {
@@ -119,6 +121,12 @@ input[type="range"]::-ms-track {
   min-height: 301px;
 }
 
+@media screen and (min-width: 375px) {
+  .mailings-calc-total {
+    font-size: 28px;
+  }
+}
+
 @media screen and (min-width: 520px) {
   .mailings-calc-header {
     font-size: 18px;
@@ -131,6 +139,12 @@ input[type="range"]::-ms-track {
   .mailings-calc-caption-small,
   .mailings-calc-milestone {
     font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .mailings-calc-total {
+    font-size: 30px;
   }
 }
 
@@ -167,6 +181,10 @@ input[type="range"]::-ms-track {
 
   .mailings-focus-card-header {
     font-size: 19px;
+  }
+
+  .mailings-calc-total {
+    font-size: 35px;
   }
 
   .mailings-calc {
@@ -227,18 +245,12 @@ input[type="range"]::-ms-track {
   }
 
   .mailings-calc-price-wrapper {
-    max-width: 286px;
+    max-width: 320px;
     min-width: 286px;
     margin: 0px !important;
   }
 
-  .mailings-calc-total {
-    max-width: unset;
-    min-width: unset;
-  }
-
   .mailings-calc-button {
-    margin-left: 31px;
     max-width: 321px;
     max-height: 41px;
   }
@@ -277,9 +289,10 @@ input[type="range"]::-ms-track {
   }
 
   .mailings-calc-price-wrapper {
-    max-width: 290px;
-    min-width: 286px;
+    max-width: 360px;
+    min-width: 360px;
     margin: 0 !important;
+    flex: 1 1 auto;
   }
 
   .mailings-calc-choose-caption {
