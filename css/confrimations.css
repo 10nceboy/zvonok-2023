@@ -1,3 +1,7 @@
+.fit-content {
+  max-width: fit-content;
+}
+
 .confirmations-hero-left {
   box-shadow: 0px 0px 30px 0px rgba(244, 119, 76, 0.2);
   border-radius: 7px;
@@ -19,6 +23,10 @@
 
 .confirmations-hero-left-bottom {
   min-height: 182px;
+}
+
+.confirmation-hero-card {
+  min-height: 204px;
 }
 
 .step-icon {
@@ -51,6 +59,7 @@
 
 .confirmations-card-header {
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .confirmations-card-desc {
@@ -58,14 +67,28 @@
 }
 
 .confirmations-marquee-list {
-  -webkit-animation-duration: 24s;
-  animation-duration: 24s;
+  animation-duration: 20s;
+  animation: marquee 20s linear-infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .confirmations-marquee-list svg {
   max-width: 5px;
   max-height: 5px;
 }
+
+
 
 .confirmations-focus-list {
   padding: 0px;
@@ -89,6 +112,10 @@
 
 .confirmations-promo-card {
   min-height: 169px;
+}
+
+.methods-subheader {
+  font-size: 18px;
 }
 
 .methods-card {
@@ -143,18 +170,52 @@
   max-height: 25px;
 }
 
+.api-link {
+  font-weight: 600;
+}
+
+.api-link:hover,
+.methods-know-button:hover,
+.get-link:hover {
+  color: #f25f2d;
+}
+
 .scenario-chip svg {
   max-width: 15px;
   margin: 0px 4px 1px 0;
 }
 
+.confirmations-arrow-button {
+  min-width: 40px !important;
+}
+
+@media screen and (min-width: 375px) {
+  .confirmation-hero-card {
+    min-height: 154px;
+  }
+}
+
+@media screen and (min-width: 390px) {
+  .confirmations-price-desc {
+    font-size: 14px;
+  }
+}
+
 @media screen and (min-width: 425px) {
+  .confirmation-hero-card {
+    min-height: 161px;
+  }
+
   .confirmations-promo-card {
     min-height: 149px;
   }
 
   .confirmations-price-modal-activator svg {
     margin-bottom: 4px;
+  }
+
+  .confirmations-price-desc {
+    font-size: 15px;
   }
 }
 
@@ -195,7 +256,6 @@
     margin-bottom: 5px !important;
   }
 
-
   .confirmations-price-modal-activator svg {
     margin-bottom: 2px;
   }
@@ -217,6 +277,13 @@
     margin-bottom: 20px;
   }
 
+  .confrimations-cost-modal {
+    padding: 20px;
+  }
+
+  .confrimations-cost-modal-close {
+    top: -40px !important;
+  }
 }
 
 @media screen and (min-width: 720px) {
@@ -234,11 +301,15 @@
   }
 
   .confirmations-promo-card {
-    min-height: 169px;
+    min-height: 189px;
   }
 }
 
 @media screen and (min-width: 767px) {
+  .confirmation-hero-card {
+    min-height: 220px;
+  }
+
   .confirmations-detail-instruction {
     max-width: unset;
   }
@@ -321,10 +392,6 @@
     border-radius: 5px;
   }
 
-  .confirmations-card-header {
-    font-size: 18px;
-  }
-
   .confirmations-card-icon {
     margin-bottom: 15px;
   }
@@ -357,6 +424,10 @@
     margin-right: 20px !important;
   }
 
+  .confirmations-marquee-list li:last-child {
+    margin-right: 10px !important;
+  }
+
   .confirmations-marquee-list svg {
     min-height: 10px;
     min-width: 10px;
@@ -387,6 +458,10 @@
 
   .methods-card-left {
     max-width: 616px;
+  }
+
+  .methods-subheader {
+    font-size: 25px;
   }
 
   .methods-card-right {
