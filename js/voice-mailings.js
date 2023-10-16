@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       totalPriceSpan.innerHTML = `${
         parseFloat(
           quantity * 0.03 +
-            Number((duration * quantity * 0.032).toFixed(2), 10),
+            Number((duration * quantity * (1.9 / 60)).toFixed(2), 10),
           10
         ).toFixed(2) * 1
       }&nbsp;₽`;
