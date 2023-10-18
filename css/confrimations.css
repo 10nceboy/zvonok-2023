@@ -71,6 +71,8 @@
   animation-name:marquee;
 }
 
+
+
 @keyframes marquee {
   0% {
     transform: translateX(0%);
@@ -170,6 +172,16 @@
   max-height: 25px;
 }
 
+
+.scenario-chip :before {
+  width: 15px;
+  height:15px;
+  display: inline-block;
+  content:"";
+  background:url("../img/icons/star-mobile.svg") no-repeat center center;
+  margin: 0px 4px -2px 0;
+}
+
 .api-link {
   font-weight: 600;
 }
@@ -180,10 +192,6 @@
   color: #f25f2d;
 }
 
-.scenario-chip svg {
-  max-width: 15px;
-  margin: 0px 4px 1px 0;
-}
 
 .confirmations-arrow-button {
   min-width: 40px !important;
@@ -513,6 +521,15 @@
     top: -12%;
     max-height: 29px;
   }
+
+ 
+.scenario-chip :before {
+  width: 20px;
+  height:20px;
+  background-image:url("../img/icons/star.svg");
+  margin: 0px 4px -3px 0;
+}
+  
 
   .confirmations-step-image {
     bottom: 0px;
