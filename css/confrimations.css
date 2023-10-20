@@ -8,13 +8,18 @@
   margin-bottom: 20px;
 }
 
-.confirmations-hero-left-top {
-  border-bottom: 1px solid #e6e6e6;
-}
+
 
 .confirmations-hero-left-top,
 .confirmations-hero-left-bottom {
   padding: 30px 15px;
+  display: flex;
+  flex-direction:column;
+}
+
+.confirmations-input {
+  background-color:#F5F5F5;
+  border-radius:20px 0px 0px 20px;
 }
 
 .confirmations-hero-left-top {
@@ -23,6 +28,7 @@
 
 .confirmations-hero-left-bottom {
   min-height: 182px;
+  background-color:#E4E4E4;
 }
 
 .confirmation-hero-card {
@@ -69,6 +75,11 @@
 .confirmations-marquee-list {
   animation-duration: 20s;
   animation-name:marquee;
+}
+
+
+.confirmations-politics a {
+  color:#F4774C;
 }
 
 
@@ -195,6 +206,10 @@
 
 .confirmations-arrow-button {
   min-width: 40px !important;
+  background-color:#F5F5F5;
+  margin-left: 0px;
+ border-right:1px solid var(--color-grey-med, #AEAEAE);
+ border-radius:0px 20px 20px 0px;
 }
 
 @media screen and (min-width: 375px) {
@@ -251,7 +266,6 @@
   }
 
   .confirmations-step-image {
-    bottom: 0px;
     right: 26px;
   }
 
@@ -377,9 +391,20 @@
     margin-left: 20px;
   }
 
+
+  .confirmations-input {
+    border-radius:20px;
+    max-width: 300px;
+  }
+
+  .confirmations-arrow-button {
+    margin-left: 10px;
+  }
+
+
   .confirmations-hero-left-top,
   .confirmations-hero-left-bottom {
-    padding: 30px;
+    padding: 40px;
     min-height: 224px;
   }
 
@@ -532,7 +557,7 @@
   
 
   .confirmations-step-image {
-    bottom: 0px;
+    bottom: 28px;
     right: 26px;
   }
 
@@ -552,7 +577,7 @@
   .confirmations-step-robot-image {
     min-width: 122px;
     min-height: 159px;
-    bottom: -17%;
+    bottom: -12%;
     transform: rotateY(172deg) rotate(6deg);
   }
 }
@@ -565,9 +590,9 @@
 
   .confirmations-hero-left-top,
   .confirmations-hero-left-bottom {
-    padding: 45px;
-    min-height: 234px;
-    max-height: 234px;
+    padding: 50px 94px;
+    min-height: 261px;
+    max-height: 261px;
   }
 
   .step-icon {
