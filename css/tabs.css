@@ -92,7 +92,6 @@
 }
 
 .tab-form-link {
-  color: inherit !important;
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
@@ -247,6 +246,10 @@
 @media screen and (min-width: 1200px) {
   .tabs-list li {
     min-width: 445px;
+  }
+
+  .tabs-list span {
+    min-width: 400px !important;
   }
 
   .tabs-left {

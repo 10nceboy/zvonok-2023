@@ -2,12 +2,28 @@
   margin-bottom: 10px;
 }
 
+.dark-orange-hover:hover {
+  color: #f25f2d !important;
+}
+
+.confirm-card-tooltip[aria-describedby] svg path {
+  fill: #F25F2D;
+  }
+
 .max-h-40 {
   max-height: 40px;
 }
 
 .lh-13-14 {
   line-height: 130%;
+}
+
+.color-orange {
+  color: #f4774c !important;
+}
+
+.color-pale-grey {
+  color: #d4d4d4 !important;
 }
 
 .orphans-4 {
@@ -18,10 +34,18 @@
   border: none !important;
 }
 
+.border-radius-xs {
+  border-radius: 5px !important;
+}
+
 .results p,
 .results li {
   font-size: 12px;
   min-width: 300px;
+}
+
+.results p {
+  margin-bottom: 10px;
 }
 
 .results-list {
@@ -54,13 +78,13 @@
   text-decoration-skip-ink: none;
 }
 
-
 .mb-25-35 {
   margin-bottom: 25px !important;
 }
 
 .accordion-header-new {
   font-size: 18px !important;
+  column-gap: 2px !important;
 }
 
 .faq-block :hover .accordion-header-new {
@@ -82,11 +106,10 @@
 
 .new-circle:before {
   background-image: url("../img/decor/circle-redial.svg");
-  bottom: -28px;
-  width: 155px;
+  bottom: -28px !important;
+  width: 155px !important;
+  display: block !important;
 }
-
-
 
 .priceblock {
   padding-bottom: 40px !important;
@@ -147,6 +170,10 @@
 
 .time-list {
   margin-top: 30px;
+}
+
+.time-list li {
+  font-size: 15px;
 }
 
 .answer-right {
@@ -432,7 +459,7 @@
     margin-left: 20px;
   }
 
-  .hero-desc{
+  .hero-desc {
     font-size: 16px;
   }
 
@@ -492,6 +519,10 @@
   .try-card-desc-free {
     margin-top: 0px !important;
     max-width: 678px;
+  }
+
+  .results p {
+    margin-bottom: 15px;
   }
 
   .new-register-form {
@@ -618,7 +649,7 @@
     margin-left: 30px;
   }
 
-  .hero-desc{
+  .hero-desc {
     font-size: 18px;
   }
 
@@ -644,8 +675,8 @@
   }
 
   .register-button {
-    padding: 10px 32px;
-    max-width: 161px;
+    padding: 10px 14px;
+    max-width: unset;
   }
 
   .new-case-item:not(:last-child) {

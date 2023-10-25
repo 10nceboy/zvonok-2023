@@ -1,246 +1,425 @@
 <!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Звонок</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="Звонок. Звонки для бизнеса - автоматизируйте рутинные процессы">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="format-detection" content="telephone=no">
-    <meta property="og:site_name" content="">
-    <meta property="og:title" content="Звонок. Звонки для бизнеса - автоматизируйте рутинные процессы">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="Звонок. Звонки для бизнеса - автоматизируйте рутинные процессы">
-    <meta property="og:image" content="https://call.storagecult.ru/img/og.jpg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1280">
-    <meta property="og:image:height" content="720">
-    <meta property="og:url" content="https://call.storagecult.ru/">
-    <meta property="twitter:card" content="summary_large_image">
-    <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="img/favicon.svg">
+    <meta name="keywords" content="" />
+    <meta
+      name="description"
+      content="Звонок. Звонки для бизнеса - автоматизируйте рутинные процессы"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:site_name" content="" />
+    <meta
+      property="og:title"
+      content="Звонок. Звонки для бизнеса - автоматизируйте рутинные процессы"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Звонок. Звонки для бизнеса - автоматизируйте рутинные процессы"
+    />
+    <meta
+      property="og:image"
+      content="https://call.storagecult.ru/img/og.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:url" content="https://call.storagecult.ru/" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link
+      rel="preload"
+      href="fonts/Inter-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/Inter-SemiBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/Inter-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="img/favicon.svg" />
     <script src="js/swiper.js"></script>
-</head>
-<body>
-<header class="head-inner">
-    <div class="container">
+  </head>
+  <body>
+    <header class="head-inner">
+      <div class="container">
         <div class="row align-items-center justify-content-between gx-0 gy-0">
-            <div class="col-auto">
-                <a class="logo" href="/">
-                    <img width="129" height="26" src="img/logo.svg" alt="logo">
+          <div class="col-auto">
+            <a class="logo" href="/">
+              <img width="129" height="26" src="img/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <div class="col-auto d-none d-lg-block">
+            <div class="d-flex align-items-center">
+              <div class="dropdown dropdown-second mr30">
+                <a
+                  class="head-nav-link dropdown-toggle d-flex align-items-center"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuSecond"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Услуги
                 </a>
-            </div>
-
-            <div class="col-auto d-none d-lg-block">
-                <div class="d-flex align-items-center">
-                    <div class="dropdown dropdown-second mr30">
-                        <a class="head-nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuSecond" data-bs-toggle="dropdown" aria-expanded="false">
-                            Услуги
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuSecond">
-                            <div class="dropdown-services">
-                                <ul class="dropdown-list">
-                                    <li>
-                                        <a class="dropdown-item" href="/api-call.html">Звонки по API</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="/auto-call.html">Автоматический обзвон</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="/confirmation.html">Подтверждение номера</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="/callcenter.html">Автозвонки для колл-центра <span class="header-muted">(в разработке)</span></a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="/incoming.html">Входящие звонки</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item-delofon dropdown-item-delofon-head" href="https://delofon.ru/" target="_blank">Делофон</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <a class="head-nav-link" href="/price.html">Тарифы и цены</a>
-                    </div>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuSecond">
+                  <div class="dropdown-services">
+                    <ul class="dropdown-list">
+                      <li>
+                        <a class="dropdown-item" href="/api-call.html"
+                          >Звонки по API</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/auto-call.html"
+                          >Автоматический обзвон</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/confirmation.html"
+                          >Подтверждение номера</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/callcenter.html"
+                          >Автозвонки для колл-центра
+                          <span class="header-muted">(в разработке)</span></a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/incoming.html"
+                          >Входящие звонки</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item-delofon dropdown-item-delofon-head"
+                          href="https://delofon.ru/"
+                          target="_blank"
+                          >Делофон</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
+              <div>
+                <a class="head-nav-link" href="/price.html">Тарифы и цены</a>
+              </div>
             </div>
-            <div class="col-auto d-none d-lg-block">
-                <div class="d-flex align-items-center">
-                    <div class="mr30">
-                        <a class="footer-nav-link" href="tel:+74952860100">+7 (495) 286-01-00</a>
-                    </div>
-                    <div class="dropdown dropdown-main">
-                        <a class="footer-nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuHeader" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img width="20" height="20" src="img/country/ru.png" alt="country">
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <div class="d-flex align-items-center">
+              <div class="mr30">
+                <a class="footer-nav-link" href="tel:+74952860100"
+                  >+7 (495) 286-01-00</a
+                >
+              </div>
+              <div class="dropdown dropdown-main">
+                <a
+                  class="footer-nav-link dropdown-toggle d-flex align-items-center"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuHeader"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    width="20"
+                    height="20"
+                    src="img/country/ru.png"
+                    alt="country"
+                  />
+                  <span>Россия</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuHeader">
+                  <div class="d-flex">
+                    <div class="dropdown-country">
+                      <ul class="dropdown-list">
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img
+                              width="20"
+                              height="20"
+                              src="img/country/ru.png"
+                              alt="country"
+                            />
                             <span>Россия</span>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuHeader">
-                            <div class="d-flex">
-                                <div class="dropdown-country">
-                                    <ul class="dropdown-list">
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img width="20" height="20" src="img/country/ru.png" alt="country">
-                                                <span>Россия</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img width="20" height="20" src="img/country/ua.png" alt="country">
-                                                <span>Украина</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img width="20" height="20" src="img/country/by.png" alt="country">
-                                                <span>Беларусь</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img width="20" height="20" src="img/country/kz.png" alt="country">
-                                                <span>Казахстан</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="dropdown-language">
-                                    <ul class="dropdown-list">
-                                        <li>
-                                            <a class="dropdown-item current" href="#">
-                                                <img width="20" height="20" src="img/country/ru.png" alt="country">
-                                                <span>Рус</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img width="20" height="20" src="img/country/uk.png" alt="country">
-                                                <span>Eng</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <ul class="dropdown-list">
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img width="20" height="20" src="img/country/ru.png" alt="country">
-                                                <span>Рус</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img width="20" height="20" src="img/country/ua.png" alt="country">
-                                                <span>Укр</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img width="20" height="20" src="img/country/uk.png" alt="country">
-                                                <span>Eng</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <ul class="dropdown-list">
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img width="20" height="20" src="img/country/ru.png" alt="country">
-                                                <span>Рус</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img width="20" height="20" src="img/country/uk.png" alt="country">
-                                                <span>Eng</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <ul class="dropdown-list">
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img width="20" height="20" src="img/country/ru.png" alt="country">
-                                                <span>Рус</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img width="20" height="20" src="img/country/kz.png" alt="country">
-                                                <span>Каз</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                <img width="20" height="20" src="img/country/uk.png" alt="country">
-                                                <span>Eng</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img
+                              width="20"
+                              height="20"
+                              src="img/country/ua.png"
+                              alt="country"
+                            />
+                            <span>Украина</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img
+                              width="20"
+                              height="20"
+                              src="img/country/by.png"
+                              alt="country"
+                            />
+                            <span>Беларусь</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img
+                              width="20"
+                              height="20"
+                              src="img/country/kz.png"
+                              alt="country"
+                            />
+                            <span>Казахстан</span>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
+                    <div class="dropdown-language">
+                      <ul class="dropdown-list">
+                        <li>
+                          <a class="dropdown-item current" href="#">
+                            <img
+                              width="20"
+                              height="20"
+                              src="img/country/ru.png"
+                              alt="country"
+                            />
+                            <span>Рус</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img
+                              width="20"
+                              height="20"
+                              src="img/country/uk.png"
+                              alt="country"
+                            />
+                            <span>Eng</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <ul class="dropdown-list">
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img
+                              width="20"
+                              height="20"
+                              src="img/country/ru.png"
+                              alt="country"
+                            />
+                            <span>Рус</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img
+                              width="20"
+                              height="20"
+                              src="img/country/ua.png"
+                              alt="country"
+                            />
+                            <span>Укр</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img
+                              width="20"
+                              height="20"
+                              src="img/country/uk.png"
+                              alt="country"
+                            />
+                            <span>Eng</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <ul class="dropdown-list">
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img
+                              width="20"
+                              height="20"
+                              src="img/country/ru.png"
+                              alt="country"
+                            />
+                            <span>Рус</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img
+                              width="20"
+                              height="20"
+                              src="img/country/uk.png"
+                              alt="country"
+                            />
+                            <span>Eng</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <ul class="dropdown-list">
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img
+                              width="20"
+                              height="20"
+                              src="img/country/ru.png"
+                              alt="country"
+                            />
+                            <span>Рус</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img
+                              width="20"
+                              height="20"
+                              src="img/country/kz.png"
+                              alt="country"
+                            />
+                            <span>Каз</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img
+                              width="20"
+                              height="20"
+                              src="img/country/uk.png"
+                              alt="country"
+                            />
+                            <span>Eng</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="col-auto d-none d-lg-block">
-                <div class="d-flex align-items-center">
-                    <div class="mr30">
-                        <a class="head-nav-link" href="#">Войти</a>
-                    </div>
-                    <div>
-                        <a class="btn btn-default" href="#">Регистрация</a>
-                    </div>
-                </div>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <div class="d-flex align-items-center">
+              <div class="mr30">
+                <a class="head-nav-link" href="#">Войти</a>
+              </div>
+              <div>
+                <a class="btn btn-default" href="#">Зарегистрироваться</a>
+              </div>
             </div>
-            <div class="col-auto d-block d-lg-none">
-                <button class="btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                    <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="1" y1="1" x2="29" y2="1" stroke="#5A5A5B" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="1" y1="11" x2="29" y2="11" stroke="#5A5A5B" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="1" y1="21" x2="29" y2="21" stroke="#5A5A5B" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </button>
-            </div>
-
+          </div>
+          <div class="col-auto d-block d-lg-none">
+            <button
+              class="btn-menu"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
+              <svg
+                width="30"
+                height="22"
+                viewBox="0 0 30 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="1"
+                  y1="1"
+                  x2="29"
+                  y2="1"
+                  stroke="#5A5A5B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="1"
+                  y1="11"
+                  x2="29"
+                  y2="11"
+                  stroke="#5A5A5B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="1"
+                  y1="21"
+                  x2="29"
+                  y2="21"
+                  stroke="#5A5A5B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-    </div>
-</header>
-<main>
-
-<div class="container mb-brc">
-    <nav class="breadcrumbs-wrapper" aria-label="breadcrumb">
-        <ol class="breadcrumb">
+      </div>
+    </header>
+    <main>
+      <div class="container mb-brc">
+        <nav class="breadcrumbs-wrapper" aria-label="breadcrumb">
+          <ol class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="/">Главная</a>
+              <a href="/">Главная</a>
             </li>
             <li class="breadcrumb-item active" aria-current="page">
-                <span>Руководство пользователя</span>
+              <span>Руководство пользователя</span>
             </li>
-        </ol>
-    </nav>
-</div>
+          </ol>
+        </nav>
+      </div>
 
-<div class="pb115">
-    <div class="container">
-        <div class="col-md-8 col-12 mb55-45">
-            <h1 class="h1-styled h1-noindex">Руководство пользователя Звонка</h1>
-            <div class="h1-desc mb-0">Звонок меняется, чтобы стать ещё удобнее. В некоторых разделах Руководства информация может быть неполной — скоро мы её обновим. </div>
-        </div>
-        <div class="row gx-6 gy-sm-5 gy-3 d-none d-lg-flex">
+      <div class="pb115">
+        <div class="container">
+          <div class="col-md-8 col-12 mb55-45">
+            <h1 class="h1-styled h1-noindex">
+              Руководство пользователя Звонка
+            </h1>
+            <div class="h1-desc mb-0">
+              Звонок меняется, чтобы стать ещё удобнее. В некоторых разделах
+              Руководства информация может быть неполной — скоро мы её обновим.
+            </div>
+          </div>
+          <div class="row gx-6 gy-sm-5 gy-3 d-none d-lg-flex">
             <div class="col-lg-4 col-12">
-                <ul class="has-subnav">
-                    <li>
-                        <div class="subnav-title">
-                            <a href="/manual.html">Работа с личным кабинетом</a>
-                        </div>
-                        <!--<ul class="subnav-list">
+              <ul class="has-subnav">
+                <li>
+                  <div class="subnav-title">
+                    <a href="/manual.html">Работа с личным кабинетом</a>
+                  </div>
+                  <!--<ul class="subnav-list">
                             <li>
                                 <a href="#">IVR-сценарии</a>
                             </li>
@@ -269,628 +448,1157 @@
                                 <a href="#">Кампании</a>
                             </li>
                         </ul>-->
+                </li>
+                <li>
+                  <div class="subnav-title">
+                    <a class="active" href="/videoinstruction.html"
+                      >Видеоинструкции</a
+                    >
+                  </div>
+                  <ul class="subnav-list">
+                    <li>
+                      <a class="active" href="/videoinstruction.html"
+                        >Возможности сервиса Звонок за 5 минут</a
+                      >
                     </li>
                     <li>
-                        <div class="subnav-title">
-                            <a class="active" href="/videoinstruction.html">Видеоинструкции</a>
-                        </div>
-                        <ul class="subnav-list">
-                            <li>
-                                <a class="active" href="/videoinstruction.html">Возможности сервиса Звонок за 5 минут</a>
-                            </li>
-                            <li>
-                                <a href="#">Создаём первую кампанию: с чего начать</a>
-                            </li>
-                        </ul>
+                      <a href="#">Создаём первую кампанию: с чего начать</a>
                     </li>
-                    <li>
-                        <div class="subnav-title">
-                            <a href="/faq.html">Частые вопросы</a>
-                        </div>
-                    </li>
-                </ul>
+                  </ul>
+                </li>
+                <li>
+                  <div class="subnav-title">
+                    <a href="/faq.html">Частые вопросы</a>
+                  </div>
+                </li>
+              </ul>
             </div>
             <div class="col-lg-8 col-12">
-                <article class="article">
-                    <div>
-                        <h2>Возможности сервиса Звонок за 5 минут</h2>
-                        <div class="article-video">
-                            <video width="670" height="390" src="#" poster="img/poster2.jpg"></video>
-                            <button class="play-button" type="button">
-                                <svg width="90" height="90" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="32" cy="32" r="32"/>
-                                    <path d="M46.7622 30.268C48.0955 31.0378 48.0955 32.9623 46.7622 33.7321L27.0878 45.0911C25.7545 45.8609 24.0878 44.8987 24.0878 43.3591L24.0878 20.641C24.0878 19.1014 25.7545 18.1392 27.0878 18.909L46.7622 30.268Z"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <p>Телефонные списки должны задаваться заранее для кампаний, имеющих тип «Обзвон по списку» и «Конструктор роликов». </p>
-                        <p>Для остальных кампаний телефонные списки изначально не задаются и будут пустыми с автоматически сгенерированными названиями, которые начинаются с «From campaign …». </p>
-                        <p>Это потому, что данные кампании ожидают, что вы будете добавлять номера на прозвон налету через API, но схема работы у них одинаковая.</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-        <div class="manual-accordion d-block d-lg-none" id="accordionExampleScroll">
-            <div class="accordion-item" id="opened1">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Работа с личным кабинетом
+              <article class="article">
+                <div>
+                  <h2>Возможности сервиса Звонок за 5 минут</h2>
+                  <div class="article-video">
+                    <video
+                      width="670"
+                      height="390"
+                      src="#"
+                      poster="img/poster2.jpg"
+                    ></video>
+                    <button class="play-button" type="button">
+                      <svg
+                        width="90"
+                        height="90"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="32" cy="32" r="32" />
+                        <path
+                          d="M46.7622 30.268C48.0955 31.0378 48.0955 32.9623 46.7622 33.7321L27.0878 45.0911C25.7545 45.8609 24.0878 44.8987 24.0878 43.3591L24.0878 20.641C24.0878 19.1014 25.7545 18.1392 27.0878 18.909L46.7622 30.268Z"
+                        />
+                      </svg>
                     </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" >
-                    <div class="accordion-body">
-                        <div class="accordion-desc">Нажмите на нужный раздел, информация появится ниже</div>
-                        <ul class="subnav-list subnav-list-grid">
-                            <li>
-                                <a href="#">IVR-сценарии</a>
-                            </li>
-                            <li>
-                                <a href="#">Планировщик</a>
-                            </li>
-                            <li>
-                                <a href="#">Тонкие настройки</a>
-                            </li>
-                            <li>
-                                <a href="/detalisation.html">Детализация</a>
-                            </li>
-                            <li>
-                                <a href="#">Профиль</a>
-                            </li>
-                            <li>
-                                <a href="#">SIP-линии</a>
-                            </li>
-                            <li>
-                                <a href="#">Аудиоролики</a>
-                            </li>
-                            <li>
-                                <a href="#">Кампании</a>
-                            </li>
-                            <li>
-                                <a href="#">Абонентские номера</a>
-                            </li>
-                        </ul>
-                        <article class="article" id="scroll-container1">
-                            <div>
-                                <h2>Узнайте обо всех возможностях Звонка</h2>
-                                <p>Звонок поможет вашему бизнесу всегда оставаться на связи и эффективно работать с клиентами.</p>
-                                <p>В этом разделе собраны подробные инструкции и полезные советы о том, как правильно настроить кампании и обработать результаты.</p>
-                                <p>Здесь вы также найдёте ответы на частые вопросы и короткие видеоинструкции с пошаговым описанием.</p>
-                            </div>
-                            <div class="article-decor article-img">
-                                <img width="455" height="289" src="img/manual/1.svg" alt="picture">
-                            </div>
-                        </article>
-                        <a class="top-link hide" href="#opened1" id="js-top1" data-scroll data-scrollTop>
-                            <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3335 10.7151C20.7446 11.0839 21.3769 11.0496 21.7456 10.6384C22.1144 10.2273 22.0801 9.59508 21.669 9.2263L11.6684 0.255636C11.2884 -0.0851655 10.7128 -0.0851655 10.3329 0.255636L0.332275 9.22631C-0.0788465 9.59509 -0.113169 10.2273 0.255609 10.6384C0.624389 11.0496 1.25662 11.0839 1.66774 10.7151L9.97261 3.26554L9.97482 21.0008C9.97489 21.5531 10.4227 22.001 10.9749 22.0012C11.5272 22.0014 11.9749 21.5539 11.9748 21.0016L11.9726 3.21527L20.3335 10.7151Z" fill="white"/>
-                            </svg>
-                        </a>
-                    </div>
+                  </div>
+                  <p>
+                    Телефонные списки должны задаваться заранее для кампаний,
+                    имеющих тип «Обзвон по списку» и «Конструктор роликов».
+                  </p>
+                  <p>
+                    Для остальных кампаний телефонные списки изначально не
+                    задаются и будут пустыми с автоматически сгенерированными
+                    названиями, которые начинаются с «From campaign …».
+                  </p>
+                  <p>
+                    Это потому, что данные кампании ожидают, что вы будете
+                    добавлять номера на прозвон налету через API, но схема
+                    работы у них одинаковая.
+                  </p>
                 </div>
+              </article>
+            </div>
+          </div>
+          <div
+            class="manual-accordion d-block d-lg-none"
+            id="accordionExampleScroll"
+          >
+            <div class="accordion-item" id="opened1">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Работа с личным кабинетом
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+              >
+                <div class="accordion-body">
+                  <div class="accordion-desc">
+                    Нажмите на нужный раздел, информация появится ниже
+                  </div>
+                  <ul class="subnav-list subnav-list-grid">
+                    <li>
+                      <a href="#">IVR-сценарии</a>
+                    </li>
+                    <li>
+                      <a href="#">Планировщик</a>
+                    </li>
+                    <li>
+                      <a href="#">Тонкие настройки</a>
+                    </li>
+                    <li>
+                      <a href="/detalisation.html">Детализация</a>
+                    </li>
+                    <li>
+                      <a href="#">Профиль</a>
+                    </li>
+                    <li>
+                      <a href="#">SIP-линии</a>
+                    </li>
+                    <li>
+                      <a href="#">Аудиоролики</a>
+                    </li>
+                    <li>
+                      <a href="#">Кампании</a>
+                    </li>
+                    <li>
+                      <a href="#">Абонентские номера</a>
+                    </li>
+                  </ul>
+                  <article class="article" id="scroll-container1">
+                    <div>
+                      <h2>Узнайте обо всех возможностях Звонка</h2>
+                      <p>
+                        Звонок поможет вашему бизнесу всегда оставаться на связи
+                        и эффективно работать с клиентами.
+                      </p>
+                      <p>
+                        В этом разделе собраны подробные инструкции и полезные
+                        советы о том, как правильно настроить кампании и
+                        обработать результаты.
+                      </p>
+                      <p>
+                        Здесь вы также найдёте ответы на частые вопросы и
+                        короткие видеоинструкции с пошаговым описанием.
+                      </p>
+                    </div>
+                    <div class="article-decor article-img">
+                      <img
+                        width="455"
+                        height="289"
+                        src="img/manual/1.svg"
+                        alt="picture"
+                      />
+                    </div>
+                  </article>
+                  <a
+                    class="top-link hide"
+                    href="#opened1"
+                    id="js-top1"
+                    data-scroll
+                    data-scrollTop
+                  >
+                    <svg
+                      width="22"
+                      height="23"
+                      viewBox="0 0 22 23"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M20.3335 10.7151C20.7446 11.0839 21.3769 11.0496 21.7456 10.6384C22.1144 10.2273 22.0801 9.59508 21.669 9.2263L11.6684 0.255636C11.2884 -0.0851655 10.7128 -0.0851655 10.3329 0.255636L0.332275 9.22631C-0.0788465 9.59509 -0.113169 10.2273 0.255609 10.6384C0.624389 11.0496 1.25662 11.0839 1.66774 10.7151L9.97261 3.26554L9.97482 21.0008C9.97489 21.5531 10.4227 22.001 10.9749 22.0012C11.5272 22.0014 11.9749 21.5539 11.9748 21.0016L11.9726 3.21527L20.3335 10.7151Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
             <div class="accordion-item" id="opened2">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Видеоинструкции
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" >
-                    <div class="accordion-body">
-                        <div class="accordion-desc">Нажмите на нужный раздел, информация появится ниже</div>
-                        <ul class="subnav-list">
-                            <li>
-                                <a class="active" href="/videoinstruction.html">Возможности сервиса Звонок за 5 минут</a>
-                            </li>
-                            <li>
-                                <a href="#">Создаём первую кампанию: с чего начать</a>
-                            </li>
-                        </ul>
-                        <article class="article" id="scroll-container">
-                            <div>
-                                <h2>Возможности сервиса Звонок за 5 минут</h2>
-                                <div class="article-video">
-                                    <video width="670" height="390" src="#" poster="img/poster2.jpg"></video>
-                                    <button class="play-button" type="button">
-                                        <svg width="90" height="90" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="32" cy="32" r="32"/>
-                                            <path d="M46.7622 30.268C48.0955 31.0378 48.0955 32.9623 46.7622 33.7321L27.0878 45.0911C25.7545 45.8609 24.0878 44.8987 24.0878 43.3591L24.0878 20.641C24.0878 19.1014 25.7545 18.1392 27.0878 18.909L46.7622 30.268Z"/>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <p>Телефонные списки должны задаваться заранее для кампаний, имеющих тип «Обзвон по списку» и «Конструктор роликов». </p>
-                                <p>Для остальных кампаний телефонные списки изначально не задаются и будут пустыми с автоматически сгенерированными названиями, которые начинаются с «From campaign …». </p>
-                                <p>Это потому, что данные кампании ожидают, что вы будете добавлять номера на прозвон налету через API, но схема работы у них одинаковая.</p>
-                            </div>
-                        </article>
-                        <a class="top-link hide" href="#opened2" id="js-top2" data-scroll data-scrollTop>
-                            <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3335 10.7151C20.7446 11.0839 21.3769 11.0496 21.7456 10.6384C22.1144 10.2273 22.0801 9.59508 21.669 9.2263L11.6684 0.255636C11.2884 -0.0851655 10.7128 -0.0851655 10.3329 0.255636L0.332275 9.22631C-0.0788465 9.59509 -0.113169 10.2273 0.255609 10.6384C0.624389 11.0496 1.25662 11.0839 1.66774 10.7151L9.97261 3.26554L9.97482 21.0008C9.97489 21.5531 10.4227 22.001 10.9749 22.0012C11.5272 22.0014 11.9749 21.5539 11.9748 21.0016L11.9726 3.21527L20.3335 10.7151Z" fill="white"/>
-                            </svg>
-                        </a>
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Видеоинструкции
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+              >
+                <div class="accordion-body">
+                  <div class="accordion-desc">
+                    Нажмите на нужный раздел, информация появится ниже
+                  </div>
+                  <ul class="subnav-list">
+                    <li>
+                      <a class="active" href="/videoinstruction.html"
+                        >Возможности сервиса Звонок за 5 минут</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">Создаём первую кампанию: с чего начать</a>
+                    </li>
+                  </ul>
+                  <article class="article" id="scroll-container">
+                    <div>
+                      <h2>Возможности сервиса Звонок за 5 минут</h2>
+                      <div class="article-video">
+                        <video
+                          width="670"
+                          height="390"
+                          src="#"
+                          poster="img/poster2.jpg"
+                        ></video>
+                        <button class="play-button" type="button">
+                          <svg
+                            width="90"
+                            height="90"
+                            viewBox="0 0 64 64"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="32" cy="32" r="32" />
+                            <path
+                              d="M46.7622 30.268C48.0955 31.0378 48.0955 32.9623 46.7622 33.7321L27.0878 45.0911C25.7545 45.8609 24.0878 44.8987 24.0878 43.3591L24.0878 20.641C24.0878 19.1014 25.7545 18.1392 27.0878 18.909L46.7622 30.268Z"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <p>
+                        Телефонные списки должны задаваться заранее для
+                        кампаний, имеющих тип «Обзвон по списку» и «Конструктор
+                        роликов».
+                      </p>
+                      <p>
+                        Для остальных кампаний телефонные списки изначально не
+                        задаются и будут пустыми с автоматически
+                        сгенерированными названиями, которые начинаются с «From
+                        campaign …».
+                      </p>
+                      <p>
+                        Это потому, что данные кампании ожидают, что вы будете
+                        добавлять номера на прозвон налету через API, но схема
+                        работы у них одинаковая.
+                      </p>
                     </div>
+                  </article>
+                  <a
+                    class="top-link hide"
+                    href="#opened2"
+                    id="js-top2"
+                    data-scroll
+                    data-scrollTop
+                  >
+                    <svg
+                      width="22"
+                      height="23"
+                      viewBox="0 0 22 23"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M20.3335 10.7151C20.7446 11.0839 21.3769 11.0496 21.7456 10.6384C22.1144 10.2273 22.0801 9.59508 21.669 9.2263L11.6684 0.255636C11.2884 -0.0851655 10.7128 -0.0851655 10.3329 0.255636L0.332275 9.22631C-0.0788465 9.59509 -0.113169 10.2273 0.255609 10.6384C0.624389 11.0496 1.25662 11.0839 1.66774 10.7151L9.97261 3.26554L9.97482 21.0008C9.97489 21.5531 10.4227 22.001 10.9749 22.0012C11.5272 22.0014 11.9749 21.5539 11.9748 21.0016L11.9726 3.21527L20.3335 10.7151Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
                 </div>
+              </div>
             </div>
             <div class="accordion-item" id="opened3">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Частые вопросы
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" >
-                    <div class="accordion-body">
-                        <article class="article" id="scroll-container3">
-                            <div>
-                                <h2>Ответы на частые вопросы</h2>
-                                <div class="accordion-faq" id="accordionPanelsStayOpenExample2">
-                                    <div class="accordion-item">
-                                        <h3 class="accordion-header" id="panelsStayOpen-headingOne5">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne5" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne5">
-                                                Что делать, если не загружается аудиоролик?
-                                            </button>
-                                        </h3>
-                                        <div id="panelsStayOpen-collapseOne5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne5">
-                                            <div class="accordion-answer">
-                                                <p>Для начала проверьте формат загружаемого аудиоролика. Сервис поддерживает форматы .wav, .mp3, .ogg. Если ва ш аудиоролик в другом формате, воспользуйтесь конвертером и переведите ролик в подходящий формат.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h3 class="accordion-header" id="panelsStayOpen-heading6">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse6" aria-expanded="false" aria-controls="panelsStayOpen-collapse6">
-                                                Как выгрузить детализацию звонков?
-                                            </button>
-                                        </h3>
-                                        <div id="panelsStayOpen-collapse6" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading6">
-                                            <div class="accordion-answer">
-                                                <p>Для начала проверьте формат загружаемого аудиоролика. Сервис поддерживает форматы .wav, .mp3, .ogg. Если ва ш аудиоролик в другом формате, воспользуйтесь конвертером и переведите ролик в подходящий формат.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h3 class="accordion-header" id="panelsStayOpen-heading7">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse7" aria-expanded="false" aria-controls="panelsStayOpen-collapse7">
-                                                Что такое API Public Key?
-                                            </button>
-                                        </h3>
-                                        <div id="panelsStayOpen-collapse7" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading7">
-                                            <div class="accordion-answer">
-                                                <p>Для начала проверьте формат загружаемого аудиоролика. Сервис поддерживает форматы .wav, .mp3, .ogg. Если ва ш аудиоролик в другом формате, воспользуйтесь конвертером и переведите ролик в подходящий формат.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h3 class="accordion-header" id="panelsStayOpen-heading8">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse8" aria-expanded="false" aria-controls="panelsStayOpen-collapse8">
-                                                Что такое SIP-линия?
-                                            </button>
-                                        </h3>
-                                        <div id="panelsStayOpen-collapse8" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading8">
-                                            <div class="accordion-answer">
-                                                <p>Для начала проверьте формат загружаемого аудиоролика. Сервис поддерживает форматы .wav, .mp3, .ogg. Если ва ш аудиоролик в другом формате, воспользуйтесь конвертером и переведите ролик в подходящий формат.</p>
-                                                <p>Для начала проверьте формат загружаемого аудиоролика. Сервис поддерживает форматы .wav, .mp3, .ogg. Если ва ш аудиоролик в другом формате, воспользуйтесь конвертером и переведите ролик в подходящий формат.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <a class="top-link hide" href="#opened3" id="js-top3" data-scroll data-scrollTop>
-                            <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3335 10.7151C20.7446 11.0839 21.3769 11.0496 21.7456 10.6384C22.1144 10.2273 22.0801 9.59508 21.669 9.2263L11.6684 0.255636C11.2884 -0.0851655 10.7128 -0.0851655 10.3329 0.255636L0.332275 9.22631C-0.0788465 9.59509 -0.113169 10.2273 0.255609 10.6384C0.624389 11.0496 1.25662 11.0839 1.66774 10.7151L9.97261 3.26554L9.97482 21.0008C9.97489 21.5531 10.4227 22.001 10.9749 22.0012C11.5272 22.0014 11.9749 21.5539 11.9748 21.0016L11.9726 3.21527L20.3335 10.7151Z" fill="white"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-</main>
-
-<footer class="footer">
-    <div class="container">
-        <div class="footer-head">
-            <a class="logo logo-bottom" href="/">
-                <div>
-                    <img width="129" height="26" src="img/logo.svg" alt="logo" loading="lazy">
-                </div>
-            </a>
-            <div class="dropdown dropdown-main d-none d-md-block">
-                <a class="footer-nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuFooter" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img width="20" height="20" src="img/country/ru.png" alt="country" loading="lazy">
-                    <span>Россия</span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuFooter">
-                    <div class="d-flex">
-                        <div class="dropdown-country">
-                            <ul class="dropdown-list">
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img width="20" height="20" src="img/country/ru.png" alt="country" loading="lazy">
-                                        <span>Россия</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img width="20" height="20" src="img/country/ua.png" alt="country" loading="lazy">
-                                        <span>Украина</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img width="20" height="20" src="img/country/by.png" alt="country" loading="lazy">
-                                        <span>Беларусь</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img width="20" height="20" src="img/country/kz.png" alt="country" loading="lazy">
-                                        <span>Казахстан</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="dropdown-language">
-                            <ul class="dropdown-list">
-                                <li>
-                                    <a class="dropdown-item current" href="#">
-                                        <img width="20" height="20" src="img/country/ru.png" alt="country" loading="lazy">
-                                        <span>Рус</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img width="20" height="20" src="img/country/uk.png" alt="country" loading="lazy">
-                                        <span>Eng</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="dropdown-list">
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img width="20" height="20" src="img/country/ru.png" alt="country" loading="lazy">
-                                        <span>Рус</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img width="20" height="20" src="img/country/ua.png" alt="country" loading="lazy">
-                                        <span>Укр</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img width="20" height="20" src="img/country/uk.png" alt="country" loading="lazy">
-                                        <span>Eng</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="dropdown-list">
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img width="20" height="20" src="img/country/ru.png" alt="country" loading="lazy">
-                                        <span>Рус</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img width="20" height="20" src="img/country/uk.png" alt="country" loading="lazy">
-                                        <span>Eng</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="dropdown-list">
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img width="20" height="20" src="img/country/ru.png" alt="country" loading="lazy">
-                                        <span>Рус</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img width="20" height="20" src="img/country/kz.png" alt="country" loading="lazy">
-                                        <span>Каз</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img width="20" height="20" src="img/country/uk.png" alt="country" loading="lazy">
-                                        <span>Eng</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-block d-md-none">
-                <div class="accordion accordion-menu">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingSecond">
-                            <button class="accordion-button footer-nav-link bb collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSecond" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                <img width="15" height="15" src="img/country/ru.png" alt="country" loading="lazy">
-                                <span>Россия</span>
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Частые вопросы
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+              >
+                <div class="accordion-body">
+                  <article class="article" id="scroll-container3">
+                    <div>
+                      <h2>Ответы на частые вопросы</h2>
+                      <div
+                        class="accordion-faq"
+                        id="accordionPanelsStayOpenExample2"
+                      >
+                        <div class="accordion-item">
+                          <h3
+                            class="accordion-header"
+                            id="panelsStayOpen-headingOne5"
+                          >
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapseOne5"
+                              aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapseOne5"
+                            >
+                              Что делать, если не загружается аудиоролик?
                             </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseSecond" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSecond">
-                            <div class="accordion-body">
-                                <div class="d-flex dropdown-main-offcanvas">
-                                    <div class="dropdown-country">
-                                        <ul class="dropdown-list">
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <img width="15" height="15" src="img/country/ru.png" alt="country" loading="lazy">
-                                                    <span>Россия</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <img width="15" height="15" src="img/country/ua.png" alt="country" loading="lazy">
-                                                    <span>Украина</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <img width="15" height="15" src="img/country/by.png" alt="country" loading="lazy">
-                                                    <span>Беларусь</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <img width="15" height="15" src="img/country/kz.png" alt="country" loading="lazy">
-                                                    <span>Казахстан</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="dropdown-language">
-                                        <ul class="dropdown-list">
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <img width="15" height="15" src="img/country/ru.png" alt="country" loading="lazy">
-                                                    <span>Рус</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <img width="15" height="15" src="img/country/uk.png" alt="country" loading="lazy">
-                                                    <span>Eng</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="dropdown-list">
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <img width="15" height="15" src="img/country/ru.png" alt="country" loading="lazy">
-                                                    <span>Рус</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <img width="15" height="15" src="img/country/ua.png" alt="country" loading="lazy">
-                                                    <span>Укр</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <img width="15" height="15" src="img/country/uk.png" alt="country" loading="lazy">
-                                                    <span>Eng</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="dropdown-list">
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <img width="15" height="15" src="img/country/ru.png" alt="country" loading="lazy">
-                                                    <span>Рус</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <img width="15" height="15" src="img/country/uk.png" alt="country" loading="lazy">
-                                                    <span>Eng</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="dropdown-list">
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <img width="15" height="15" src="img/country/ru.png" alt="country" loading="lazy">
-                                                    <span>Рус</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <img width="15" height="15" src="img/country/kz.png" alt="country" loading="lazy">
-                                                    <span>Каз</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <img width="15" height="15" src="img/country/uk.png" alt="country" loading="lazy">
-                                                    <span>Eng</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                          </h3>
+                          <div
+                            id="panelsStayOpen-collapseOne5"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingOne5"
+                          >
+                            <div class="accordion-answer">
+                              <p>
+                                Для начала проверьте формат загружаемого
+                                аудиоролика. Сервис поддерживает форматы .wav,
+                                .mp3, .ogg. Если ва ш аудиоролик в другом
+                                формате, воспользуйтесь конвертером и переведите
+                                ролик в подходящий формат.
+                              </p>
                             </div>
+                          </div>
                         </div>
+                        <div class="accordion-item">
+                          <h3
+                            class="accordion-header"
+                            id="panelsStayOpen-heading6"
+                          >
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse6"
+                              aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse6"
+                            >
+                              Как выгрузить детализацию звонков?
+                            </button>
+                          </h3>
+                          <div
+                            id="panelsStayOpen-collapse6"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading6"
+                          >
+                            <div class="accordion-answer">
+                              <p>
+                                Для начала проверьте формат загружаемого
+                                аудиоролика. Сервис поддерживает форматы .wav,
+                                .mp3, .ogg. Если ва ш аудиоролик в другом
+                                формате, воспользуйтесь конвертером и переведите
+                                ролик в подходящий формат.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h3
+                            class="accordion-header"
+                            id="panelsStayOpen-heading7"
+                          >
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse7"
+                              aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse7"
+                            >
+                              Что такое API Public Key?
+                            </button>
+                          </h3>
+                          <div
+                            id="panelsStayOpen-collapse7"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading7"
+                          >
+                            <div class="accordion-answer">
+                              <p>
+                                Для начала проверьте формат загружаемого
+                                аудиоролика. Сервис поддерживает форматы .wav,
+                                .mp3, .ogg. Если ва ш аудиоролик в другом
+                                формате, воспользуйтесь конвертером и переведите
+                                ролик в подходящий формат.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h3
+                            class="accordion-header"
+                            id="panelsStayOpen-heading8"
+                          >
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#panelsStayOpen-collapse8"
+                              aria-expanded="false"
+                              aria-controls="panelsStayOpen-collapse8"
+                            >
+                              Что такое SIP-линия?
+                            </button>
+                          </h3>
+                          <div
+                            id="panelsStayOpen-collapse8"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading8"
+                          >
+                            <div class="accordion-answer">
+                              <p>
+                                Для начала проверьте формат загружаемого
+                                аудиоролика. Сервис поддерживает форматы .wav,
+                                .mp3, .ogg. Если ва ш аудиоролик в другом
+                                формате, воспользуйтесь конвертером и переведите
+                                ролик в подходящий формат.
+                              </p>
+                              <p>
+                                Для начала проверьте формат загружаемого
+                                аудиоролика. Сервис поддерживает форматы .wav,
+                                .mp3, .ogg. Если ва ш аудиоролик в другом
+                                формате, воспользуйтесь конвертером и переведите
+                                ролик в подходящий формат.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </article>
+                  <a
+                    class="top-link hide"
+                    href="#opened3"
+                    id="js-top3"
+                    data-scroll
+                    data-scrollTop
+                  >
+                    <svg
+                      width="22"
+                      height="23"
+                      viewBox="0 0 22 23"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M20.3335 10.7151C20.7446 11.0839 21.3769 11.0496 21.7456 10.6384C22.1144 10.2273 22.0801 9.59508 21.669 9.2263L11.6684 0.255636C11.2884 -0.0851655 10.7128 -0.0851655 10.3329 0.255636L0.332275 9.22631C-0.0788465 9.59509 -0.113169 10.2273 0.255609 10.6384C0.624389 11.0496 1.25662 11.0839 1.66774 10.7151L9.97261 3.26554L9.97482 21.0008C9.97489 21.5531 10.4227 22.001 10.9749 22.0012C11.5272 22.0014 11.9749 21.5539 11.9748 21.0016L11.9726 3.21527L20.3335 10.7151Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
                 </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-head">
+          <a class="logo logo-bottom" href="/">
+            <div>
+              <img
+                width="129"
+                height="26"
+                src="img/logo.svg"
+                alt="logo"
+                loading="lazy"
+              />
+            </div>
+          </a>
+          <div class="dropdown dropdown-main d-none d-md-block">
+            <a
+              class="footer-nav-link dropdown-toggle d-flex align-items-center"
+              href="#"
+              role="button"
+              id="dropdownMenuFooter"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                width="20"
+                height="20"
+                src="img/country/ru.png"
+                alt="country"
+                loading="lazy"
+              />
+              <span>Россия</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuFooter">
+              <div class="d-flex">
+                <div class="dropdown-country">
+                  <ul class="dropdown-list">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img
+                          width="20"
+                          height="20"
+                          src="img/country/ru.png"
+                          alt="country"
+                          loading="lazy"
+                        />
+                        <span>Россия</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img
+                          width="20"
+                          height="20"
+                          src="img/country/ua.png"
+                          alt="country"
+                          loading="lazy"
+                        />
+                        <span>Украина</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img
+                          width="20"
+                          height="20"
+                          src="img/country/by.png"
+                          alt="country"
+                          loading="lazy"
+                        />
+                        <span>Беларусь</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img
+                          width="20"
+                          height="20"
+                          src="img/country/kz.png"
+                          alt="country"
+                          loading="lazy"
+                        />
+                        <span>Казахстан</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown-language">
+                  <ul class="dropdown-list">
+                    <li>
+                      <a class="dropdown-item current" href="#">
+                        <img
+                          width="20"
+                          height="20"
+                          src="img/country/ru.png"
+                          alt="country"
+                          loading="lazy"
+                        />
+                        <span>Рус</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img
+                          width="20"
+                          height="20"
+                          src="img/country/uk.png"
+                          alt="country"
+                          loading="lazy"
+                        />
+                        <span>Eng</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="dropdown-list">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img
+                          width="20"
+                          height="20"
+                          src="img/country/ru.png"
+                          alt="country"
+                          loading="lazy"
+                        />
+                        <span>Рус</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img
+                          width="20"
+                          height="20"
+                          src="img/country/ua.png"
+                          alt="country"
+                          loading="lazy"
+                        />
+                        <span>Укр</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img
+                          width="20"
+                          height="20"
+                          src="img/country/uk.png"
+                          alt="country"
+                          loading="lazy"
+                        />
+                        <span>Eng</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="dropdown-list">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img
+                          width="20"
+                          height="20"
+                          src="img/country/ru.png"
+                          alt="country"
+                          loading="lazy"
+                        />
+                        <span>Рус</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img
+                          width="20"
+                          height="20"
+                          src="img/country/uk.png"
+                          alt="country"
+                          loading="lazy"
+                        />
+                        <span>Eng</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="dropdown-list">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img
+                          width="20"
+                          height="20"
+                          src="img/country/ru.png"
+                          alt="country"
+                          loading="lazy"
+                        />
+                        <span>Рус</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img
+                          width="20"
+                          height="20"
+                          src="img/country/kz.png"
+                          alt="country"
+                          loading="lazy"
+                        />
+                        <span>Каз</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img
+                          width="20"
+                          height="20"
+                          src="img/country/uk.png"
+                          alt="country"
+                          loading="lazy"
+                        />
+                        <span>Eng</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-block d-md-none">
+            <div class="accordion accordion-menu">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingSecond">
+                  <button
+                    class="accordion-button footer-nav-link bb collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseSecond"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo"
+                  >
+                    <img
+                      width="15"
+                      height="15"
+                      src="img/country/ru.png"
+                      alt="country"
+                      loading="lazy"
+                    />
+                    <span>Россия</span>
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseSecond"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingSecond"
+                >
+                  <div class="accordion-body">
+                    <div class="d-flex dropdown-main-offcanvas">
+                      <div class="dropdown-country">
+                        <ul class="dropdown-list">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img
+                                width="15"
+                                height="15"
+                                src="img/country/ru.png"
+                                alt="country"
+                                loading="lazy"
+                              />
+                              <span>Россия</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img
+                                width="15"
+                                height="15"
+                                src="img/country/ua.png"
+                                alt="country"
+                                loading="lazy"
+                              />
+                              <span>Украина</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img
+                                width="15"
+                                height="15"
+                                src="img/country/by.png"
+                                alt="country"
+                                loading="lazy"
+                              />
+                              <span>Беларусь</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img
+                                width="15"
+                                height="15"
+                                src="img/country/kz.png"
+                                alt="country"
+                                loading="lazy"
+                              />
+                              <span>Казахстан</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dropdown-language">
+                        <ul class="dropdown-list">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img
+                                width="15"
+                                height="15"
+                                src="img/country/ru.png"
+                                alt="country"
+                                loading="lazy"
+                              />
+                              <span>Рус</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img
+                                width="15"
+                                height="15"
+                                src="img/country/uk.png"
+                                alt="country"
+                                loading="lazy"
+                              />
+                              <span>Eng</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <ul class="dropdown-list">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img
+                                width="15"
+                                height="15"
+                                src="img/country/ru.png"
+                                alt="country"
+                                loading="lazy"
+                              />
+                              <span>Рус</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img
+                                width="15"
+                                height="15"
+                                src="img/country/ua.png"
+                                alt="country"
+                                loading="lazy"
+                              />
+                              <span>Укр</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img
+                                width="15"
+                                height="15"
+                                src="img/country/uk.png"
+                                alt="country"
+                                loading="lazy"
+                              />
+                              <span>Eng</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <ul class="dropdown-list">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img
+                                width="15"
+                                height="15"
+                                src="img/country/ru.png"
+                                alt="country"
+                                loading="lazy"
+                              />
+                              <span>Рус</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img
+                                width="15"
+                                height="15"
+                                src="img/country/uk.png"
+                                alt="country"
+                                loading="lazy"
+                              />
+                              <span>Eng</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <ul class="dropdown-list">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img
+                                width="15"
+                                height="15"
+                                src="img/country/ru.png"
+                                alt="country"
+                                loading="lazy"
+                              />
+                              <span>Рус</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img
+                                width="15"
+                                height="15"
+                                src="img/country/kz.png"
+                                alt="country"
+                                loading="lazy"
+                              />
+                              <span>Каз</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <img
+                                width="15"
+                                height="15"
+                                src="img/country/uk.png"
+                                alt="country"
+                                loading="lazy"
+                              />
+                              <span>Eng</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="row gy-0 gx-0">
-            <div class="col-lg-6">
-                <div class="row gy-0 gx-0">
-                    <div class="col-md-6">
-                        <ul class="footer-list footer-list-p">
-                            <li>
-                                <div class="footer-contacts">
-                                    <div class="footer-contacts-title">Телефон</div>
-                                    <div class="footer-contacts-desc">
-                                        <a href="tel:+74952860100">+7 (495) 286-01-00</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="footer-contacts">
-                                    <div class="footer-contacts-title">Почта</div>
-                                    <div class="footer-contacts-desc">
-                                        <a href="mailto:rus@zvonok.com">rus@zvonok.com</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="footer-contacts">
-                                    <div class="footer-contacts-title">Часы работы</div>
-                                    <div class="footer-contacts-desc">пн-пт с 10 до 19 по мск</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="footer-contacts">
-                                    <div class="footer-contacts-title">Телеграм-канал</div>
-                                    <div class="footer-contacts-desc">
-                                        <a href="https://t.me/zvonok_com" target="_blank">zvonok_com</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="footer-contacts">
-                                    <div class="footer-contacts-title">Администратор</div>
-                                    <div class="footer-contacts-desc">ООО «Привет, Интернет»</div>
-                                </div>
-                            </li>
-                        </ul>
+          <div class="col-lg-6">
+            <div class="row gy-0 gx-0">
+              <div class="col-md-6">
+                <ul class="footer-list footer-list-p">
+                  <li>
+                    <div class="footer-contacts">
+                      <div class="footer-contacts-title">Телефон</div>
+                      <div class="footer-contacts-desc">
+                        <a href="tel:+74952860100">+7 (495) 286-01-00</a>
+                      </div>
                     </div>
+                  </li>
+                  <li>
+                    <div class="footer-contacts">
+                      <div class="footer-contacts-title">Почта</div>
+                      <div class="footer-contacts-desc">
+                        <a href="mailto:rus@zvonok.com">rus@zvonok.com</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="footer-contacts">
+                      <div class="footer-contacts-title">Часы работы</div>
+                      <div class="footer-contacts-desc">
+                        пн-пт с 10 до 19 по мск
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="footer-contacts">
+                      <div class="footer-contacts-title">Телеграм-канал</div>
+                      <div class="footer-contacts-desc">
+                        <a href="https://t.me/zvonok_com" target="_blank"
+                          >zvonok_com</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="footer-contacts">
+                      <div class="footer-contacts-title">Администратор</div>
+                      <div class="footer-contacts-desc">
+                        ООО «Привет, Интернет»
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
 
-                    <div class="col-md-6">
-                        <div class="footer-title">Разделы сайта</div>
-                        <ul class="footer-list">
-                            <li>
-                                <a class="footer-nav-link current" href="#">Личный кабинет</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Звонки по API</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Автоматический обзвон</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Подтверждение номера</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Входящие звонки</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Автозвонки для колл-центра</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-delofon" href="https://delofon.ru/" target="_blank">Делофон</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+              <div class="col-md-6">
+                <div class="footer-title">Разделы сайта</div>
+                <ul class="footer-list">
+                  <li>
+                    <a class="footer-nav-link current" href="#"
+                      >Личный кабинет</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#">Звонки по API</a>
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#"
+                      >Автоматический обзвон</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#">Подтверждение номера</a>
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#">Входящие звонки</a>
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#"
+                      >Автозвонки для колл-центра</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="footer-nav-delofon"
+                      href="https://delofon.ru/"
+                      target="_blank"
+                      >Делофон</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col-lg-6">
-                <div class="row gy-0 gx-0">
-                    <div class="col-md-6">
-                        <div class="footer-title">Разделы сайта</div>
-                        <ul class="footer-list">
-                            <li>
-                                <a class="footer-nav-link" href="/manual.html">Руководство пользователя</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Технические инструкции</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="/price.html">Тарифы и цены</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="https://sochi.hh.ru/employer/2812305" target="_blank">Вакансии</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="/boring-page.html">Договор оферты</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Политика обработки ПД</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Информация об онлайн-оплате</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Правоохранительным органам</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Пользовательское соглашение</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Официальные документы</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-red" href="/claim.html">Жалоба на звонок</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="/contacts.html">Контакты</a>
-                            </li>
-                        </ul>
-                    </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row gy-0 gx-0">
+              <div class="col-md-6">
+                <div class="footer-title">Разделы сайта</div>
+                <ul class="footer-list">
+                  <li>
+                    <a class="footer-nav-link" href="/manual.html"
+                      >Руководство пользователя</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#"
+                      >Технические инструкции</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="/price.html"
+                      >Тарифы и цены</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="footer-nav-link"
+                      href="https://sochi.hh.ru/employer/2812305"
+                      target="_blank"
+                      >Вакансии</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="/boring-page.html"
+                      >Договор оферты</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#"
+                      >Политика обработки ПД</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#"
+                      >Информация об онлайн-оплате</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#"
+                      >Правоохранительным органам</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#"
+                      >Пользовательское соглашение</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#"
+                      >Официальные документы</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-red" href="/claim.html"
+                      >Жалоба на звонок</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="/contacts.html"
+                      >Контакты</a
+                    >
+                  </li>
+                </ul>
+              </div>
 
-                    <div class="col-md-6">
-                        <div class="footer-title">Полезная информация</div>
-                        <ul class="footer-list">
-                            <li>
-                                <a class="footer-nav-link" href="#">Аутсорсинговый колл-центр</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Холодный обзвон клиентов</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Как правильно обзванивать клиентов</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Обзвон клиентов автоматическим роботом</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Автообзвон должников</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Как правильно обзванивать потенциальных клиентов</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Обзвон базы клиентов или партнёров</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Обзвон «спящих» клиентов</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Как обзванивать старых клиентов</a>
-                            </li>
-                            <li>
-                                <a class="footer-nav-link" href="#">Голосовые рассылки</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+              <div class="col-md-6">
+                <div class="footer-title">Полезная информация</div>
+                <ul class="footer-list">
+                  <li>
+                    <a class="footer-nav-link" href="#"
+                      >Аутсорсинговый колл-центр</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#"
+                      >Холодный обзвон клиентов</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#"
+                      >Как правильно обзванивать клиентов</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#"
+                      >Обзвон клиентов автоматическим роботом</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#">Автообзвон должников</a>
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#"
+                      >Как правильно обзванивать потенциальных клиентов</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#"
+                      >Обзвон базы клиентов или партнёров</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#"
+                      >Обзвон «спящих» клиентов</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#"
+                      >Как обзванивать старых клиентов</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-nav-link" href="#">Голосовые рассылки</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
         <div class="row mt-lg-0 mt-md-4 mt-0 gy-0 gx-0">
-            <div class="col-12 mb-2">
-                <div class="footer-muted">&copy; <span id="footer-year">2022</span> Группа компаний Zvonok</div>
+          <div class="col-12 mb-2">
+            <div class="footer-muted">
+              &copy; <span id="footer-year">2022</span> Группа компаний Zvonok
             </div>
-            <div class="col-lg-6 col-12">
-                <div class="footer-muted">Информация на сайте, кроме Публичной оферты и раздела «Тарифы и цены», носит маркетинговый и справочный характер, и не является офертой.</div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="footer-muted">
+              Информация на сайте, кроме Публичной оферты и раздела «Тарифы и
+              цены», носит маркетинговый и справочный характер, и не является
+              офертой.
             </div>
-            <div class="col-lg-6 col-12 d-flex align-items-lg-end justify-content-lg-end">
-                <div class="footer-muted">Сайт сделан в <a class="out-link" href="https://out.agency/?utm_source=client-website&utm_medium=footer&utm_campaign=agency-link&utm_content=zvonok">OUT.AGENCY</a></div>
+          </div>
+          <div
+            class="col-lg-6 col-12 d-flex align-items-lg-end justify-content-lg-end"
+          >
+            <div class="footer-muted">
+              Сайт сделан в
+              <a
+                class="out-link"
+                href="https://out.agency/?utm_source=client-website&utm_medium=footer&utm_campaign=agency-link&utm_content=zvonok"
+                >OUT.AGENCY</a
+              >
             </div>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<!--alternative footer-->
-<!--<footer class="footer">
+    <!--alternative footer-->
+    <!--<footer class="footer">
     <div class="container">
         <div class="footer-head">
             <a class="logo logo-bottom" href="/">
@@ -1258,448 +1966,976 @@
     </div>
 </footer>-->
 
-<div class="position-fixed bottom-0 end-0 cookie-box">
-    <div id="myToast" class="toast cookie-toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-            Этот сайт использует файлы куки.
-        </div>
+    <div class="position-fixed bottom-0 end-0 cookie-box">
+      <div
+        id="myToast"
+        class="toast cookie-toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">Этот сайт использует файлы куки.</div>
         <div class="toast-body">
-            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close">Принять</button>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          >
+            Принять
+          </button>
         </div>
+      </div>
     </div>
-</div>
 
-<div class="offcanvas offcanvas-start offcanvas-menu" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
+    <div
+      class="offcanvas offcanvas-start offcanvas-menu"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
         <a class="logo" href="/">
-            <img width="129" height="26" src="img/logo.svg" alt="logo" loading="lazy">
+          <img
+            width="129"
+            height="26"
+            src="img/logo.svg"
+            alt="logo"
+            loading="lazy"
+          />
         </a>
-        <button type="button" class="btn-menu-close" data-bs-dismiss="offcanvas" aria-label="Close">
-            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22 1L1 22" stroke="#5A5A5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M22 22L1 1" stroke="#5A5A5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+        <button
+          type="button"
+          class="btn-menu-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <svg
+            width="23"
+            height="23"
+            viewBox="0 0 23 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M22 1L1 22"
+              stroke="#5A5A5B"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M22 22L1 1"
+              stroke="#5A5A5B"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
         </button>
-    </div>
-    <div class="offcanvas-body">
-        <div class="accordion accordion-menu" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header head-nav-link" id="panelsStayOpen-headingOne">
-                    <button class="accordion-button head-nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                        Услуги
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                    <div class="accordion-body dropdown-services">
-                        <ul class="dropdown-list">
-                            <li>
-                                <a class="dropdown-item" href="/api-call.html">Звонки по API</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="/auto-call.html">Автоматический обзвон</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="/confirmation.html">Подтверждение номера</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="/callcenter.html">Автозвонки для колл-центра <span class="header-muted">(в разработке)</span></a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="/incoming.html">Входящие звонки</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item-delofon" href="#">Делофон</a>
-                            </li>
-                        </ul>
-                    </div>
+      </div>
+      <div class="offcanvas-body">
+        <div
+          class="accordion accordion-menu"
+          id="accordionPanelsStayOpenExample"
+        >
+          <div class="accordion-item">
+            <h2
+              class="accordion-header head-nav-link"
+              id="panelsStayOpen-headingOne"
+            >
+              <button
+                class="accordion-button head-nav-link collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                Услуги
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body dropdown-services">
+                <ul class="dropdown-list">
+                  <li>
+                    <a class="dropdown-item" href="/api-call.html"
+                      >Звонки по API</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/auto-call.html"
+                      >Автоматический обзвон</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/confirmation.html"
+                      >Подтверждение номера</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/callcenter.html"
+                      >Автозвонки для колл-центра
+                      <span class="header-muted">(в разработке)</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/incoming.html"
+                      >Входящие звонки</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item-delofon" href="#">Делофон</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <a class="head-nav-link" href="/price.html">Тарифы и цены</a>
+          </div>
+          <div class="accordion-item">
+            <a class="footer-nav-link" href="tel:+74952860100"
+              >+7 (495) 286-01-00</a
+            >
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button
+                class="accordion-button footer-nav-link bb collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo"
+              >
+                <img
+                  width="15"
+                  height="15"
+                  src="img/country/ru.png"
+                  alt="country"
+                  loading="lazy"
+                />
+                <span>Россия</span>
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo"
+            >
+              <div class="accordion-body">
+                <div class="d-flex dropdown-main-offcanvas">
+                  <div class="dropdown-country">
+                    <ul class="dropdown-list">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img
+                            width="15"
+                            height="15"
+                            src="img/country/ru.png"
+                            alt="country"
+                            loading="lazy"
+                          />
+                          <span>Россия</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img
+                            width="15"
+                            height="15"
+                            src="img/country/ua.png"
+                            alt="country"
+                            loading="lazy"
+                          />
+                          <span>Украина</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img
+                            width="15"
+                            height="15"
+                            src="img/country/by.png"
+                            alt="country"
+                            loading="lazy"
+                          />
+                          <span>Беларусь</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img
+                            width="15"
+                            height="15"
+                            src="img/country/kz.png"
+                            alt="country"
+                            loading="lazy"
+                          />
+                          <span>Казахстан</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-language">
+                    <ul class="dropdown-list">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img
+                            width="15"
+                            height="15"
+                            src="img/country/ru.png"
+                            alt="country"
+                            loading="lazy"
+                          />
+                          <span>Рус</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img
+                            width="15"
+                            height="15"
+                            src="img/country/uk.png"
+                            alt="country"
+                            loading="lazy"
+                          />
+                          <span>Eng</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul class="dropdown-list">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img
+                            width="15"
+                            height="15"
+                            src="img/country/ru.png"
+                            alt="country"
+                            loading="lazy"
+                          />
+                          <span>Рус</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img
+                            width="15"
+                            height="15"
+                            src="img/country/ua.png"
+                            alt="country"
+                            loading="lazy"
+                          />
+                          <span>Укр</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img
+                            width="15"
+                            height="15"
+                            src="img/country/uk.png"
+                            alt="country"
+                            loading="lazy"
+                          />
+                          <span>Eng</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul class="dropdown-list">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img
+                            width="15"
+                            height="15"
+                            src="img/country/ru.png"
+                            alt="country"
+                            loading="lazy"
+                          />
+                          <span>Рус</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img
+                            width="15"
+                            height="15"
+                            src="img/country/uk.png"
+                            alt="country"
+                            loading="lazy"
+                          />
+                          <span>Eng</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul class="dropdown-list">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img
+                            width="15"
+                            height="15"
+                            src="img/country/ru.png"
+                            alt="country"
+                            loading="lazy"
+                          />
+                          <span>Рус</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img
+                            width="15"
+                            height="15"
+                            src="img/country/kz.png"
+                            alt="country"
+                            loading="lazy"
+                          />
+                          <span>Каз</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img
+                            width="15"
+                            height="15"
+                            src="img/country/uk.png"
+                            alt="country"
+                            loading="lazy"
+                          />
+                          <span>Eng</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
 
-            <div class="accordion-item">
-                <a class="head-nav-link" href="/price.html">Тарифы и цены</a>
-            </div>
-            <div class="accordion-item">
-                <a class="footer-nav-link" href="tel:+74952860100">+7 (495) 286-01-00</a>
-            </div>
+          <div class="accordion-item">
+            <a class="head-nav-link" href="#">Войти</a>
+          </div>
+          <div class="accordion-item">
+            <a class="btn btn-default btn-offcanvas">Зарегистрироваться</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                    <button class="accordion-button footer-nav-link bb collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                        <img width="15" height="15" src="img/country/ru.png" alt="country" loading="lazy">
-                        <span>Россия</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                    <div class="accordion-body">
-                        <div class="d-flex dropdown-main-offcanvas">
-                            <div class="dropdown-country">
-                                <ul class="dropdown-list">
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <img width="15" height="15" src="img/country/ru.png" alt="country" loading="lazy">
-                                            <span>Россия</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <img width="15" height="15" src="img/country/ua.png" alt="country" loading="lazy">
-                                            <span>Украина</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <img width="15" height="15" src="img/country/by.png" alt="country" loading="lazy">
-                                            <span>Беларусь</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <img width="15" height="15" src="img/country/kz.png" alt="country" loading="lazy">
-                                            <span>Казахстан</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="dropdown-language">
-                                <ul class="dropdown-list">
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <img width="15" height="15" src="img/country/ru.png" alt="country" loading="lazy">
-                                            <span>Рус</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <img width="15" height="15" src="img/country/uk.png" alt="country" loading="lazy">
-                                            <span>Eng</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul class="dropdown-list">
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <img width="15" height="15" src="img/country/ru.png" alt="country" loading="lazy">
-                                            <span>Рус</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <img width="15" height="15" src="img/country/ua.png" alt="country" loading="lazy">
-                                            <span>Укр</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <img width="15" height="15" src="img/country/uk.png" alt="country" loading="lazy">
-                                            <span>Eng</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul class="dropdown-list">
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <img width="15" height="15" src="img/country/ru.png" alt="country" loading="lazy">
-                                            <span>Рус</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <img width="15" height="15" src="img/country/uk.png" alt="country" loading="lazy">
-                                            <span>Eng</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul class="dropdown-list">
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <img width="15" height="15" src="img/country/ru.png" alt="country" loading="lazy">
-                                            <span>Рус</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <img width="15" height="15" src="img/country/kz.png" alt="country" loading="lazy">
-                                            <span>Каз</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <img width="15" height="15" src="img/country/uk.png" alt="country" loading="lazy">
-                                            <span>Eng</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+    <div
+      class="modal fade"
+      id="consultationModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered consultation-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="h2-styled">Расскажем, что умеет Звонок</h2>
+            <button
+              type="button"
+              class="btn-close-modal"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="15" cy="15" r="15" fill="#F4774C" />
+                <path
+                  d="M9 9L21 21M21 9L9 21"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-desc">
+              Укажите ваш телефон, мы ответим на все вопросы о работе сервиса.
+            </div>
+            <form class="d-flex flex-column align-items-center" action="#">
+              <input
+                class="form-input"
+                type="text"
+                name="name"
+                placeholder="Имя"
+                required
+              />
+              <input
+                class="form-input form-number"
+                type="tel"
+                name="phone"
+                placeholder="Номер телефона"
+                required
+              />
+              <button class="btn btn-primary" type="submit">
+                Заказать звонок
+              </button>
+              <div class="form-desc">
+                Отправляя форму, вы даете согласие на обработку
+                <a class="form-link" href="#">персональных данных</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalApi1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered api-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>Ваша IT-система</div>
+            <button
+              type="button"
+              class="btn-close-modal"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="15" cy="15" r="15" fill="#F4774C" />
+                <path
+                  d="M9 9L21 21M21 9L9 21"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-desc">
+              Подключайте Звонок к любым вашим системам: CRM, ERP, BPM и другим.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalApi2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered api-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>API-интеграция</div>
+            <button
+              type="button"
+              class="btn-close-modal"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="15" cy="15" r="15" fill="#F4774C" />
+                <path
+                  d="M9 9L21 21M21 9L9 21"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-desc">
+              API-интеграция обеспечивает двусторонние запросы и обмен
+              информацией между вашей IT‑системой и Звонком.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalApi3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered api-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>Zvonok</div>
+            <button
+              type="button"
+              class="btn-close-modal"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="15" cy="15" r="15" fill="#F4774C" />
+                <path
+                  d="M9 9L21 21M21 9L9 21"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-desc">
+              Список номеров или параметров клиентов Звонок получит из вашей
+              IT-системы, или добавьте эту информацию вручную.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalApi4"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered api-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>Клиент</div>
+            <button
+              type="button"
+              class="btn-close-modal"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="15" cy="15" r="15" fill="#F4774C" />
+                <path
+                  d="M9 9L21 21M21 9L9 21"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-desc">
+              Звонки клиентам происходят с учетом параметров и по заданному в
+              настройках сервиса сценарию.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalApi5"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered api-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>Webhook</div>
+            <button
+              type="button"
+              class="btn-close-modal"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="15" cy="15" r="15" fill="#F4774C" />
+                <path
+                  d="M9 9L21 21M21 9L9 21"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-desc">
+              По завершении звонков Вебхуки отправят всю информацию о звонках и
+              статусы клиентов в вашу IT-систему.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalApi6"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered api-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>Записи разговора</div>
+            <button
+              type="button"
+              class="btn-close-modal"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="15" cy="15" r="15" fill="#F4774C" />
+                <path
+                  d="M9 9L21 21M21 9L9 21"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-desc">
+              Записи разговора и ответы клиента хранятся в ЛК, а также могут
+              автоматически отправляться в вашу IT-систему.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalConfirm1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered api-modal confirm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close-modal"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="15" cy="15" r="15" fill="#F4774C" />
+                <path
+                  d="M9 9L21 21M21 9L9 21"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-desc">
+              Стоимость звонка
+              <span class="confirm-card-cost700">— 1,7 ₽/мин</span> (посекундная
+              тарификация)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalInfo1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered api-modal confirm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close-modal"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="15" cy="15" r="15" fill="#F4774C" />
+                <path
+                  d="M9 9L21 21M21 9L9 21"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-desc-small">
+              При обзвоне система отслеживает более 20 параметров. От количества
+              операторов в линии до среднего времени разговора и доли
+              недозвонов.
+            </div>
+            <div class="modal-desc-small">
+              На основе анализа система прогнозирует будущую нагрузку
+              и совершает такое количество звонков, чтобы все операторы были
+              заняты, а клиенты не слушали гудки.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalInfo2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered api-modal confirm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close-modal"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="15" cy="15" r="15" fill="#F4774C" />
+                <path
+                  d="M9 9L21 21M21 9L9 21"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-desc-small">
+              Система автоматически соединяет оператора с клиентом без гудков
+              и долгих ожиданий.
+            </div>
+            <div class="modal-desc-small">
+              Звонок распознаёт автоответчики и не тратит на них деньги
+              и внимание операторов.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalInfo3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered api-modal confirm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close-modal"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="15" cy="15" r="15" fill="#F4774C" />
+                <path
+                  d="M9 9L21 21M21 9L9 21"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-desc-small">
+              На основе анализа данных система рассчитывает, когда пора звонить
+              следующему клиенту, чтобы сразу соединить его с освободившимся
+              оператором.
+            </div>
+            <div class="modal-desc-small">
+              Вы можете сами настроить паузы между звонками, степень нагрузки
+              и другие параметры.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="presentationModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-xl modal-dialog-centered presentation-modal"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close-modal"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="15" cy="15" r="15" fill="#F4774C" />
+                <path
+                  d="M9 9L21 21M21 9L9 21"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="presentation-block d-block">
+              <div class="row gy-0 gx-0">
+                <div class="col-lg-6 col-12">
+                  <div class="presentation-block-white loop-decor">
+                    <h2 class="h2-styled">Попробуйте Звонок в деле!</h2>
+                    <div class="h2-desc">
+                      Укажите ваше имя и номер телефона, робот позвонит вам
+                      и покажет, что он умеет.
                     </div>
+                    <div class="h2-desc">
+                      Во время звонка на месте формы заявки вы увидете
+                      трансляцию звонка от робота, ваши взаимодействия и ответы.
+                    </div>
+                  </div>
                 </div>
-            </div>
-
-            <div class="accordion-item">
-                <a class="head-nav-link" href="#">Войти</a>
-            </div>
-            <div class="accordion-item">
-                <a class="btn btn-default btn-offcanvas">Регистрация</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade " id="consultationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered consultation-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="h2-styled">Расскажем, что умеет Звонок</h2>
-                <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="15" fill="#F4774C"/>
-                        <path d="M9 9L21 21M21 9L9 21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="modal-desc">Укажите ваш телефон, мы ответим на все вопросы о работе сервиса.</div>
-                <form class="d-flex flex-column align-items-center" action="#">
-                    <input class="form-input" type="text" name="name" placeholder="Имя" required>
-                    <input class="form-input form-number" type="tel" name="phone" placeholder="Номер телефона" required>
-                    <button class="btn btn-primary" type="submit">Заказать звонок</button>
-                    <div class="form-desc">
-                        Отправляя форму, вы даете согласие на обработку <a class="form-link" href="#">персональных данных</a>
+                <div class="col-lg-6 col-12">
+                  <div class="presentation-block-orange">
+                    <div class="presentation-block-step-num">Шаг 1/2</div>
+                    <div class="presentation-block-head">
+                      Введите имя и номер
                     </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade " id="modalApi1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered api-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div>Ваша IT-система</div>
-                <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="15" fill="#F4774C"/>
-                        <path d="M9 9L21 21M21 9L9 21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="modal-desc">Подключайте Звонок к любым вашим системам: CRM, ERP, BPM и другим.</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade " id="modalApi2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered api-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div>API-интеграция</div>
-                <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="15" fill="#F4774C"/>
-                        <path d="M9 9L21 21M21 9L9 21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="modal-desc">API-интеграция обеспечивает двусторонние запросы и обмен информацией между вашей IT‑системой и Звонком.</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade " id="modalApi3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered api-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div>Zvonok</div>
-                <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="15" fill="#F4774C"/>
-                        <path d="M9 9L21 21M21 9L9 21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="modal-desc">Список номеров или параметров клиентов Звонок получит из вашей IT-системы, или добавьте эту информацию вручную.</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade " id="modalApi4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered api-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div>Клиент</div>
-                <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="15" fill="#F4774C"/>
-                        <path d="M9 9L21 21M21 9L9 21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="modal-desc">Звонки клиентам происходят с учетом параметров и по заданному в настройках сервиса сценарию.</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade " id="modalApi5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered api-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div>Webhook</div>
-                <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="15" fill="#F4774C"/>
-                        <path d="M9 9L21 21M21 9L9 21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="modal-desc">По завершении звонков Вебхуки отправят всю информацию о звонках и статусы клиентов в вашу IT-систему.</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade " id="modalApi6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered api-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div>Записи разговора</div>
-                <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="15" fill="#F4774C"/>
-                        <path d="M9 9L21 21M21 9L9 21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="modal-desc">Записи разговора и ответы клиента хранятся в ЛК, а также могут автоматически отправляться в вашу IT-систему.</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade " id="modalConfirm1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered api-modal confirm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="15" fill="#F4774C"/>
-                        <path d="M9 9L21 21M21 9L9 21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="modal-desc">Стоимость звонка <span class="confirm-card-cost700">— 1,7 ₽/мин</span> (посекундная тарификация)</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade " id="modalInfo1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered api-modal confirm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="15" fill="#F4774C"/>
-                        <path d="M9 9L21 21M21 9L9 21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="modal-desc-small">При обзвоне система отслеживает более 20 параметров. От количества операторов в линии до среднего времени разговора и доли недозвонов.</div>
-                <div class="modal-desc-small">На основе анализа система прогнозирует будущую нагрузку и совершает такое количество звонков, чтобы все операторы были заняты, а клиенты не слушали гудки.</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade " id="modalInfo2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered api-modal confirm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="15" fill="#F4774C"/>
-                        <path d="M9 9L21 21M21 9L9 21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="modal-desc-small">Система автоматически соединяет оператора с клиентом без гудков и долгих ожиданий. </div>
-                <div class="modal-desc-small">Звонок распознаёт автоответчики и не тратит на них деньги и внимание операторов.</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade " id="modalInfo3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered api-modal confirm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="15" fill="#F4774C"/>
-                        <path d="M9 9L21 21M21 9L9 21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="modal-desc-small">На основе анализа данных система рассчитывает, когда пора звонить следующему клиенту, чтобы сразу соединить его с освободившимся оператором.</div>
-                <div class="modal-desc-small">Вы можете сами настроить паузы между звонками, степень нагрузки и другие параметры.</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="presentationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered presentation-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="15" fill="#F4774C"/>
-                        <path d="M9 9L21 21M21 9L9 21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="presentation-block d-block">
-                    <div class="row gy-0 gx-0">
-                        <div class="col-lg-6 col-12">
-                            <div class="presentation-block-white loop-decor">
-                                <h2 class="h2-styled">Попробуйте Звонок в деле!</h2>
-                                <div class="h2-desc">Укажите ваше имя и номер телефона, робот позвонит вам и покажет, что он умеет.</div>
-                                <div class="h2-desc">Во время звонка на месте формы заявки вы увидете трансляцию звонка от робота, ваши взаимодействия и ответы.</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="presentation-block-orange">
-                                <div class="presentation-block-step-num">Шаг 1/2</div>
-                                <div class="presentation-block-head">Введите имя и номер</div>
-                                <form action="#">
-                                    <input class="form-input w-100" type="text" name="name" placeholder="Имя" required>
-                                    <input class="form-input form-number w-100" type="tel" name="phone" placeholder="Номер телефона" required>
-                                    <button class="btn btn-secondary w-100 presentation-toggle" data-bs-toggle="presentation-block" type="button">Заказать звонок</button>
-                                    <div class="form-desc">
-                                        Отправляя форму, вы даете согласие на&nbsp;обработку <a class="form-link" href="#">персональных данных</a>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                    <form action="#">
+                      <input
+                        class="form-input w-100"
+                        type="text"
+                        name="name"
+                        placeholder="Имя"
+                        required
+                      />
+                      <input
+                        class="form-input form-number w-100"
+                        type="tel"
+                        name="phone"
+                        placeholder="Номер телефона"
+                        required
+                      />
+                      <button
+                        class="btn btn-secondary w-100 presentation-toggle"
+                        data-bs-toggle="presentation-block"
+                        type="button"
+                      >
+                        Заказать звонок
+                      </button>
+                      <div class="form-desc">
+                        Отправляя форму, вы даете согласие на&nbsp;обработку
+                        <a class="form-link" href="#">персональных данных</a>
+                      </div>
+                    </form>
+                  </div>
                 </div>
-                <!--Шаг 2-->
-                <!--<div class="presentation-block">
+              </div>
+            </div>
+            <!--Шаг 2-->
+            <!--<div class="presentation-block">
                     <div class="row gy-0 gx-0">
                         <div class="col-lg-6 col-12">
                             <div class="presentation-block-white chat-decor">
@@ -1723,8 +2959,8 @@
                         </div>
                     </div>
                 </div>-->
-                <!--Шаг 3-->
-                <!--<div class="presentation-block">
+            <!--Шаг 3-->
+            <!--<div class="presentation-block">
                     <div class="row gy-0 gx-0">
                         <div class="col-lg-6 col-12">
                             <div class="presentation-block-white">
@@ -1750,101 +2986,192 @@
                         </div>
                     </div>
                 </div>-->
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<div class="modal fade" id="mycityModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered presentation-modal">
+    <div
+      class="modal fade"
+      id="mycityModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-xl modal-dialog-centered presentation-modal"
+      >
         <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="15" fill="#F4774C"/>
-                        <path d="M9 9L21 21M21 9L9 21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="presentation-block d-block">
-                    <div class="row gy-0 gx-0">
-                        <div class="col-lg-6 col-12">
-                            <div class="presentation-block-white decor-city">
-                                <h2 class="h2-styled">Подключим ваш город</h2>
-                                <div class="h2-desc">Оставьте заявку, чтобы узнать возможность, срок и стоимость подключения номера в вашем городе.</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="presentation-block-orange">
-                                <form action="#">
-                                    <input class="form-input w-100" type="text" name="city" placeholder="Интересующий город" required>
-                                    <input class="form-input w-100" type="text" name="name" placeholder="Имя" required>
-                                    <input class="form-input form-number w-100" type="tel" name="phone" placeholder="Номер телефона" required>
-                                    <button class="btn btn-secondary w-100 presentation-toggle" data-bs-toggle="presentation-block" type="button">Подключить</button>
-                                    <div class="form-desc">
-                                        Отправляя форму, вы даете согласие на&nbsp;обработку <a class="form-link" href="#">персональных данных</a>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close-modal"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="15" cy="15" r="15" fill="#F4774C" />
+                <path
+                  d="M9 9L21 21M21 9L9 21"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="presentation-block d-block">
+              <div class="row gy-0 gx-0">
+                <div class="col-lg-6 col-12">
+                  <div class="presentation-block-white decor-city">
+                    <h2 class="h2-styled">Подключим ваш город</h2>
+                    <div class="h2-desc">
+                      Оставьте заявку, чтобы узнать возможность, срок и
+                      стоимость подключения номера в вашем городе.
                     </div>
+                  </div>
                 </div>
+                <div class="col-lg-6 col-12">
+                  <div class="presentation-block-orange">
+                    <form action="#">
+                      <input
+                        class="form-input w-100"
+                        type="text"
+                        name="city"
+                        placeholder="Интересующий город"
+                        required
+                      />
+                      <input
+                        class="form-input w-100"
+                        type="text"
+                        name="name"
+                        placeholder="Имя"
+                        required
+                      />
+                      <input
+                        class="form-input form-number w-100"
+                        type="tel"
+                        name="phone"
+                        placeholder="Номер телефона"
+                        required
+                      />
+                      <button
+                        class="btn btn-secondary w-100 presentation-toggle"
+                        data-bs-toggle="presentation-block"
+                        type="button"
+                      >
+                        Подключить
+                      </button>
+                      <div class="form-desc">
+                        Отправляя форму, вы даете согласие на&nbsp;обработку
+                        <a class="form-link" href="#">персональных данных</a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<div class="modal fade" id="prettynumModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered presentation-modal">
+    <div
+      class="modal fade"
+      id="prettynumModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-xl modal-dialog-centered presentation-modal"
+      >
         <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="15" cy="15" r="15" fill="#F4774C"/>
-                        <path d="M9 9L21 21M21 9L9 21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="presentation-block d-block">
-                    <div class="row gy-0 gx-0">
-                        <div class="col-lg-6 col-12">
-                            <div class="presentation-block-white">
-                                <h2 class="h2-styled">Закажи красивый номер!</h2>
-                                <ul class="presentation-block-personals">
-                                    <li>Его легко запомнят ваши клиенты</li>
-                                    <li>Он лучше обычного работает в рекламе</li>
-                                    <li>Такой номер подтвердит престижность компании</li>
-                                    <li>С него тоже можно будет делать исходящие</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="presentation-block-orange">
-                                <div class="presentation-block-desc">На выбор есть красивые мобильные и городские номера</div>
-                                <form action="#">
-                                    <input class="form-input form-number w-100" type="tel" name="phone" placeholder="Номер телефона" required>
-                                    <button class="btn btn-secondary w-100 presentation-toggle" data-bs-toggle="presentation-block" type="button">Подключить</button>
-                                    <div class="form-desc">
-                                        Отправляя форму, вы даете согласие на&nbsp;обработку <a class="form-link" href="#">персональных данных</a>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close-modal"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="15" cy="15" r="15" fill="#F4774C" />
+                <path
+                  d="M9 9L21 21M21 9L9 21"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="presentation-block d-block">
+              <div class="row gy-0 gx-0">
+                <div class="col-lg-6 col-12">
+                  <div class="presentation-block-white">
+                    <h2 class="h2-styled">Закажи красивый номер!</h2>
+                    <ul class="presentation-block-personals">
+                      <li>Его легко запомнят ваши клиенты</li>
+                      <li>Он лучше обычного работает в рекламе</li>
+                      <li>Такой номер подтвердит престижность компании</li>
+                      <li>С него тоже можно будет делать исходящие</li>
+                    </ul>
+                  </div>
                 </div>
+                <div class="col-lg-6 col-12">
+                  <div class="presentation-block-orange">
+                    <div class="presentation-block-desc">
+                      На выбор есть красивые мобильные и городские номера
+                    </div>
+                    <form action="#">
+                      <input
+                        class="form-input form-number w-100"
+                        type="tel"
+                        name="phone"
+                        placeholder="Номер телефона"
+                        required
+                      />
+                      <button
+                        class="btn btn-secondary w-100 presentation-toggle"
+                        data-bs-toggle="presentation-block"
+                        type="button"
+                      >
+                        Подключить
+                      </button>
+                      <div class="form-desc">
+                        Отправляя форму, вы даете согласие на&nbsp;обработку
+                        <a class="form-link" href="#">персональных данных</a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<script src="js/bootstrap.js"></script>
-<script src="js/jquery.js"></script>
-<script src="js/inputmask.js"></script>
-<script src="js/magnific-popup.js"></script>
-<script src="js/sweet-scroll.js"></script>
-<script src="js/main.js"></script>
-<script src="js/demo-call.js"></script>
-</body>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/inputmask.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/sweet-scroll.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/demo-call.js"></script>
+  </body>
 </html>

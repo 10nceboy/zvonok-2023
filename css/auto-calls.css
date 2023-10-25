@@ -145,6 +145,9 @@ audio.active ~ button.auto-calls-player::after {
   display: inline;
 }
 
+
+
+
 .auto-calls-tooltip-activator {
   max-width: 15px;
   max-height: 15px;

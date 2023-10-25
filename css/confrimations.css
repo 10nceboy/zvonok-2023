@@ -8,18 +8,22 @@
   margin-bottom: 20px;
 }
 
-
-
 .confirmations-hero-left-top,
 .confirmations-hero-left-bottom {
   padding: 30px 15px;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
+}
+
+.faq-list {
+  margin: 10px 0px 0px 0px;
+  list-style: decimal outside;
+  padding-left: 20px;
 }
 
 .confirmations-input {
-  background-color:#F5F5F5;
-  border-radius:20px 0px 0px 20px;
+  background-color: #f5f5f5;
+  border-radius: 20px 0px 0px 20px;
 }
 
 .confirmations-hero-left-top {
@@ -28,7 +32,7 @@
 
 .confirmations-hero-left-bottom {
   min-height: 182px;
-  background-color:#E4E4E4;
+  background-color: #e4e4e4;
 }
 
 .confirmation-hero-card {
@@ -74,15 +78,27 @@
 
 .confirmations-marquee-list {
   animation-duration: 20s;
-  animation-name:marquee;
+  animation-name: marquee;
 }
-
 
 .confirmations-politics a {
-  color:#F4774C;
+  color: #f4774c;
 }
 
+.confirmations-tel {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
 
+.confirmations-tel:before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: url("../img/icons/tel.svg") no-repeat center center;
+  margin-right: 10px;
+}
 
 @keyframes marquee {
   0% {
@@ -100,8 +116,6 @@
   max-width: 5px;
   max-height: 5px;
 }
-
-
 
 .confirmations-focus-list {
   padding: 0px;
@@ -123,6 +137,28 @@
   margin-top: 5px;
 }
 
+.conversation-focus-example {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.confirmations-focus-card-tel-number {
+  padding: 15px 0px;
+  font-size: 25px;
+  margin: 15px 0px;
+  line-height: 130%;
+}
+
+.confrimations-focus-card-header {
+  margin-bottom: 5px !important;
+  font-size: 18px;
+}
+
+.confirmations-focus-card-small {
+  margin-bottom: 15px;
+  max-width: unset;
+}
+
 .confirmations-promo-card {
   min-height: 169px;
 }
@@ -133,10 +169,35 @@
 
 .methods-card {
   margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.methods-card-big {
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+.methods-card-with-note {
+  padding-top: 5px;
+  padding-right: 6px;
+}
+
+.methods-card-with-note-header {
+  margin-top: -10px;
 }
 
 .methods-card-first-button {
   margin-top: 5px;
+}
+
+.methods-note {
+  border-radius: 25px;
+  padding: 4px 5px;
+  font-size: 13px;
+}
+
+.methods-note-best {
+  margin-bottom: 5px;
 }
 
 .confirmations-price-modal-activator svg {
@@ -168,7 +229,7 @@
 }
 
 .scenario-card-with-chip {
-  margin-top: 27px;
+  margin-top: 25px;
 }
 
 .scenario-chip {
@@ -183,18 +244,18 @@
   max-height: 25px;
 }
 
-
 .scenario-chip :before {
   width: 15px;
-  height:15px;
+  height: 15px;
   display: inline-block;
-  content:"";
-  background:url("../img/icons/star-mobile.svg") no-repeat center center;
+  content: "";
+  background: url("../img/icons/star-mobile.svg") no-repeat center center;
   margin: 0px 4px -2px 0;
 }
 
 .api-link {
   font-weight: 600;
+  margin-top: 5px;
 }
 
 .api-link:hover,
@@ -203,13 +264,33 @@
   color: #f25f2d;
 }
 
-
 .confirmations-arrow-button {
   min-width: 40px !important;
-  background-color:#F5F5F5;
+  background-color: #f5f5f5;
   margin-left: 0px;
- border-right:1px solid var(--color-grey-med, #AEAEAE);
- border-radius:0px 20px 20px 0px;
+  border-right: 1px solid var(--color-grey-med, #aeaeae);
+  border-radius: 0px 20px 20px 0px;
+}
+
+.confirmations-advantages {
+  margin-top: 35px;
+}
+
+.confirmations-disadvantages-list li:before {
+  background-image: url("../img/icons/disadvantage.svg");
+}
+
+.confirmations-difference-header {
+  margin-bottom: 15px;
+}
+
+.confirmation-difference-list li {
+  font-size: 15px;
+  padding-left: 18px;
+}
+
+.confirmation-difference-list li:before {
+  margin-top: 2px;
 }
 
 @media screen and (min-width: 375px) {
@@ -230,7 +311,7 @@
   }
 
   .confirmations-promo-card {
-    min-height: 149px;
+    min-height: 155px;
   }
 
   .confirmations-price-modal-activator svg {
@@ -281,6 +362,11 @@
   .confirmations-price-modal-activator svg {
     margin-bottom: 2px;
   }
+
+  .confrimations-focus-card-header {
+    margin-bottom: 10px !important;
+    font-size: 19px;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -306,6 +392,10 @@
   .confrimations-cost-modal-close {
     top: -40px !important;
   }
+
+  .confirmation-difference-list li {
+    padding-left: 35px;
+  }
 }
 
 @media screen and (min-width: 720px) {
@@ -324,6 +414,18 @@
 
   .confirmations-promo-card {
     min-height: 189px;
+  }
+
+  .confirmations-focus-card-tel-number {
+    margin: 15px 0px 20px;
+  }
+
+  .confirmations-difference-header {
+    margin-bottom: 20px;
+  }
+
+  .confirmation-difference-list li {
+    font-size: 16px;
   }
 }
 
@@ -379,6 +481,23 @@
   .confirmations-promo-card {
     min-height: 149px;
   }
+
+  .confirmations-get {
+    padding: 15px 13px 14px;
+    border-radius: 4px;
+    border: 1px solid #d4d4d4;
+    margin-top: 20px;
+  }
+
+  .confirmations-get-text {
+    max-width: 553px;
+    font-size: 15px;
+    color: #5a5a5a !important;
+  }
+
+  .confirmations-focus-card-tel-number {
+    font-size: 28px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -391,16 +510,14 @@
     margin-left: 20px;
   }
 
-
   .confirmations-input {
-    border-radius:20px;
+    border-radius: 20px;
     max-width: 300px;
   }
 
   .confirmations-arrow-button {
     margin-left: 10px;
   }
-
 
   .confirmations-hero-left-top,
   .confirmations-hero-left-bottom {
@@ -418,6 +535,33 @@
     max-width: 20px;
     max-height: 20px;
     margin-top: 4px;
+  }
+
+  .confrimations-focus-card-header {
+    font-size: 20px;
+    margin-bottom: 20px !important;
+  }
+
+  .confirmations-focus-desc {
+    font-size: 18px;
+  }
+
+  .conversation-focus-example {
+    padding: 25px 35px 0px 35px;
+    margin-top: 0px !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conversation-focus-example-desc {
+    max-width: 470px;
+    font-size: 15px;
+  }
+
+  .confirmations-tel:before {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
   }
 
   .confirmations-card {
@@ -446,10 +590,58 @@
     margin-bottom: 25px;
   }
 
+  .confirmations-focus-card-small {
+    margin: 0px 20px 0px 0px;
+    background: transparent;
+    min-height: 200px;
+    max-width: 33.3%;
+  }
+
   .scenario-cards {
     grid-row-gap: 30px;
     grid-column-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .methods-cards {
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .methods-card-medium {
+    margin: 0px !important;
+    min-width: 50%;
+    max-width: unset;
+  }
+
+  .methods-card-big {
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+
+  .methods-card-with-note {
+    padding-top: 15px;
+    padding-right: 15px;
+  }
+
+  .methods-card-with-note-small {
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+
+  .methods-card-with-note-header {
+    margin-top: -15px;
+  }
+
+  .methods-note {
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+
+  .methods-note-small {
+    font-size: 13px;
+    padding: 5px 7px;
+    margin-bottom: 8px;
   }
 
   .confirmations-marquee-list li {
@@ -485,6 +677,12 @@
     font-size: 15px;
   }
 
+  .confirmations-focus-card-tel-number {
+    font-size: 35px;
+    padding: 30px 0px;
+    line-height: 120%;
+  }
+
   .methods-card {
     margin-bottom: 30px;
   }
@@ -500,7 +698,7 @@
   .methods-card-right {
     position: absolute;
     right: 20px;
-    bottom: 0px;
+    bottom: -35px;
   }
 
   .methods-robot-image {
@@ -537,6 +735,22 @@
     margin-bottom: 6px;
   }
 
+  .confirmations-feature-price-tooltip {
+    margin-left: 4px;
+  }
+
+  .confirmations-feature-price-tooltip svg {
+    margin-bottom: 5px;
+  }
+
+  .confirmations-answer-tooltip {
+    margin-left: 5px;
+  }
+
+  .confirmations-answer-tooltip svg {
+    margin-bottom: 4px;
+  }
+
   .confirmations-detail-instruction {
     max-width: 465px;
     margin-left: 35px;
@@ -547,14 +761,12 @@
     max-height: 29px;
   }
 
- 
-.scenario-chip :before {
-  width: 20px;
-  height:20px;
-  background-image:url("../img/icons/star.svg");
-  margin: 0px 4px -3px 0;
-}
-  
+  .scenario-chip :before {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icons/star.svg");
+    margin: 0px 4px -3px 0;
+  }
 
   .confirmations-step-image {
     bottom: 28px;
@@ -570,7 +782,16 @@
     grid-column-end: 4;
   }
 
+  .scenario-card-order-2 {
+    grid-row-start: 2;
+  }
+
   .scenario-card-order-1 {
+    grid-row-start: 3;
+  }
+
+  .scenario-card-column-2 {
+    grid-column-start: 2;
     grid-row-start: 3;
   }
 
@@ -579,6 +800,72 @@
     min-height: 159px;
     bottom: -12%;
     transform: rotateY(172deg) rotate(6deg);
+  }
+
+  .confirmations-focus-card-narrow {
+    padding: 35px !important;
+  }
+
+  .confirmations-advantages {
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+
+  .confirmations-disadvantages,
+  .confirmations-advantages {
+    min-width: 450px;
+    flex-shrink: 0;
+  }
+
+  .confirmations-answer {
+    padding-top: 50px;
+  }
+
+  .confirmations-answer-right {
+    margin: 0px 0px 0px -30px !important;
+  }
+
+  .confirmations-answer-left h2 {
+    font-size: 25px;
+  }
+
+  .confirmation-difference-list li {
+    font-size: 17px;
+  }
+
+  .confirmations-popover {
+    left: 77% !important;
+    top: -184px !important;
+    margin-left: 4px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .confirmations-popover-arrow::before {
+    left: 84% !important;
+    bottom: -12px !important;
+  }
+
+  .warn-popover {
+    min-width: 366px;
+  }
+
+  .warn-arrow::before {
+    left: 79%;
+    transform: rotateY(180deg);
+  }
+
+  .confirmations-hero-desc-small {
+    max-width: 528px;
+  }
+
+  .methods-note-best {
+    padding: 3px 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .confirmations-popover {
+    left: 77.5% !important;
   }
 }
 
@@ -614,14 +901,25 @@
 
   .confirmations-focus-card {
     padding: 0px 45px;
+    margin-left: 30px;
+  }
+
+  .methods-cards {
+    grid-gap: 30px;
   }
 
   .methods-card {
     max-height: 230px;
   }
 
+  .methods-card-medium {
+    max-height: 205px;
+    max-width: unset !important;
+    min-width: 50%;
+  }
+
   .methods-card-right {
-    right: 80px;
+    right: 66px;
   }
 
   .methods-robot-image {
@@ -635,6 +933,13 @@
 
   .confirmations-card:not(:first-child) {
     margin-left: 30px;
+  }
+
+  .confirmations-focus-card-small {
+    margin: 0px 20px 0px 0px;
+    background: transparent;
+    min-height: 200px;
+    max-width: 33.3%;
   }
 
   .confirmations-price-desc {
@@ -655,5 +960,56 @@
 
   .confirmations-detail-instruction {
     margin-left: 105px;
+  }
+
+  .confirmations-focus-card-small {
+    margin: 0px 30px 0px 0px;
+    min-height: 175px;
+    max-width: 350px;
+  }
+
+  .confirmations-disadvantages,
+  .confirmations-advantages {
+    min-width: 500px;
+  }
+
+  .confirmations-advantages {
+    margin-left: 30px;
+  }
+
+  .confirmations-answer-left {
+    min-width: 580px;
+    max-width: 580px;
+  }
+
+  .confirmation-difference-list li {
+    font-size: 18px;
+    padding-left: 40px;
+  }
+
+  .confirmations-popover {
+    left: 84.5% !important;
+  }
+
+  .confirmations-popover-arrow::before {
+    left: 69% !important;
+    bottom: -12px !important;
+  }
+
+  .warn-arrow::before {
+    left: 79%;
+    transform: unset;
+  }
+
+  .methods-note-small {
+    font-size: 14px;
+    padding: 5px 10px 3px 10px;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .confirmations-popover {
+    left: 87% !important;
   }
 }
