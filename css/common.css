@@ -6,9 +6,7 @@
   color: #f25f2d !important;
 }
 
-.confirm-card-tooltip[aria-describedby] svg path {
-  fill: #F25F2D;
-  }
+
 
 .max-h-40 {
   max-height: 40px;
