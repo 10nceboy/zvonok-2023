@@ -200,6 +200,10 @@
   margin-bottom: 5px;
 }
 
+.confirmations-price-header {
+  font-size: 18px;
+}
+
 .confirmations-price-modal-activator svg {
   max-width: 15px;
   max-height: 15px;
@@ -427,6 +431,8 @@
   .confirmation-difference-list li {
     font-size: 16px;
   }
+
+
 }
 
 @media screen and (min-width: 767px) {
@@ -498,9 +504,28 @@
   .confirmations-focus-card-tel-number {
     font-size: 28px;
   }
+
+  .confirmations-price-header {
+    font-size: 20px;
+  }
+
+
+  .confirmations-input {
+    border-radius: 20px;
+    max-width: 80%;
+  }
+
+   .confirmations-arrow-button {
+    margin-left: 10px;
+    border: none;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .lg-mw-579 {
+    max-width: 579px;
+  }
+
   .confrimations-hero-wrapper {
     padding-top: 25px;
     align-items: center;
@@ -511,13 +536,10 @@
   }
 
   .confirmations-input {
-    border-radius: 20px;
     max-width: 300px;
+    margin-right: 0px;
   }
 
-  .confirmations-arrow-button {
-    margin-left: 10px;
-  }
 
   .confirmations-hero-left-top,
   .confirmations-hero-left-bottom {
@@ -594,6 +616,7 @@
     margin: 0px 20px 0px 0px;
     background: transparent;
     min-height: 200px;
+    max-width: 200px;
     max-width: 33.3%;
   }
 
@@ -642,6 +665,7 @@
     font-size: 13px;
     padding: 5px 7px;
     margin-bottom: 8px;
+    max-height: 30px;
   }
 
   .confirmations-marquee-list li {
@@ -861,6 +885,15 @@
   .methods-note-best {
     padding: 3px 10px;
   }
+
+  .confirmations-answer-left,
+  .confirmations-answer-left h2 {
+    max-width: 470px;
+  }
+
+  .confirmations-price-header {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -935,13 +968,6 @@
     margin-left: 30px;
   }
 
-  .confirmations-focus-card-small {
-    margin: 0px 20px 0px 0px;
-    background: transparent;
-    min-height: 200px;
-    max-width: 33.3%;
-  }
-
   .confirmations-price-desc {
     font-size: 20px;
   }
@@ -965,6 +991,7 @@
   .confirmations-focus-card-small {
     margin: 0px 30px 0px 0px;
     min-height: 175px;
+    max-height: 175px;
     max-width: 350px;
   }
 
@@ -978,8 +1005,11 @@
   }
 
   .confirmations-answer-left {
-    min-width: 580px;
     max-width: 580px;
+  }
+
+  .confirmations-answer-left h2 {
+    max-width: unset;
   }
 
   .confirmation-difference-list li {
@@ -997,7 +1027,7 @@
   }
 
   .warn-arrow::before {
-    left: 79%;
+    left: 80%;
     transform: unset;
   }
 
@@ -1011,5 +1041,21 @@
 @media screen and (min-width: 1400px) {
   .confirmations-popover {
     left: 87% !important;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .confirmations-popover {
+    left: unset !important;
+    top: unset !important;
+  }
+
+  .warn-popover {
+    top: 92% !important;
+    left: -10.5% !important;
+  }
+
+  .confirmations-popover-arrow:before {
+    left: 8% !important;
   }
 }
