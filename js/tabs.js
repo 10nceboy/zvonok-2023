@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
       let list = el.closest(".tabs-list");
       let links = list.querySelectorAll("li[data-box]");
       links.forEach((el) => {
-        el.addEventListener("click", function (evt) {
+        el.addEventListener("mouseover", function (evt) {
           document
             .querySelectorAll(`li`)
             .forEach((link) => link.classList.remove("active"));

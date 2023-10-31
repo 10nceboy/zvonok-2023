@@ -8,6 +8,16 @@
   margin-bottom: 20px;
 }
 
+.confirmations-focus-desc-in-frame {
+  padding: 23px 16px 24px 14px;
+  border-radius: 5px;
+  min-width: 237px;
+}
+
+.confirmations-caption-small {
+  min-width: 237px;
+}
+
 .confirmations-hero-left-top,
 .confirmations-hero-left-bottom {
   padding: 30px 15px;
@@ -39,13 +49,25 @@
   min-height: 204px;
 }
 
-.step-icon {
-  min-width: 15px;
-  min-height: 15px;
-  max-width: 15px;
-  max-height: 15px;
-  margin-right: 7px;
-  margin-bottom: 5px;
+.confirmations-card-with-icon::before {
+  content: "";
+  background: no-repeat center center;
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.confirmations-card-tel::before {
+  background-image: url("../img/icons/phone.svg");
+}
+
+.confirmations-card-fast::before {
+  background-image: url("../img/icons/fast.svg");
+}
+
+.confirmations-card-money::before {
+  background-image: url("../img/icons/money.svg");
 }
 
 .confirmations-step-image {
@@ -79,6 +101,15 @@
 .confirmations-marquee-list {
   animation-duration: 20s;
   animation-name: marquee;
+}
+
+.confirmations-marque-point:before {
+  content: "";
+  background: url("../img/icons/marquee-point.svg") no-repeat center center;
+  width: 5px;
+  height: 5px;
+  display: block;
+  border-radius: 50%;
 }
 
 .confirmations-politics a {
@@ -217,6 +248,7 @@
 .confirmations-detail-instruction {
   margin-bottom: 45px;
   max-width: 500px;
+  min-width: 300px;
 }
 
 .scenario-cards {
@@ -400,6 +432,10 @@
   .confirmation-difference-list li {
     padding-left: 35px;
   }
+
+  .confirmation-hero-card {
+    min-height: 175px;
+  }
 }
 
 @media screen and (min-width: 720px) {
@@ -416,10 +452,6 @@
     font-size: 16px;
   }
 
-  .confirmations-promo-card {
-    min-height: 189px;
-  }
-
   .confirmations-focus-card-tel-number {
     margin: 15px 0px 20px;
   }
@@ -431,8 +463,6 @@
   .confirmation-difference-list li {
     font-size: 16px;
   }
-
-
 }
 
 @media screen and (min-width: 767px) {
@@ -444,10 +474,9 @@
     max-width: unset;
   }
 
-  .confirmations-marquee-list svg {
-    max-width: 15px;
-    max-height: 15px;
-    min-height: 15px;
+  .confirmations-marque-point:before {
+    width: 10px;
+    height: 10px;
   }
 
   .confirmations-hero-left-top,
@@ -461,14 +490,6 @@
 
   .confirmations-hero-left-bottom {
     min-height: 152px;
-  }
-
-  .step-icon {
-    min-width: 20px;
-    min-height: 20px;
-    max-width: 20px;
-    max-height: 20px;
-    margin-bottom: 0px;
   }
 
   .confirmations-step {
@@ -509,13 +530,12 @@
     font-size: 20px;
   }
 
-
   .confirmations-input {
     border-radius: 20px;
     max-width: 80%;
   }
 
-   .confirmations-arrow-button {
+  .confirmations-arrow-button {
     margin-left: 10px;
     border: none;
   }
@@ -524,6 +544,10 @@
 @media screen and (min-width: 992px) {
   .lg-mw-579 {
     max-width: 579px;
+  }
+
+  .confirmations-focus-card-small-desc {
+    min-width: 300px;
   }
 
   .confrimations-hero-wrapper {
@@ -540,7 +564,6 @@
     margin-right: 0px;
   }
 
-
   .confirmations-hero-left-top,
   .confirmations-hero-left-bottom {
     padding: 40px;
@@ -549,14 +572,6 @@
 
   .confirmations-step {
     font-size: 15px;
-  }
-
-  .step-icon {
-    min-width: 20px;
-    min-height: 20px;
-    max-width: 20px;
-    max-height: 20px;
-    margin-top: 4px;
   }
 
   .confrimations-focus-card-header {
@@ -605,6 +620,10 @@
 
   .confirmations-card:not(:first-child) {
     margin-left: 20px;
+  }
+
+  .confirmations-card-with-icon::before {
+    margin-bottom: 15px;
   }
 
   .confirmations-card-desc {
@@ -882,6 +901,10 @@
     max-width: 528px;
   }
 
+  .confirmations-focus-desc-in-frame {
+    padding: 35px 26px;
+  }
+
   .methods-note-best {
     padding: 3px 10px;
   }
@@ -913,10 +936,6 @@
     padding: 50px 94px;
     min-height: 261px;
     max-height: 261px;
-  }
-
-  .step-icon {
-    margin-right: 10px;
   }
 
   .confirmations-card-header {
@@ -1034,7 +1053,7 @@
   .methods-note-small {
     font-size: 14px;
     padding: 5px 10px 3px 10px;
-    margin-bottom: 5px;
+    margin-bottom: 9px;
   }
 }
 
